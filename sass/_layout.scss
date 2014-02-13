@@ -6,14 +6,15 @@
 // settings
 
 $total-columns : 8;
-$column-width : 4em;
+$column-width : 5em;
 $gutter-width : 1em;
-$grid-padding : 1em;
+$grid-padding : 0;
 
-$medium-columns : 8;
-$large-columns : 16;
+$container-style: magic;
+$container-width: 48em;
 
-$container-width : container-outer-width($large-columns);
+$medium-columns : 8; //768
+$large-columns : 12; //1200
 
 // --------------------------------------------
 // layout
@@ -22,47 +23,41 @@ $container-width : container-outer-width($large-columns);
 
 .container {
   @include container;
-  overflow: hidden;
 }
 
 // --------------------------------------------
-// small
+// pad
 
-$anchor : 1;
-$side : $total-columns - $anchor;
-
-.left {
-  @include span-columns($side);
-  margin-left: -100%;
-  .show-left & { margin-left: 0; }
-}
-
-.main {
-  @include span-columns($total-columns);
-  margin-right: - 100%;
-  .show-right & { margin-left: - space($side); }
-}
-
-.right {
-  @include span-columns($side omega);
-  margin-right: -100%;
-  .show-right & { margin-right: 0; }
-}
-
-// --------------------------------------------
-// medium
-
-$main : 5;
+$main : 8;
 $side : $medium-columns - $main;
 
 @include at-breakpoint($medium-columns) {
-  [href="#left"] { visibility: hidden; }
 
-  .left {
-    @include span-columns($side);
-    margin-left: 0;
-    .show-right & { margin-left: - 100%; }
+  .main {
+    @include span-columns($medium-columns);
+    margin-right: - 100%;
+    .show-right & { margin-left: - space(4); }
   }
+
+  .right {
+    @include span-columns(4 omega);
+    margin-right: -100%;
+    .show-right & { margin-right: 0; }
+  }
+}
+
+// --------------------------------------------
+// Desktop
+
+$main : 8;
+$side : $large-columns - $main;
+
+@include at-breakpoint($large-columns) {
+  
+  .container {
+    max-width: 1200px;
+  }
+  [href="#right"] { visibility: hidden; }
 
   .main {
     width: columns($main);
@@ -71,30 +66,8 @@ $side : $medium-columns - $main;
 
   .right {
     width: columns($side);
+    margin-right: 0;
     .show-right & { margin-right: 0; }
-  }
-}
-
-// --------------------------------------------
-// large
-
-$main : 6;
-$side : ($large-columns - $main)/2;
-
-@include at-breakpoint($large-columns) {
-  [href="#right"] { visibility: hidden; }
-
-  .left {
-    @include span-columns($side);
-    .show-right & { margin-left: 0; }
-  }
-
-  .main {
-    width: columns($main);
-  }
-
-  .right {
-    @include span-columns($side omega);
   }
 }
 
@@ -102,9 +75,9 @@ $side : ($large-columns - $main)/2;
 // styles (for demo only)
 
 .container {
-  @include susy-grid-background;
-  @include at-breakpoint($medium-columns) { @include susy-grid-background; }
-  @include at-breakpoint($large-columns) { @include susy-grid-background; }
+  //@include susy-grid-background;
+  //@include at-breakpoint($medium-columns) { @include susy-grid-background; }
+  //@include at-breakpoint($large-columns) { @include susy-grid-background; }
   text-transform: uppercase;
 }
 
@@ -118,27 +91,15 @@ header, footer {
 }
 
 .toggle { text-transform: none; }
-[href="#left"] { float: left; }
+
 [href="#right"] { float: right; }
 
-.left, .right, .main {
+.right, .main {
   @include transition(.3s all ease);
   height: 20em;
   padding: 1em;
 }
-.left, .right { @include opacity(0); }
-
-.left {
-  background: rgba(#cff,.75);
-  .show-left & { @include opacity(1); }
-  @include at-breakpoint($medium-columns) {
-    @include opacity(1);
-    .show-right & { @include opacity(0); }
-  }
-  @include at-breakpoint($large-columns) {
-    &, .show-right & { @include opacity(1); }
-  }
-}
+.right { @include opacity(0); }
 
 .main {
   background: rgba(#eee,.75);
