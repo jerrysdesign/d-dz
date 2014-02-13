@@ -23,6 +23,7 @@ $large-columns : 12; //1200
 
 .container {
   @include container;
+  overflow: hidden;
 }
 
 // --------------------------------------------
@@ -31,20 +32,18 @@ $large-columns : 12; //1200
 $main : 8;
 $side : $medium-columns - $main;
 
-@include at-breakpoint($medium-columns) {
-
-  .main {
-    @include span-columns($medium-columns);
-    margin-right: - 100%;
-    .show-right & { margin-left: - space(4); }
-  }
-
-  .right {
-    @include span-columns(4 omega);
-    margin-right: -100%;
-    .show-right & { margin-right: 0; }
-  }
+.main {
+  @include span-columns($medium-columns);
+  margin-right: - 100%;
+  .show-right & { margin-left: - space(4); }
 }
+
+.right {
+  @include span-columns(4 omega);
+  margin-right: -100%;
+  .show-right & { margin-right: 0; }
+}
+
 
 // --------------------------------------------
 // Desktop
