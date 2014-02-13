@@ -3,3 +3,4 @@ _notes/*
 .DS_Store
 stylesheets/*
 fire_app_log.txt
+config.rb
