@@ -1,5 +1,5 @@
-_notes/
-.sass-cache/
+_notes/*
+.sass-cache/*
 .DS_Store
-stylesheets/
+stylesheets/*
 fire_app_log.txt
