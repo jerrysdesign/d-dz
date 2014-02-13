@@ -1,0 +1,5 @@
+_notes/
+.sass-cache/
+.DS_Store
+stylesheets/
+fire_app_log.txt
