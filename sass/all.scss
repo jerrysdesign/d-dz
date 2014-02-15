@@ -1,7 +1,7 @@
 // vertical rhythm
 $base-font-size: 16px;
 $base-line-height: 24px;
-$relative-font-sizing: false;
+//$relative-font-sizing: false;
 
 // compass
 $legacy-support-for-ie: false;
@@ -11,8 +11,11 @@ $grid-background-baseline-height: $base-line-height;
 $page-container: ".page";
 
 // import all things
+@import "basic/mixin";
 @import "compass";
 @import "susy";
+
+@include border-box-sizing;
 
 @import "normalize";
 @include establish-baseline;
@@ -21,3 +24,5 @@ $page-container: ".page";
 @import "typography";
 @import "layout";
 @import "pages";
+//
+@import "partials/header";

@@ -1,13 +1,19 @@
-%helvetica-light {
-  font-family: "HelveticaNeue-Light", "Helvetica", "Arial", sans-serif;
-  font-weight: 300;
+/*font*/
+@font-face {
+  font-family: "klavika";
+  src: url('../font/klavika-webfont.ttf') format('truetype'), url('../font/klavika-webfont.eot') format('embedded-opentype');
 }
-
 body {
-  @extend %helvetica-light;
+  font-family: "klavika",
+               AvenirNext-Regular,
+               HelveticaNeue-Light, Helvetica, Arial,
+               'Heiti TC',
+               微軟正黑體, 'Microsoft JhengHei',
+               sans-serif;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+   //text-rendering: optimizeLegibility;
+  font-weight: 400;
 }
 
 .hide {
@@ -17,7 +23,6 @@ body {
 #{headings()} {
   @include reset-box-model;
   @include adjust-font-size-to(32px);
-  @extend %helvetica-light;
 }
 
 a {

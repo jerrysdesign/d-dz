@@ -1,0 +1,96 @@
+.header {
+  @include pie-clearfix;
+  height: 145px;
+  border-bottom: 1px solid #333;
+  position: relative;
+  .logo {
+    // margin-left: 30px;
+    margin-right: 70px;
+    float: left;
+    a {
+      background: url(../images/Logo.jpg) no-repeat;
+      display: block;
+      height: 62px;
+      width: 197px;
+      strong {
+        display: none;
+      }
+    }
+  }
+}
+
+ul.main-menu {
+  font-weight: 900;
+  letter-spacing: -1px;
+  float: left;
+  clear: top;
+  a {
+    color: #585858;
+    line-height: 1.5;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  > li {
+    float: left;
+    a {
+      display: block;
+      padding: 5px 15px;
+      z-index: 105;
+      position: relative;
+      
+    }
+    &:hover {
+      a {
+        border-bottom: 4px solid #8094cf;
+      }
+      .subdiv {
+        display: block;
+        margin-top: -4px;
+        font-weight: 100;
+        letter-spacing: normal;
+        font-size: .85em;
+        padding: 10px 20px;
+        dt, dd {
+          @include reset-list;
+        }
+      }
+    }
+    > ul {
+      
+    }
+  }
+  .subdiv {
+    position: absolute;
+    display: none;
+    z-index: 100;
+    background-color: rgba(230,230,230,.75);
+    border-top: 4px solid rgba(0,0,0,.25);
+    dl {
+
+    }
+  }
+  .submenu {
+    @include pie-clearfix;
+  }
+  .submenu-col {
+    float: left;
+    padding: 0 10px;
+    margin: 10px 0px 10px 5px;
+  }
+}
+
+ul.lang {
+  position: absolute;
+  right: 10px;
+  height: 30px;
+  font-size: 13px;
+  overflow: hidden;
+  > li {
+    float: left;
+  }
+  a {
+    display: block;
+  }
+}
+
