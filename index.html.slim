@@ -1,4 +1,21 @@
-.page
-  h1 OK GO!!!
-  - 3.times do
-    p= zh_lorem_paragraphs 5
+= content_for :title do 
+  <title>首頁</title>
+.container
+  = render "layout_header"
+
+  .banner
+    = image_tag(lorem_image("1200x400"))
+  .index 
+    .newsbanner
+      = image_tag(lorem_image("1200x180"))
+    .product
+      section
+        h2 product_1
+      section
+        h2 product_2
+      section
+        h2 product_3
+      section
+        h2 product_4
+  footer.footer
+    p Footer

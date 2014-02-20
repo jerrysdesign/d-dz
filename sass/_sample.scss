@@ -1,0 +1,212 @@
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+@include establish-baseline;
+
+$total-columns: 5;
+$column-width: 4em;
+$gutter-width: 1em;
+$grid-padding: 1em;
+$pad: 768px 12;
+$pc: 960px 15;
+$view: 2;
+$side: $total-columns - $view;
+
+.container {
+  @include set-container-width;
+  @include susy-grid-background;
+  margin: 0 auto;
+  //overflow: hidden;
+  @include at-breakpoint($pad) {
+    @include susy-grid-background;
+    @include container;
+  }
+
+  @include at-breakpoint($pc) {
+    @include susy-grid-background;
+    @include container;
+  }
+}
+
+.header {
+  @include set-container-width;
+  margin: 0 auto;
+  background: #241d1f;
+  color: white;
+  @include padding-trailer(1 / 4);
+  @include padding-leader(1 / 4);
+  @include trailer;
+  text-align: center;
+  position: relative;
+  h1 {
+    //@include adjust-font-size-to(1.5em);
+  }
+  .menu-control {
+    padding: 2px;
+    @include transition(all, 0.5s);
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    cursor: pointer;
+    @include border-radius(3px);
+    border: 1px solid white;
+    &:hover {
+      color: #241d1f;
+      background: white;
+      border: 1px solid #241d1f;
+    }
+  }
+  @include at-breakpoint($pad) {
+    @include container;
+    .menu-control {
+      display: none;
+    }
+  }
+
+  @include at-breakpoint($pc) {
+    @include container;
+  }
+}
+
+.menu {
+  @include span-columns($side);
+  @include padding-leader(0.5);
+  @include padding-trailer(3);
+  @include pad(0.2, 0.2);
+  @include box-sizing(border-box);
+  margin-left: -100%;
+  @include opacity(0.9);
+  background: #207abc;
+  color: white;
+  @include transition(margin 1s);
+  @extend %clearfix;
+  .open & {
+    margin-left: 0;
+  }
+  h2 {
+    font-weight: bold;
+    @include adjust-font-size-to(18px);
+  }
+  a {
+    @include transition(all, 0.5s);
+    color: white;
+    display: block;
+    line-height: 2.5em;
+    text-indent: 1em;
+    &:hover {
+      background: darken(#207abc, 10%);
+      color: yellow;
+    }
+  }
+  @include at-breakpoint($pad) {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    li {
+      @include inline-block;
+      a {
+        text-indent: 0;
+        padding: 1em;
+      }
+    }
+    h2 {
+      display: none;
+    }
+  }
+}
+
+.main {
+  @include span-columns($total-columns omega);
+  @include transition(margin 1s);
+  .open & {
+    margin-right: -(space($side));
+  }
+}
+
+.banner {
+  background: blue;
+  color: white;
+  @include trailer;
+  p {
+    @include adjust-font-size-to(13px);
+  }
+  @include at-breakpoint($pad) {
+    p {
+      @include adjust-font-size-to(23px, 1.5);
+    }
+  }
+
+  @include at-breakpoint($pc) {
+    p {
+      @include adjust-font-size-to(35px);
+    }
+  }
+}
+
+.product {
+  @include trailer;
+  @extend %clearfix;
+  background: red;
+  section {
+    height: 100px;
+    background: black;
+    @include trailer;
+  }
+  .bar {
+    @include trailer;
+    height: 100px;
+    text-align: center;
+    background: gray;
+    a {
+      padding: 5px 10px;
+      @include border-radius(5px);
+      background: blue;
+      color: white;
+      @include inline-block;
+    }
+  }
+  @include at-breakpoint($pad) {
+    section {
+      @include isolate-grid(6);
+    }
+    .bar {
+      @include isolate-grid(6);
+    }
+  }
+
+  @include at-breakpoint($pc) {
+    section {
+      @include isolate-grid(5);
+    }
+    .bar {
+      @include isolate-grid(15);
+      background: gray;
+    }
+  }
+}
+
+.blog {
+  background: pink;
+  @extend %clearfix;
+  h2 {
+    text-align: center;
+  }
+  section {
+    height: 100px;
+    @include trailer;
+    background: green;
+  }
+  @include at-breakpoint($pad) {
+    section {
+      @include span-columns(6);
+      @include nth-omega(2n);
+    }
+  }
+}
+
+.test-color {
+  color: red;
+  background: black;
+}

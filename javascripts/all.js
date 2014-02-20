@@ -1,8 +1,23 @@
+//主選單
+$('.main_navigation > li').bind('mouseover', openSubMenu);
+$('.main_navigation > li').bind('mouseleave', closeSubMenu);
+
+function openSubMenu() {
+  $(this).addClass('active');
+  $(this).find('> ul').stop(true, true).slideDown(250);
+}
+
+function closeSubMenu() {
+  $(this).removeClass('active');
+  $(this).find('> ul').stop(true, true).slideUp(150);
+}
+
+//側欄
 $(document).ready(function(){
   $('body').addClass('js');
   var $menu = $('#menu'),
-    $menulink = $('.menu-link'),
-    $menuTrigger = $('.has-subnav > a');
+      $menulink = $('.menu-link'),
+      $menuTrigger = $('.has-subnav > a');
 
   $menulink.click(function(e){
     e.preventDefault();

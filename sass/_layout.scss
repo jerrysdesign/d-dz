@@ -22,12 +22,12 @@ $large-columns : 12; //1200
   overflow: hidden;
   min-width: 768px;
 }
-
-.header {
+.header , .footer {
   ul, li {
     @include reset-list;
   }
 }
+
 // --------------------------------------------
 // pad
 
@@ -38,21 +38,26 @@ $side : $medium-columns - $main;
   @include span-columns($medium-columns);
   margin-right: - 100%;
   .show-right & { margin-left: - space(4); }
+  //不隱藏
+  //@include span-columns($medium-columns);
 }
-
+.header {
+  height: 115px; 
+}
+.index {
+  padding: 1em;
+}
 .right {
   @include span-columns(4 omega);
   margin-right: -100%;
   .show-right & { margin-right: 0; }
+  //不隱藏
+  //@include span-columns($medium-columns);
 }
-.logo {
-  margin-top: 10px;
-}
-ul.main-menu {
-  margin-top: 10px;
-}
-ul.lang {
-  top: 10px;
+
+section {
+  @include isolate-grid(4);
+  padding: 1em;
 }
 
 // --------------------------------------------
@@ -66,28 +71,28 @@ $side : $large-columns - $main;
   .container {
     max-width: 1200px;
   }
+  
   [href="#right"] { visibility: hidden; }
 
   .main {
     width: columns($main);
+    //不隱藏
+    //@include span-columns($medium-columns);
     .show-right & { margin-left: 0; }
   }
 
   .right {
     width: columns($side);
+    //不隱藏
+    //@include span-columns(4 omega);
     margin-right: 0;
     .show-right & { margin-right: 0; }
   }
-  .logo {
-    margin-top: 40px;
+  
+  .index {
+    padding: 0;
   }
 
-  ul.main-menu {
-    margin-top: 80px;
-  }
-  ul.lang {
-    top: 80px;
-  }
 }
 
 // --------------------------------------------
@@ -103,7 +108,6 @@ header, footer {
   @include clearfix;
   clear: both;
   min-height: 3em;
-  padding: 1em;
   background: rgba(#fcf,.75);
   text-align: center;
 }
@@ -114,13 +118,14 @@ header, footer {
 
 .right, .main {
   @include transition(.3s all ease);
-  height: 20em;
-  padding: 1em;
+  // height: 20em;
+  // padding: 1em;
 }
-.right { @include opacity(0); }
+//.right { @include opacity(0); }
 
 .main {
-  background: rgba(#eee,.75);
+  background: rgba(#9cf,.75);
+  min-height: 20em;
   &:after {
     @include leader;
     content: " ";
@@ -133,6 +138,52 @@ header, footer {
 
 .right {
   background: rgba(#ffc,.75);
+  min-height: 20em;
   .show-right & { @include opacity(1); }
   @include at-breakpoint($large-columns) { @include opacity(1); }
 }
+
+
+
+.banner {
+  //@include trailer;
+  // p {
+  //   @include adjust-font-size-to(13px);
+  // }
+  // @include at-breakpoint($medium-columns,8) {
+  //   p {
+  //     @include adjust-font-size-to(23px, 1.5);
+  //   }
+  // }
+
+  // @include at-breakpoint($large-columns,12) {
+  //   p {
+  //     @include adjust-font-size-to(35px);
+  //   }
+  // }
+}
+.newsbanner {
+  @include trailer;
+}
+.product {
+  //@include trailer;
+  @extend %clearfix;
+  section {
+    height: 100px;
+    background: black;
+    @include trailer;
+  }
+
+  // @include at-breakpoint($medium-columns,8) {
+  //   section {
+  //     @include isolate-grid(4);
+  //   }
+  // }
+
+  @include at-breakpoint($large-columns,12) {
+    section {
+      @include isolate-grid(3);
+    }
+  }
+}
+

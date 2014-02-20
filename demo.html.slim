@@ -1,9 +1,14 @@
-body
-  .container
-  	= render "layout_header"
-    / header
-    /   a.toggle href="#right" Show Right
-    /   | header
-    .main main
-    #right.right right
-    footer footer
+= content_for :title do 
+  <title>Demo</title>
+.container
+  = render "layout_header"
+  / header
+  /   a.toggle href="#right" Show Right
+  /   | header
+  #right.right
+    | right
+  .main
+ 		| main
+ 		a.toggle href="#right" Show Right
+  footer.footer
+    p Footer
