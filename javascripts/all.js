@@ -33,6 +33,84 @@ $(document).ready(function(){
 
 });
 
+$(document).ready(function() {
+
+  var mainSlider = document.getElementById('mainSlider');
+  var  proSlider = document.getElementById('proSlider');
+  var    bullets = document.getElementById('position').getElementsByTagName('li');
+  // var   pbullets = document.getElementById('positionpro').getElementsByTagName('li');
+
+  window.slider1 = Swipe(mainSlider, {
+    startSlide: 1,
+    speed: 400,
+    auto: 3000,
+    continuous: true,
+    //disableScroll: false,
+    //stopPropagation: false,
+    //callback: function(index, elem) {},
+    callback: function(pos) {
+      var i = bullets.length;
+      while (i--) {
+        bullets[i].className = '';
+      }
+      bullets[pos].className = 'on';
+    },
+    //transitionEnd: function(index, elem) {}
+  });
+
+  // //
+  // window.slider1 = Swipe(mainSlider, {
+  //   continuous: true,
+  //   speed: 400,
+  //   auto: 3000,
+  //   callback: function(pos) {
+
+  //     var i = bullets.length;
+  //     while (i--) {
+  //       bullets[i].className = '';
+  //     }
+  //     bullets[pos].className = 'on';
+  //   }
+  // });
+  // //
+  // window.slider2 = Swipe(proSlider, {
+  //   continuous: true,
+  //   speed: 500,
+  //   auto: 4000,
+  //   callback: function(pos) {
+
+  //     var i = pbullets.length;
+  //     while (i--) {
+  //       pbullets[i].className = '';
+  //     }
+  //     pbullets[pos].className = 'on';
+  //   }
+  // });
+  
+  //
+  // var mslider = Swipe(document.getElementById('sliderpro'), {
+  //   continuous: true,
+  //   speed: 500,
+  //   auto: 4000,
+  //   callback: function(pos) {
+    
+  //     var i = mbullets.length;
+  //     while (i--) {
+  //       mbullets[i].className = '';
+  //     }
+  //     mbullets[pos].className = 'on';
+  //   }
+  // });
+  
+  // var i = slider.getNumSlides();
+  //   while (i--) {
+  //     document.getElementById('positionpro').appendChild(document.createElement('li'));
+  //   }
+  // var mbullets = document.getElementById('positionpro').getElementsByTagName('li');
+  //bullets[0].className='on';
+
+});
+
 // var OBC = function(a, b){
 //   "use strict";
 //   return a.defuscate = {

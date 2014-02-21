@@ -1,0 +1,86 @@
+.banner {
+  position: relative;
+  .swipe {
+    margin-bottom: -7px;
+  }
+  .position-nav {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+  }
+}
+.banner_footer {
+  background-color: $bg01;
+  color: #fff;
+  text-align: center;
+  padding: 20px 15% 15px;
+  @include trailer;
+}
+.newsbanner {
+  @include trailer;
+}
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  .swipe-wrap {
+    overflow: hidden;
+    position: relative;
+    > div {
+      float:left;
+      width:100%;
+      position: relative;
+    }
+  }
+}
+
+.position-nav {
+  li {
+    @include border-radius (100%);
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .2);
+    //cursor: pointer;
+    &.on {
+      background-color: #fff;
+    }
+  }
+}
+
+nav.slider-pagination {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.prev, .next {
+  color: rgba(255, 255, 255, .5);
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  margin: -26px 0 0;
+}
+.prev {
+  right: 100%;
+  margin-right: -52px;
+}
+.next {
+  left: 100%;
+  margin-left: -52px;
+}
+.swipe {
+  width: 768px;
+  height: 256px;
+}
+@include at-breakpoint($large-columns) {
+  .swipe {
+    width: 1200px;
+    height: 400px;
+  }
+  .banner_footer {
+    padding: 25px 25%;
+  }
+}

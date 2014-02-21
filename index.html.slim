@@ -4,7 +4,10 @@
   = render "layout_header"
 
   .banner
-    = image_tag(lorem_image("1200x400"))
+    //= image_tag(lorem_image("1200x400"))
+    = render "partials/slider"
+  .banner_footer
+    | DingZing specializes in high-performance technical films and advanced thermoplastic polyurethane solutions that energize industries.
   .index 
     .newsbanner
       = image_tag(lorem_image("1200x180"))

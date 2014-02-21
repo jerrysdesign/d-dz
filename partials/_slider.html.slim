@@ -1,0 +1,29 @@
+#mainSlider.swipe
+  .swipe-wrap
+    div.wrap
+      //img#SB1.sliderbanner alt="" src="images/coach-v.png"
+      = image_tag(lorem_image("1200x400"),:class => "sliderbanner", :id => "SB1")
+    div.wrap
+      //img#SB2.sliderbanner alt="" src="images/app-screen-v.png"
+      = image_tag(lorem_image("1200x400"),:class => "sliderbanner", :id => "SB2")
+    div.wrap
+      //img#SB3.sliderbanner alt="" src="images/home-v.png"
+      = image_tag(lorem_image("1200x400"),:class => "sliderbanner", :id => "SB3")
+    div.wrap
+      = image_tag(lorem_image("1200x400"),:class => "sliderbanner", :id => "SB4")
+    div.wrap
+      = image_tag(lorem_image("1200x400"),:class => "sliderbanner", :id => "SB5")
+    div.wrap
+      = image_tag(lorem_image("1200x400"),:class => "sliderbanner", :id => "SB6")
+nav.slider-pagination
+  li.prev onclick='slider1.prev()'
+    img src="images/arrow_prev.png"
+  li.next onclick='slider1.next()'
+    img src="images/arrow_next.png"
+nav#position.position-nav
+  li.on
+  li
+  li
+  li
+  li
+  li

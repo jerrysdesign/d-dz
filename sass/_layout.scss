@@ -143,28 +143,6 @@ header, footer {
   @include at-breakpoint($large-columns) { @include opacity(1); }
 }
 
-
-
-.banner {
-  //@include trailer;
-  // p {
-  //   @include adjust-font-size-to(13px);
-  // }
-  // @include at-breakpoint($medium-columns,8) {
-  //   p {
-  //     @include adjust-font-size-to(23px, 1.5);
-  //   }
-  // }
-
-  // @include at-breakpoint($large-columns,12) {
-  //   p {
-  //     @include adjust-font-size-to(35px);
-  //   }
-  // }
-}
-.newsbanner {
-  @include trailer;
-}
 .product {
   //@include trailer;
   @extend %clearfix;
