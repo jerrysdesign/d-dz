@@ -1,3 +1,5 @@
+//banner
+
 .banner {
   position: relative;
   .swipe {
@@ -45,6 +47,9 @@
     &.on {
       background-color: #fff;
     }
+  }
+  li+li {
+    margin-left: 5px;
   }
 }
 
