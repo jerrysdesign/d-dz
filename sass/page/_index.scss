@@ -12,7 +12,7 @@
   }
 }
 .banner_footer {
-  background-color: $bg01;
+  background-color: $color01;
   color: #fff;
   text-align: center;
   padding: 20px 15% 15px;
@@ -87,5 +87,39 @@ nav.slider-pagination {
   }
   .banner_footer {
     padding: 25px 25%;
+  }
+}
+
+.product {
+  //@include trailer;
+  @extend %clearfix;
+  section {
+    background: #fff;
+    @include trailer;
+    h3 {
+      color: $color01;
+      font-size: 1.25em;
+    }
+    p {
+      line-height: 1.5;
+      margin-top: .5em;
+      margin-bottom: .5em;
+      height: 4em;
+    }
+    p+p {
+      a {
+        color: $color01;
+      } 
+      height: auto;
+    }
+  }
+  section {
+    @include isolate-grid(4);
+    padding: 1em 1.5em .75em;
+  }
+  @include at-breakpoint($large-columns,12) {
+    section {
+      @include isolate-grid(3);
+    }
   }
 }

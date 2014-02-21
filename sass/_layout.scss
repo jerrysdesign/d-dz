@@ -55,11 +55,6 @@ $side : $medium-columns - $main;
   //@include span-columns($medium-columns);
 }
 
-section {
-  @include isolate-grid(4);
-  padding: 1em;
-}
-
 // --------------------------------------------
 // Desktop
 
@@ -141,27 +136,5 @@ header, footer {
   min-height: 20em;
   .show-right & { @include opacity(1); }
   @include at-breakpoint($large-columns) { @include opacity(1); }
-}
-
-.product {
-  //@include trailer;
-  @extend %clearfix;
-  section {
-    height: 100px;
-    background: black;
-    @include trailer;
-  }
-
-  // @include at-breakpoint($medium-columns,8) {
-  //   section {
-  //     @include isolate-grid(4);
-  //   }
-  // }
-
-  @include at-breakpoint($large-columns,12) {
-    section {
-      @include isolate-grid(3);
-    }
-  }
 }
 
