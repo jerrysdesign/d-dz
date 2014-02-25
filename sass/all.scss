@@ -14,7 +14,7 @@ $page-container: ".page";
 @import "basic/mixin";
 @import "compass";
 @import "susy";
-
+@import "compass/utilities/sprites";
 @include border-box-sizing;
 
 @import "normalize";
