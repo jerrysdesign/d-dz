@@ -12,10 +12,10 @@
     margin: 20px 70px 10px 20px;
     margin-right: 70px;
     a {
-      background: url(../images/Logo.jpg) no-repeat;
+      background: url(../images/logo.png) no-repeat;
       display: block;
-      width: 197px;
-      height: 42px;
+      width: 180px;
+      height: 55px;
       strong {
         display: none;
       }
@@ -45,7 +45,7 @@
       float: left;
       > a {
         position: relative;
-        padding: 10px 20px;
+        padding: 25px 20px;
         line-height: 1.5;
         z-index: 151;
         //@include text-shadow (0 1px 1px #fff);
@@ -67,21 +67,21 @@
     display: none;
     z-index: 150;
     // 外觀
-    background-color: rgba(230,230,230,.85);
-    border-top: 4px solid rgba(0,0,0,.25);
+    background-color: rgba(226,226,226,.9);
+    border-top: 4px solid rgb(160,160,160);
     @include box-shadow (0px 3px 15px rgba(0,0,0,0.02));
     // 
     font-weight: 100;
     letter-spacing: normal;
-    font-size: .85em;
     padding: 10px 0 5px;
     li {
       float: none;
-      dl { margin: 10px; }
+      dl { margin: 10px 11px; }
       dt, dd { @include reset-list; }
-      dt { font-weight: bold; }
+      dt { font-size: .8725em;font-weight: bold; }
+      dd { font-size: .8125em;}
       a {
-        padding: 5px 10px;
+        padding: 0 10px;
       }
       a:hover {
         background: #8094cf;
@@ -92,6 +92,12 @@
     //multi Sub menu
     .submenu-col {
       float: left;
+    }
+    > li > dl > dd:first-child > a {
+      font-size: 1.075em;font-weight: bold;
+    }
+    &.multi-sub {
+      width: 768px;
     }
   }
 
@@ -115,10 +121,10 @@
 @include at-breakpoint($large-columns) {
 
   .header {
-    height: 145px; 
+    height: 134px; 
 
     .logo {
-      margin-top: 40px;
+      margin: 45px 35px 20px 30px;
       margin-bottom: 0;
       a {
         height: 62px;
@@ -126,13 +132,20 @@
     }
     .navigation {
       width: auto;
-      margin-top: 65px;
+      margin-top: 56px;
       border: none;
     }
     .navigation, .navigation .navigation-inner {
       border: none;
     }
-
+    .sub_navigation {
+      li {
+        dl { margin: 10px 16px; }
+      }
+      &.multi-sub {
+        width: auto;
+      }
+    }
     ul.lang {
       top: 80px;
     }
