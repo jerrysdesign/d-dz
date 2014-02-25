@@ -16,10 +16,10 @@
   color: #fff;
   text-align: center;
   padding: 20px 15% 15px;
-  @include trailer;
+  @include trailer20;
 }
 .newsbanner {
-  @include trailer;
+  @include trailer20;
 }
 .swipe {
   overflow: hidden;
@@ -86,7 +86,10 @@ nav.slider-pagination {
     height: 400px;
   }
   .banner_footer {
-    padding: 25px 25%;
+    font-size: 1.5em;
+    line-height: 1.333;
+    padding: 23px 20%;
+    height: 100px;
   }
 }
 
@@ -122,4 +125,9 @@ nav.slider-pagination {
       @include isolate-grid(3);
     }
   }
+}
+
+.product {
+  @import "sprite/logo/*.png";
+  @include all-logo-sprites;
 }

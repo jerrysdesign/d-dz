@@ -9,6 +9,14 @@ $line-height: 1.8;
   border: 0;
   list-style: none;
 }
+@mixin trailer20 {
+  margin-bottom: 20px;
+}
+ 
+%remove-text {
+  text-indent: -9999px;
+  display:block;
+}
 
 %clearfix {
   &:before {
