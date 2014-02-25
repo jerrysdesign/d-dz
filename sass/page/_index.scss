@@ -108,12 +108,17 @@ nav.slider-pagination {
       margin-top: .5em;
       margin-bottom: .5em;
       height: 4em;
+      letter-spacing: -.05em;
     }
     p+p {
       a {
         color: $color01;
+        text-decoration: underline;
+        font-weight: 600;
+        font-style: italic;
       } 
       height: auto;
+      margin: 0;
     }
   }
   section {
@@ -140,5 +145,8 @@ nav.slider-pagination {
   //.logo-provecta
   //.logo-orkesta
   //.logo-adventa
-  //.logo-duopel  
+  //.logo-duopel
+  section p {
+    line-height: 1.286;
+  }  
 }

@@ -1,3 +1,13 @@
+// vertical rhythm
+$base-font-size: 1em;
+$font-size: 1em;
+$base-line-height: 1.5em;
+//$relative-font-sizing: false;
+
+// compass
+$legacy-support-for-ie: false;
+$grid-background-baseline-height: $base-line-height;
+
 /*font*/
 @import "basic/typography";
 @font-face {
@@ -34,7 +44,7 @@ a {
 
 p {
   @include reset-box-model;
-  @include adjust-font-size-to(13px);
+  @include adjust-font-size-to(14px);
   @include leader(1);
   @include trailer(1);
 }
