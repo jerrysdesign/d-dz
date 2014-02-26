@@ -26,6 +26,24 @@
   .contact_us {
     @include span-columns(2 omega);
     background-color: #eeeeee;
+    padding: 26px 28px;
+    font-size: 1em;
+    h6 {
+      padding-top: 50px;
+      background-image: url(../images/icon_email.png);
+      background-repeat: no-repeat;
+      font-size: 1em;
+    }
+    p {
+      font-size: 1em;
+      margin: 10px 0;
+    }
+    a {
+      color: $color01;
+      text-decoration: underline;
+      font-weight: bold;
+      font-style: italic;
+    }
   }
 
   @include at-breakpoint($large-columns) {
