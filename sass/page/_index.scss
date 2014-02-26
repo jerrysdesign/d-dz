@@ -96,9 +96,10 @@ nav.slider-pagination {
 .product {
   //@include trailer;
   @extend %clearfix;
+  @include trailer20;
   section {
     background: #fff;
-    @include trailer20;
+    @include isolate-grid(4);
     h3 {
       color: $color01;
       font-size: 1.25em;
@@ -121,7 +122,6 @@ nav.slider-pagination {
     }
   }
   section {
-     
     padding: 1em 7em .75em 2em;
   }
   @include at-breakpoint($large-columns,12) {

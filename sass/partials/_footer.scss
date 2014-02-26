@@ -1,5 +1,6 @@
 .footer {
   padding: 20px;
+  padding-bottom: 10px;
   .copyright {
     text-align: center;
     @include span-columns(8);
@@ -26,7 +27,7 @@
   .contact_us {
     @include span-columns(2 omega);
     background-color: #eeeeee;
-    padding: 26px 28px;
+    padding: 16px 15px;
     font-size: 1em;
     h6 {
       padding-top: 50px;
@@ -52,7 +53,8 @@
       background-color: none !important;
     }
     .contact_us {
-      @include span-columns(4 omega)
+      @include span-columns(4 omega);
+      padding: 26px 28px;
     }
     @include span-columns(12);
   }
