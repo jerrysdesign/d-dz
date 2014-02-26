@@ -4,6 +4,9 @@
   position: relative;
   .swipe {
     margin-bottom: -7px;
+    > a {
+      display: block;
+    }
   }
   .position-nav {
     position: absolute;
@@ -37,15 +40,18 @@
 }
 
 .position-nav {
+  margin-right: 10px;
   li {
     @include border-radius (100%);
     width: 12px;
     height: 12px;
     display: inline-block;
-    background-color: rgba(255, 255, 255, .2);
+    background-color: #FFF;
+    border: solid 1px $color01;
     //cursor: pointer;
     &.on {
-      background-color: #fff;
+      background-color: $color01;
+      border-width: 2px; 
     }
   }
   li+li {
@@ -54,10 +60,10 @@
 }
 
 nav.slider-pagination {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
+  //position: absolute;
+  // top: 0;
+  // height: 100%;
+  // width: 100%;
 }
 .prev, .next {
   color: rgba(255, 255, 255, .5);
