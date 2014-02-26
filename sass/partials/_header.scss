@@ -7,148 +7,155 @@
     &:hover {text-decoration: none;}
   }
 }
-  .logo {
-    float: left;
-    margin: 20px 70px 10px 20px;
-    margin-right: 70px;
-    a {
-      background: url(../images/logo.png) no-repeat;
-      display: block;
-      width: 180px;
-      height: 55px;
-      strong {
-        display: none;
-      }
+.logo {
+  float: left;
+  margin: 20px 70px 10px 20px;
+  margin-right: 70px;
+  a {
+    background: url(../images/logo.png) no-repeat;
+    display: block;
+    width: 180px;
+    height: 55px;
+    strong {
+      display: none;
     }
   }
+}
 
-  /* MAIN NAVIGATION */
+/* MAIN NAVIGATION */
 
-  .navigation {
-    border-top: solid 1px #ddd;
-    float: left;
-    width: 100%;
-    margin-top: 10px;
-    .navigation-inner {
-      border-top: solid 1px #fff;
-    }
+.navigation {
+  border-top: solid 1px #ddd;
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  .navigation-inner {
+    border-top: solid 1px #fff;
   }
+}
 
-  .main_navigation {
-    //width: 100%;
-    font-weight: 900;
-    letter-spacing: -1px;
-    a {
-      display: block;
+.main_navigation {
+  //width: 100%;
+  font-weight: 900;
+  letter-spacing: -1px;
+  a {
+    display: block;
+  }
+  > li {
+    float: left;
+    > a {
+      position: relative;
+      padding: 25px 20px;
+      line-height: 1.5;
+      z-index: 151;
+      //@include text-shadow (0 1px 1px #fff);
     }
-    > li {
-      float: left;
+    &:hover, &.active {
       > a {
-        position: relative;
-        padding: 25px 20px;
-        line-height: 1.5;
-        z-index: 151;
-        //@include text-shadow (0 1px 1px #fff);
-      }
-      &:hover, &.active {
-        > a {
-          border-bottom: 4px solid #8094cf;
-          margin-bottom: -4px;
-        }
+        border-bottom: 4px solid #8094cf;
+        margin-bottom: -4px;
       }
     }
   }
+}
 
-  /* SUB NAVIGATION */
+/* SUB NAVIGATION */
 
-  .sub_navigation, .footer_navigation {
+.sub_navigation {
 
-    @include box-sizing(content-box);
-    position: absolute;
-    display: none;
-    z-index: 150;
-    // 外觀
-    background-color: rgba(226,226,226,.9);
-    border-top: 4px solid rgb(160,160,160);
-    @include box-shadow (0px 3px 15px rgba(0,0,0,0.02));
-    // 
-    font-weight: 100;
-    letter-spacing: normal;
-    padding: 10px 0 5px;
-    li {
-      float: none;
-      dl { margin: 10px 11px; }
-      dt, dd { @include reset-list; }
-      dt { font-size: .8725em;font-weight: bold; }
-      dd { font-size: .8125em;}
-      a {
-        padding: 0 10px;
-      }
-      a:hover {
+  @include box-sizing(content-box);
+  position: absolute;
+  display: none;
+  z-index: 150;
+  // 外觀
+  background-color: rgba(226,226,226,.9);
+  border-top: 4px solid rgb(160,160,160);
+  @include box-shadow (0px 3px 15px rgba(0,0,0,0.02));
+  // 
+  font-weight: 100;
+  letter-spacing: normal;
+  padding: 10px 0 5px;
+  
+  //multi Sub menu
+  .submenu-col {
+    float: left;
+  }
+  > li > dl > dd:first-child > a {
+    font-size: 1.075em;font-weight: bold;
+  }
+  &.multi-sub {
+    width: 768px;
+  }
+}
+
+//抽出可供用樣式與footer共用
+.nav {
+  li {
+    float: none;
+    dl { margin: 10px 11px; }
+    dt, dd { @include reset-list; }
+    dt { font-size: .8725em;font-weight: bold; }
+    dd { font-size: .8125em;}
+    a {
+      color: #585858;
+      display: block;
+      padding: 0 10px;
+      &:hover {
+        text-decoration: none;
         background: #8094cf;
         color: #FFF;
       }
     }
+  }
+}
 
-    //multi Sub menu
-    .submenu-col {
-      float: left;
-    }
-    > li > dl > dd:first-child > a {
-      font-size: 1.075em;font-weight: bold;
-    }
-    &.multi-sub {
-      width: 768px;
-    }
+ul.lang {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  font-size: 13px;
+  overflow: hidden;
+  > li {
+    float: left;
   }
-  
-  ul.lang {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    height: 30px;
-    font-size: 13px;
-    overflow: hidden;
-    > li {
-      float: left;
-    }
-    a {
-      display: block;
-      line-height: 1.5;
-    }
+  a {
+    display: block;
+    line-height: 1.5;
   }
+}
 
 
 @include at-breakpoint($large-columns) {
 
-  .header {
-    height: 134px; 
-  }
-    .logo {
-      margin: 45px 35px 20px 30px;
-      margin-bottom: 0;
-      a {
-        height: 62px;
-      }
+.header {
+  height: 134px; 
+}
+  .logo {
+    margin: 45px 35px 20px 30px;
+    margin-bottom: 0;
+    a {
+      height: 62px;
     }
-    .navigation {
+  }
+  .navigation {
+    width: auto;
+    margin-top: 56px;
+    border: none;
+  }
+  .navigation, .navigation .navigation-inner {
+    border: none;
+  }
+  .sub_navigation {
+    li {
+      dl { margin: 10px 16px; }
+    }
+    &.multi-sub {
       width: auto;
-      margin-top: 56px;
-      border: none;
-    }
-    .navigation, .navigation .navigation-inner {
-      border: none;
-    }
-    .sub_navigation {
-      li {
-        dl { margin: 10px 16px; }
-      }
-      &.multi-sub {
-        width: auto;
-      }
-    }
-    ul.lang {
-      top: 80px;
     }
   }
+  ul.lang {
+    top: 80px;
+  }
+}
 
