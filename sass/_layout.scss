@@ -61,13 +61,15 @@ $side : $medium-columns - $main;
 $gutter-width : 1.36363em;
 $grid-padding : 0;
 $large-columns : 12; //1200
+$container-width: 75em;
 $main : 8;
 $side : $large-columns - $main;
 
 @include at-breakpoint($large-columns) {
   
   .container {
-    width: 75em;
+    @include container;
+    overflow: inherit;
   }
   
   [href="#right"] { visibility: hidden; }
