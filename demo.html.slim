@@ -2,13 +2,10 @@
   <title>Demo</title>
 .container
   = render "layout_header"
-  / header
-  /   a.toggle href="#right" Show Right
-  /   | header
+  //a.toggle href="#right" Show Right
   #right.right
     | right
   .main
  		| main
  		a.toggle href="#right" Show Right
-  footer.footer
-    p Footer
+  = render "layout_footer"
