@@ -6,84 +6,85 @@
     .navigation-inner
     ul.main_navigation
       li
-        a href="javascript:;" Products
+        = new_link_to("Products", "javascript:;")
         ul.sub_navigation.nav.multi-sub
           li.submenu-col
             dl
-              dt: a href="javascript:;" Provecta Films
-              dd: a href="javascript:;" Provecta Aliphatic
-              dd: a href="javascript:;" Provecta Hot Melt
-              dd: a href="javascript:;" Provecta Tape
-              dd: a href="javascript:;" Provecta Foam
-              dd: a href="javascript:;" Provecta Bio
-              dd: a href="javascript:;" Provecta Recycled
+              dt: a href="product_provecta_film.html" Provecta Films
+              dd: a href="product_provecta_film_provecta_aromatic.html" Provecta Aromatic
+              dd: a href="product_provecta_film_provecta_aliphatic.html" Provecta Aliphatic
+              dd: a href="product_provecta_film_provecta_hot_melt.html" Provecta Hot Melt
+              dd: a href="product_provecta_film_provecta_tape.html" Provecta Tape
+              dd: a href="product_provecta_film_provecta_foam.html" Provecta Foam
+              dd: a href="product_provecta_bio_film_provecta_bio_aromatic.html" Provecta Bio
+              dd: a href="javascript:;" 待確認Provecta Recycled
           li.submenu-col
             dl
-              dt: a href="javascript:;" Orkesta Films
-              dd: a href="javascript:;" Orkesta Composite
+              dt: a href="product_orkesta_film.html" Orkesta Films
+              dd: a href="product_orkesta_film_orkesta_composite.html" Orkesta Composite
             dl
-              dt: a href="javascript:;" Advanta Films
-              dd: a href="javascript:;" Advanta Breathable
-              dd: a href="javascript:;" Advanta Breathable (Color)
-              dd: a href="javascript:;" Advanta Breathable (Print)
+              dt: a href="product_duopel_film.html" Advanta Films
+              dd: a href="product_duopel_film_dintex_breathable.html" Advanta Breathable
+              dd: a href="product_doupel_color.html" Advanta Breathable (Color)
+              dd: a href="product_doupel_print.html" Advanta Breathable (Print)
           li.submenu-col
             dl
-              dt: a href="javascript:;" Air Hoses
-              dd: a href="javascript:;" Tubular Film
-              dd: a href="javascript:;" Straight
-              dd: a href="javascript:;" Multiple Straight
-              dd: a href="javascript:;" Recoil
-              dd: a href="javascript:;" Braided
-              dd: a href="javascript:;" Twin Braided
-              dd: a href="javascript:;" Machinery
+              dt Air Hoses
+              dd: a href="product_dz_air_hoses_tubular_film.html" Tubular Film
+              dd: a href="product_dz_air_hoses_straight.html" Straight
+              dd: a href="product_dz_air_hoses_multiple_straight.html" Multiple Straight
+              dd: a href="product_dz_air_hoses_recoil.html" Recoil
+              dd: a href="product_dz_air_hoses_braided.html:;" Braided
+              dd: a href="product_dz_air_hoses_twin_braided.html" Twin Braided
+              dd: a href="product_dz_air_hoses_machinery.html" Machinery
           li.submenu-col
             dl
-              dt: a href="javascript:;" Belts
-              dd: a href="javascript:;" Round (Rough)
-              dd: a href="javascript:;" Round (Smooth)
-              dd: a href="javascript:;" V-Belt
-              dd: a href="javascript:;" Ridgetop
+              dt Belts
+              dd: a href="product_dz_belt_round_rough.html" Round (Rough)
+              dd: a href="product_dz_belt_round_smooth.html" Round (Smooth)
+              dd: a href="product_dz_belt_v_belt.html" V-Belt
+              dd: a href="product_dz_belt_ridgetop.html" Ridgetop
           li.submenu-col
             dl
-              dt: a href="javascript:;" sels
-              dd: a href="javascript:;" Piston
-              dd: a href="javascript:;" Rod
-              dd: a href="javascript:;" Piston and Rod
-              dd: a href="javascript:;" Rotary
-              dd: a href="javascript:;" Buffer Ring
-              dd: a href="javascript:;" Dust Wiper
-              dd: a href="javascript:;" Metal Clad Wiper
+              dt sels
+              dd: a href="product_dz_seals_piston.html" Piston
+              dd: a href="product_dz_seals_rod.html" Rod
+              dd: a href="product_dz_seals_piston_rod.html" Piston and Rod
+              dd: a href="product_dz_seals_rotary.html" Rotary
+              dd: a href="product_dz_seals_buffer_ring.html" Buffer Ring
+              dd: a href="product_dz_seals_dust_wiper.html" Dust Wiper
+              dd: a href="product_dz_seals_metal_clad_wiper.html" Metal Clad Wiper
       li
-        a href="javascript:;" Applications
+        = new_link_to("Applications", "javascript:;")
         ul.sub_navigation.nav
           li
             dl
-              dd: a href="javascript:;" Apparel
-              dd: a href="javascript:;" Automotive
-              dd: a href="javascript:;" Electronics
-              dd: a href="javascript:;" Footwear
-              dd: a href="javascript:;" Medical
-              dd: a href="javascript:;" Optical
-              dd: a href="javascript:;" Outdoor / Sporting Goods
+              dd: a href="applications_apparel.html" Apparel
+              dd: a href="applications_automotive.html" Automotive
+              dd: a href="applications_electronics.html" Electronics
+              dd: a href="applications_footwear.html" Footwear
+              dd: a href="applications_medical.html" Medical
+              dd: a href="applications_optical.html" Optical
+              dd: a href="applications_outdoor.html" Outdoor / Sporting Goods
       li
-        a href="javascrip:;" Innovation Playground
-      = nav_link_to("Library", "/Library/")
+        = new_link_to("Innovation Playground", "innovation_playground.html")
       li
-        a href="javascript:;" Our Company
+        = new_link_to("Library", "library.html")
+      li
+        = new_link_to("Our Company", "javascript:;")
         ul.sub_navigation.nav
           li
             dl
-              dd: a href="javascript:;" About DingZing
-              dd: a href="javascript:;" Exhibitions
+              dd: a href="about_dingzing.html" About DingZing
+              dd: a href="exhibitions.html" Exhibitions
               dd: a href="javascript:;" Social Responsibility
       li
-        a href="javascript:;" Contact Us
-        
+        = new_link_to("Contact Us", "javascript:;")
         ul.sub_navigation.nav
           li
             dl
-              dd: a href="javascript:;" Global Offices
-              dd: a href="javascript:;" Distributors & Agents
+              dd: a href="contact_us_headquarters_and_branch.html" Global Offices
+              dd: a href="contact_us_distrbutor_and_agents.html" Distributors & Agents
   ul.lang
-    li: a href="javascript:;" 中文
+    li: a href="/tw/" 中文
     li: a href="javascript:;" │ English
