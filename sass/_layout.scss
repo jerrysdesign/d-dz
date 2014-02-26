@@ -36,9 +36,6 @@ $side : $medium-columns - $main;
   //不隱藏
   //@include span-columns($medium-columns);
 }
-.header {
-  height: 115px; 
-}
 .index {
   padding: 1em;
 }

@@ -90,7 +90,7 @@
 
 //抽出可供用樣式與footer共用
 .nav {
-  
+
   list-style-type: none;
   li {
     float: none;
@@ -112,6 +112,7 @@
 }
 
 ul.lang {
+  list-style-type: none;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -130,9 +131,9 @@ ul.lang {
 
 @include at-breakpoint($large-columns) {
 
-.header {
-  height: 134px; 
-}
+  .header {
+    height: 115px; 
+  }
   .logo {
     margin: 45px 35px 20px 30px;
     margin-bottom: 0;
