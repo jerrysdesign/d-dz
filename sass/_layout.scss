@@ -6,7 +6,8 @@ $column-width : 5em;
 $gutter-width : 1em;
 $grid-padding : 0;
 
-$container-style: magic;
+//$container-style: magic;
+$container-style: static;
 $container-width: 48em;
 
 $medium-columns : 8; //768
@@ -20,7 +21,6 @@ $large-columns : 12; //1200
 .container {
   @include container;
   overflow: hidden;
-  min-width: 768px;
 }
 .header , .footer {
   ul, li {
@@ -58,13 +58,16 @@ $side : $medium-columns - $main;
 // --------------------------------------------
 // Desktop
 
+$gutter-width : 1.36363em;
+$grid-padding : 0;
+$large-columns : 12; //1200
 $main : 8;
 $side : $large-columns - $main;
 
 @include at-breakpoint($large-columns) {
   
   .container {
-    max-width: 1200px;
+    width: 75em;
   }
   
   [href="#right"] { visibility: hidden; }
