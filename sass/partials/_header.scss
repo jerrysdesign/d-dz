@@ -3,7 +3,7 @@
   @include pie-clearfix;
   position: relative;
   a {
-    color: #585858;
+    color: $text-color;
     &:hover {text-decoration: none;}
   }
 }
@@ -99,12 +99,12 @@
     dt { font-size: .8725em;font-weight: bold; }
     dd { font-size: .8125em;}
     a {
-      color: #585858;
+      color: $text-color;
       display: block;
       padding: 0 10px;
       &:hover {
         text-decoration: none;
-        background: #8094cf;
+        background: $color01;
         color: #FFF;
       }
     }
