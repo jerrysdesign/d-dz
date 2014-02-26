@@ -96,10 +96,10 @@ nav.slider-pagination {
 .product {
   //@include trailer;
   @extend %clearfix;
-  @include trailer20;
   section {
     background: #fff;
     @include isolate-grid(4);
+    @include trailer20;
     h3 {
       color: $color01;
       font-size: 1.25em;

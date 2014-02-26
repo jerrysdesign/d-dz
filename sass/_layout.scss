@@ -107,7 +107,6 @@ $side : $large-columns - $main;
 header, footer {
   @include clearfix;
   clear: both;
-  min-height: 3em;
 }
 footer {
   background: $footer-background-color;
