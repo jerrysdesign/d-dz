@@ -8,22 +8,12 @@
 
   .footer_navigation {
     @include span-columns(6);
-    position: inherit;
-
-
-    // 外觀
-    
-    border-top: none;
-    @include box-shadow (none);
-    // 
-    font-weight: 100;
-    letter-spacing: normal;
-
     >li {
       float: left;
       width: 33%;
     }
   }
+  
   .contact_us {
     @include span-columns(2 omega);
     background-color: #eeeeee;

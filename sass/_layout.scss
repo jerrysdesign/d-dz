@@ -22,11 +22,6 @@ $large-columns : 12; //1200
   @include container;
   overflow: hidden;
 }
-.header , .footer {
-  ul, li {
-    @include reset-list;
-  }
-}
 
 // --------------------------------------------
 // pad

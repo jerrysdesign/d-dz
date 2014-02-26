@@ -35,9 +35,9 @@
 }
 
 .main_navigation {
-  //width: 100%;
   font-weight: 900;
   letter-spacing: -1px;
+  @include reset-list;
   a {
     display: block;
   }
@@ -62,7 +62,7 @@
 /* SUB NAVIGATION */
 
 .sub_navigation {
-
+  
   @include box-sizing(content-box);
   position: absolute;
   display: none;
@@ -90,6 +90,8 @@
 
 //抽出可供用樣式與footer共用
 .nav {
+  
+  list-style-type: none;
   li {
     float: none;
     dl { margin: 10px 11px; }
