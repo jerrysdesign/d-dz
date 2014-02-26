@@ -1,5 +1,41 @@
 .footer {
+  padding: 20px;
   .copyright {
     text-align: center;
+    @include span-columns(8);
+  }
+
+  .footer_navigation {
+    @include span-columns(6);
+    position: inherit;
+
+
+    // 外觀
+    
+    border-top: none;
+    @include box-shadow (none);
+    // 
+    font-weight: 100;
+    letter-spacing: normal;
+
+    >li {
+      float: left;
+      width: 33%;
+    }
+  }
+  .contact_us {
+    @include span-columns(2 omega);
+    background-color: #eeeeee;
+  }
+
+  @include at-breakpoint($large-columns) {
+    .footer_navigation {
+      @include span-columns(8);
+      background-color: none !important;
+    }
+    .contact_us {
+      @include span-columns(4 omega)
+    }
+    @include span-columns(12);
   }
 }

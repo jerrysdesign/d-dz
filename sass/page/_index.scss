@@ -121,7 +121,7 @@ nav.slider-pagination {
     }
   }
   section {
-    @include isolate-grid(4);
+     
     padding: 1em 7em .75em 2em;
   }
   @include at-breakpoint($large-columns,12) {

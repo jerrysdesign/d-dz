@@ -17,7 +17,7 @@ $width:940px;
   display:block;
 }
 
-%clearfix {
+%clearfix, .clearfix {
   &:before {
     content: "";
     display: table;

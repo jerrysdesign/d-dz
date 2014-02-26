@@ -6,7 +6,7 @@
     color: #585858;
     &:hover {text-decoration: none;}
   }
-
+}
   .logo {
     float: left;
     margin: 20px 70px 10px 20px;
@@ -61,7 +61,8 @@
 
   /* SUB NAVIGATION */
 
-  .sub_navigation {
+  .sub_navigation, .footer_navigation {
+
     @include box-sizing(content-box);
     position: absolute;
     display: none;
@@ -100,7 +101,7 @@
       width: 768px;
     }
   }
-
+  
   ul.lang {
     position: absolute;
     top: 10px;
@@ -116,13 +117,13 @@
       line-height: 1.5;
     }
   }
-}
+
 
 @include at-breakpoint($large-columns) {
 
   .header {
     height: 134px; 
-
+  }
     .logo {
       margin: 45px 35px 20px 30px;
       margin-bottom: 0;
@@ -150,4 +151,4 @@
       top: 80px;
     }
   }
-}
+
