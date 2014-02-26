@@ -103,8 +103,9 @@ header, footer {
   @include clearfix;
   clear: both;
   min-height: 3em;
-  background: rgba(#fcf,.75);
-  text-align: center;
+}
+footer {
+  background: $footer-background-color;
 }
 
 .toggle { text-transform: none; }
