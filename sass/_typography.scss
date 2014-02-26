@@ -39,7 +39,7 @@ body {
 }
 
 a {
-  @include link-colors(blue);
+  @include link-colors($color01);
   @include hover-link;
 }
 
