@@ -8,7 +8,7 @@ module ViewHelpers
   # load breadcrumb
   $breadcrumbs = Breadcrumb::Breadcurnbs.new File.expand_path('breadcrumbs.json')
 
-  def new_link_to(name, href, options={})
+  def new_link_to(href, name, options={})
     is_reference = $breadcrumbs.found_reference request.path, href
     href = File.join(Helpers::Path.get_http_path, href)
     href = ensure_path(href, '')
