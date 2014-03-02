@@ -8,7 +8,8 @@ $page-container: ".page";
 @import "compass/utilities/sprites";
 @include border-box-sizing;
 
-@import "normalize";
+//@import "normalize";
+@import "compass/reset";
 @include establish-baseline;
 
 @import "colors";
