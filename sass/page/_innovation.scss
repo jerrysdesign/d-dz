@@ -143,5 +143,8 @@
       margin-right: 20px;
     }
   }
-  #tabMenu.active { width: 1200px;}
+  #tabMenu.active {
+    width: 1200px;
+    background-color: $body-background-color;
+  }
 }
