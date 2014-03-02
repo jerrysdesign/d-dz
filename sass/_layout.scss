@@ -2,15 +2,15 @@
 // settings
 
 $total-columns : 8;
-$column-width : 5em;
-$gutter-width : 1em;
+$column-width : 76px;
+$gutter-width : 20px;
 $grid-padding : 0;
 
 //$container-style: magic;
-$container-style: static;
-$container-width: 48em;
+//$container-style: static;
+$container-width: 768px;
 
-$medium-columns : 8; //768
+$medium-columns : $total-columns; //768
 $large-columns : 12; //1200
 
 // --------------------------------------------
@@ -37,7 +37,7 @@ $side : $medium-columns - $main;
   //@include span-columns($medium-columns);
 }
 .index {
-  padding: 1em;
+  padding: 20px;
 }
 .right {
   @include span-columns(4 omega);
@@ -50,10 +50,12 @@ $side : $medium-columns - $main;
 // --------------------------------------------
 // Desktop
 
-$gutter-width : 1.36363em;
-$grid-padding : 0;
+$columns: 12;
+$column-width: 80px;
+$gutter-width : 20px;
+// $grid-padding : 10px;
 $large-columns : 12; //1200
-$container-width: 75em;
+$container-width: 1200px;
 $main : 8;
 $side : $large-columns - $main;
 
@@ -116,16 +118,6 @@ footer {
 //.right { @include opacity(0); }
 
 .main {
-  background: rgba(#9cf,.75);
-  min-height: 20em;
-  &:after {
-    @include leader;
-    content: " ";
-    display: block;
-    text-align: center;
-    font-style: italic;
-    text-transform: none;
-  }
 }
 
 .right {

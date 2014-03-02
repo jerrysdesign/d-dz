@@ -2,6 +2,10 @@ $text-color: #292929;
 $hot-color: #01a5ca;
 $width:940px;
 
+// vertical rhythm
+$base-font-size: 16px;
+$base-line-height: 24px;
+
 @mixin reset-list {
   margin: 0;
   padding: 0;
@@ -15,18 +19,4 @@ $width:940px;
 @mixin remove-text {
   text-indent: -9999px;
   display:block;
-}
-
-%clearfix, .clearfix {
-  &:before {
-    content: "";
-    display: table;
-  }
-    
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  zoom: 1;
 }

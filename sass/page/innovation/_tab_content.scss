@@ -14,8 +14,7 @@
       color: $color01;
     }
     >h4+p.second {
-      font-size: 16px;
-      line-height: 1.5;
+      @include adjust-font-size-to(16px);
       margin-bottom: 65px;
     }
     .product {
@@ -42,7 +41,7 @@
       }
     }
     .download {
-      font-size: 14px;
+      @include adjust-font-size-to(14px);
       h6 {
         float: left;
         @include remove-text;

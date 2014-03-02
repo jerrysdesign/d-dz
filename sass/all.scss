@@ -1,23 +1,26 @@
-// class variable
-$page-container: ".page";
-
 // import all things
 @import "basic/mixin";
-@import "compass";
-@import "susy";
-@import "compass/utilities/sprites";
-@include border-box-sizing;
-
-//@import "normalize";
-@import "compass/reset";
-@include establish-baseline;
-
 @import "colors";
+@import "compass";
+@import "compass/utilities/sprites";
+/*normalize*/
+//@import "normalize";
+///*Rest*/
+@import "compass/reset";
+img {
+	max-width: 100%
+}
+@import "susy";
+/*establish-baseline*/
+@import "compass/typography/vertical_rhythm";
+//@include establish-baseline() ;
+
+/*typography*/
 @import "typography";
+/*susy*/
 @import "layout";
+
 @import "pages";
 //
 @import "partials/header";
 @import "partials/footer";
-
-img {max-width: 100%;}

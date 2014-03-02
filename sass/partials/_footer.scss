@@ -18,7 +18,7 @@
     @include span-columns(2 omega);
     background-color: #eeeeee;
     padding: 16px 15px;
-    font-size: 1em;
+    @include adjust-font-size-to(16px);
     h6 {
       padding-top: 50px;
       background-image: url(../images/icon_email.png);

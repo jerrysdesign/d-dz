@@ -94,14 +94,14 @@
     dl { margin: 10px 11px; }
     dt, dd { @include reset-list; }
     dt {
-      font-size: .8725em;
+      @include adjust-font-size-to(14px);
       font-weight: bold;
       padding: 0 10px;
       a {
         margin: 0 -10px;
       }
     }
-    dd { font-size: .8125em;}
+    dd { @include adjust-font-size-to(13px);}
     a {
       color: $text-color;
       display: block;
@@ -121,7 +121,7 @@ ul.lang {
   top: 10px;
   right: 10px;
   height: 30px;
-  font-size: 13px;
+  @include adjust-font-size-to(13px);
   overflow: hidden;
   > li {
     float: left;
@@ -135,9 +135,9 @@ ul.lang {
 
 @include at-breakpoint($large-columns) {
 
-  .header {
-    height: 115px; 
-  }
+  // .header {
+  //   height: 115px; 
+  // }
   .logo {
     margin: 45px 35px 20px 30px;
     margin-bottom: 0;

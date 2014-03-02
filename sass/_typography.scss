@@ -1,15 +1,4 @@
-// vertical rhythm
-$base-font-size: 1em;
-$font-size: 1em;
-$base-line-height: 1.5em;
-//$relative-font-sizing: false;
-
-// compass
-$legacy-support-for-ie: false;
-$grid-background-baseline-height: $base-line-height;
-
 /*font*/
-@import "basic/typography";
 @font-face {
   font-family: "klavika";
   src: url('../font/klavika-webfont.ttf') format('truetype'), url('../font/klavika-webfont.eot') format('embedded-opentype');
@@ -21,16 +10,14 @@ body {
                'Heiti TC',
                微軟正黑體, 'Microsoft JhengHei',
                sans-serif;
-  -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-   //text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
   font-weight: 400;
   color: $text-color;
   background: $body-background-color;
-}
-
-.hide {
-  display: none;
 }
 
 #{headings()} {
@@ -48,4 +35,7 @@ p {
   @include adjust-font-size-to(14px);
   @include leader(1);
   @include trailer(1);
+}
+@mixin reset-baseline {
+  @include adjust-leading-to(.1, if($relative-font-sizing, $base-font-size, $base-font-size));
 }
