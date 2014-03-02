@@ -41,18 +41,16 @@
     padding-top: 5px;
   }
 }
-@include at-breakpoint($large-columns) {
-  #tabMenu.active { width: 1200px;}
-}
 .tab_content {
   background-color: #fff;
   @include pie-clearfix;
   padding: 20px 40px;
   .story , .story_img {
     margin: 0 auto;
+    @include pie-clearfix;
   }
   .story {
-    padding: 40px 40px 0;
+    padding: 40px 40px;
     background-color: #fff;
     h4 {
       color: $color01;
@@ -109,7 +107,7 @@
     
   }
   .story_img {
-    margin-right: 20px;
+    
   }
   
 
@@ -134,4 +132,16 @@
 
   }
   
+}
+
+@include at-breakpoint($large-columns) {
+  .tab_content {
+    .story {
+      padding-bottom: 0;
+    }
+    .story_img {
+      margin-right: 20px;
+    }
+  }
+  #tabMenu.active { width: 1200px;}
 }
