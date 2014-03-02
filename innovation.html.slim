@@ -6,16 +6,18 @@
     = image_tag("banner.jpg")
   .banner2
     = image_tag(lorem_image("1200x230"))
-  .tab
+
+  #tabMenu
     h3 Innovation Stories
     nav
-      li.active: a href="javascript:;" 1
-      li: a href="javascript:;" 2
-      li: a href="javascript:;" 3
-      li: a href="javascript:;" 4
-  .tab_content
+      li#tab-1.tab: a href="javascript:;" 1
+      li#tab-2.tab: a href="javascript:;" 2
+      li#tab-3.tab: a href="javascript:;" 3
+      li#tab-4.tab: a href="javascript:;" 4
 
-    .story_p1
+  .content.tab_content
+
+    .tab-1
       //p1-1
       .story-col
         .story
@@ -59,7 +61,7 @@
         .story_img style="width:530px;height:520px;"
           = image_tag(lorem_image("530x520"))
 
-    .story_p2
+    .tab-2
       //p2-1
       .story-col
         .story
@@ -105,7 +107,7 @@
         .story_img style="width:530px;height:520px;"
           = image_tag(lorem_image("530x520"))
 
-    .story_p3
+    .tab-3
       //p3-1
       .story-col
         .story
@@ -151,7 +153,7 @@
         .story_img style="width:530px;height:520px;"
           = image_tag(lorem_image("530x520"))
 
-    .story_p4
+    .tab-4
       //p4-1
       .story-col
         .story
