@@ -1,0 +1,45 @@
+// TAB 選單
+#tabMenu {
+  border-bottom: 5px solid $color01;
+  color: #fff;
+  font-size: 22px;
+  line-height: 50px;
+  @include pie-clearfix;
+  position: inherit;
+  h3 {
+    padding: 0 65px;
+    background-color: $color01;
+    float: left;
+    font-size: 22px;
+    line-height: 50px;
+  }
+  nav {
+    list-style: none;
+    margin-left: 6px;
+    float: left;
+    li {
+      float: left;
+      background-color: #d2d2d2;
+      a {
+        color: #fff;
+        display: block;
+        padding: 0 20px;
+        text-decoration: none;
+      }
+      &:hover,&.active {
+        background-color: $color01;
+        a {
+          background-color: $color01;
+        }
+      }
+    }
+  }
+  &.active {
+    position: fixed;
+    width: 768px;
+    background-color: #FFF;
+    z-index: 9999;
+    top: 0;
+    padding-top: 5px;
+  }
+}

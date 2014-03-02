@@ -1,0 +1,41 @@
+// 1-3
+.story_img {
+  position: relative;
+  div[class^="layer"]{
+    position: absolute;
+  }
+  *{
+    @include transition (all 0.3s ease);
+  }
+  .layer00 {
+    z-index: 1;
+  }
+  .layer01 {
+    z-index: 2;
+  }
+  .layer02 {
+    z-index: 3;
+  }
+  .layer03 {
+    z-index: 4;
+  }
+}
+#p1-3 {
+  .layer00 { right: 0; top: 0;}
+  .layer01 { left: 70px; top: 243px;}
+  .layer02 { left: 62px; top: 228px;}
+  &:hover {
+    .layer01 { left: 60px; top: 223px;}
+    .layer02 { left: 2px; top: 170px;}
+  }
+}
+#p2-1 {
+  .layer00 { left: 70px; top: 26px;}
+  .layer01 { left: 77px; top: 38px;}
+  .layer02 { left: 59px; top: 38px;}
+  &:hover {
+    .layer00 { left: 104px; top: 23px;}
+    .layer01 { left: 80px; top: 28px;}
+    .layer02 { left: 19px; top: 38px;}
+  }
+}
