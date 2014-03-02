@@ -4,6 +4,7 @@
   font-size: 22px;
   line-height: 50px;
   @include pie-clearfix;
+  position: inherit;
   h3 {
     padding: 0 65px;
     background-color: $color01;

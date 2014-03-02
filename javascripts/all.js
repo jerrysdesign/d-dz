@@ -42,21 +42,27 @@ $(document).ready(function(){
   $('[class^="story-"]').hide();
   $('[class^="story-"]:first-child').show();
   $('.story:first-child').addClass('active');
-  
+  //var tabMenuH = $("#tabMenu").innerHeight();
+  //var WsH = $(window).scrollTop() + $(window).innerHeight()-tabMenuH;
+  var tabMenuY = $("#tabMenu").offset().top;
+
+  // .innerHeight()
+
   $(".story").click(function() {
     var thisId = $(this).attr('id');
     var thatId =$(this).siblings().attr('id')
     $('[class^="story-"]').hide();
     $('.'+thisId).show();
     $('.story').removeClass('active');
-    $(this).addClass('active');  
+    $(this).addClass('active');
+    //$(window).scrollTo(tabMenuY-tabMenuH);
   });
   
   //Scroll fixed
-  var storyMenuY = $("#tabMenu").offset().top;
+  
   $(window).scroll(function(){
 
-    if( $(window).scrollTop() > (storyMenuY)){
+    if( $(window).scrollTop() > (tabMenuY)){
       $("#tabMenu").addClass('active');
     }
     else {
