@@ -34,13 +34,16 @@
   }
   &.active {
     position: fixed;
-    width: 1200px;
+    width: 768px;
     background-color: #FFF;
     z-index: 9999;
     top: 0;
+    padding-top: 5px;
   }
 }
-
+@include at-breakpoint($large-columns) {
+  #tabMenu.active { width: 1200px;}
+}
 .tab_content {
   background-color: #fff;
   @include pie-clearfix;
