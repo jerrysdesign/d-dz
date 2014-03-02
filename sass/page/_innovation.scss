@@ -45,11 +45,11 @@
   background-color: #fff;
   @include pie-clearfix;
   padding: 20px 40px;
-  .story , .story_img {
+  .story_text , .story_img {
     margin: 0 auto;
     @include pie-clearfix;
   }
-  .story {
+  .story_text {
     padding: 40px 40px;
     background-color: #fff;
     h4 {
@@ -109,23 +109,22 @@
   .story_img {
     
   }
-  
 
   @include at-breakpoint($large-columns) {
 
-    .story-col {
+    .col {
       @include pie-clearfix;
       &:nth-child(odd) {
-        .story {float: left;}
+        .story_text {float: left;}
         .story_img {float: right;}
       }
       &:nth-child(even) {
-        .story {float: right;}
+        .story_text {float: right;}
         .story_img {float: left;}
       }
     }
 
-    .story , .story_img {
+    .story_text , .story_img {
       width: 50%;
       height: 530px; 
     }
@@ -136,7 +135,7 @@
 
 @include at-breakpoint($large-columns) {
   .tab_content {
-    .story {
+    .story_text {
       padding-bottom: 0;
     }
     .story_img {
