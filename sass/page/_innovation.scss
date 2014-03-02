@@ -57,11 +57,19 @@
         @include remove-text;
         margin: 0;
         margin-bottom: 5px;
+        height: 26px;
       }
       .orkesta {
         background-image: url("../images/logo_orkesta.png");
         width: 91px;
-        height: 26px;
+      }
+      .provecta {
+        background-image: url("../images/logo_provecta.png");
+        width: 97px;
+      }
+      .provecta_orkesta {
+        background-image: url("../images/logo_provecta_orkesta.png");
+        width: 210px;
       }
       .product_info {
         clear: both;
