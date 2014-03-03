@@ -21,6 +21,7 @@ $large-columns : 12; //1200
 .container {
   @include container;
   overflow: hidden;
+  width: 768px;
 }
 
 // --------------------------------------------
@@ -64,6 +65,7 @@ $side : $large-columns - $main;
   .container {
     @include container;
     overflow: inherit;
+    width: 1200px;
   }
   
   [href="#right"] { visibility: hidden; }
