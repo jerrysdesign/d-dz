@@ -16,6 +16,7 @@
     >h4+p.second {
       @include adjust-font-size-to(16px);
       margin-bottom: 65px;
+      margin-top: 1.5em;
     }
     .product {
       h5.logo {
@@ -38,6 +39,8 @@
       }
       .product_info {
         clear: both;
+        @include leader(1);
+        @include trailer(1);
       }
     }
     .download {

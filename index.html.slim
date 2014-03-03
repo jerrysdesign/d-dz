@@ -1,35 +1,32 @@
+// index
 = content_for :title do 
-  <title>首頁</title>
-.container
-  = render "layout_header"
+  <title>DingZing | Index</title>
+.banner
+  = render "partials/slider"
+.banner_footer
+  | DingZing specializes in high-performance technical films and advanced thermoplastic polyurethane solutions that energize industries.
 
-  .banner
-    //= image_tag(lorem_image("1200x400"))
-    = render "partials/slider"
-  .banner_footer
-    | DingZing specializes in high-performance technical films and advanced thermoplastic polyurethane solutions that energize industries.
-  .index 
-    .newsbanner
-      = image_tag("playground.jpg")
-    .product
-      section
-        h3.logo-provecta Provecta™
-        p Provecta™ technical films offer our widest range of options for a variety of products and applications.
-        p
-          a href="product_provecta_film.html" Learn more >
-      section
-        h3.logo-orkesta Orkesta™
-        p Orkesta™ Composite technical films provide a durable, attractive outer layer for many different products.
-        p
-          a href="product_orkesta_film.html" Learn more >
-      section
-        h3.logo-advanta Adventa™
-        p Adventa technical films deliver outstanding waterproof-breathable functionality.
-        p
-          a href="product_duopel_film.html" Learn more >
-      section
-        h3.logo-duopel duopel.
-        p Duopel fabric solutions deliver a flinished waterproof-breathable fabric for sports wear, active wear and lifestyle clothing.
-        p
-          a href="product_duopel_film.html" Learn more >
-  = render "layout_footer"
+.index 
+  .newsbanner
+    = image_tag("playground.jpg")
+  .product
+    section
+      h3.logo-provecta Provecta™
+      p Provecta™ technical films offer our widest range of options for a variety of products and applications.
+      p
+        a href="product_provecta_film.html" Learn more >
+    section
+      h3.logo-orkesta Orkesta™
+      p Orkesta™ Composite technical films provide a durable, attractive outer layer for many different products.
+      p
+        a href="product_orkesta_film.html" Learn more >
+    section
+      h3.logo-advanta Adventa™
+      p Adventa technical films deliver outstanding waterproof-breathable functionality.
+      p
+        a href="product_duopel_film.html" Learn more >
+    section
+      h3.logo-duopel duopel.
+      p Duopel fabric solutions deliver a flinished waterproof-breathable fabric for sports wear, active wear and lifestyle clothing.
+      p
+        a href="product_duopel_film.html" Learn more >

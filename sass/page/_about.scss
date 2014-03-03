@@ -1,0 +1,54 @@
+// COPY 原設定
+.titleimage {
+  background-color: $color01;
+}
+.maincont {
+  // caption, th, td {
+  //   vertical-align: top;
+  // }
+  background-color: #FFF;
+  display: block;
+  padding-top: 30px;
+  padding-left: 35px;
+  padding-right: 55px;
+  .about {
+    overflow: hidden;
+    h3 {
+      @include isolate-grid(4);
+      font-size: 24px;
+      color: $color01;
+      line-height: 28px;
+    }
+    p {
+      @include isolate-grid(4);
+      font-size: 14px;
+      padding-bottom: 35px;
+    }
+  }
+}
+.titleimage h2 {
+  font-family: Klavika-Light;
+  font-size: 42px;
+  padding: 40px 35px 10px;
+  color: #fff;
+  font-weight: 100;
+}
+.rtitleimage {
+  @include reset-baseline;
+}
+.rcont1 {
+  font-size: 16px;
+  color: #333333;
+  padding: 20px;
+  background-color: #CCC;
+  p {
+    font-size: 16px;
+    line-height: 20px;
+    @include trailer(1);
+  }
+  .link03 {
+    @include trailer(1);
+  }
+  //@include leader(1);
+  // @include trailer(1);
+}

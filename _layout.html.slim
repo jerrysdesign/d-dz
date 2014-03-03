@@ -4,6 +4,9 @@ html lang="zh-TW"
     = render "/layout_head"
     = render "/layout_og"
   body
-    = yield
-    = render "/layout_foot"
-    = render "/layout_livereload"
+  	.container
+  		= render "/layout_header"
+	    = yield
+	    = render "layout_footer"
+	    = render "/layout_foot"
+	    = render "/layout_livereload"

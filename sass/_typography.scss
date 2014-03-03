@@ -3,6 +3,10 @@
   font-family: "klavika";
   src: url('../font/klavika-webfont.ttf') format('truetype'), url('../font/klavika-webfont.eot') format('embedded-opentype');
 }
+@font-face {
+  font-family: "Klavika-Light";
+  src: url('../font/Klavika-Light.otf') format('truetype'), url('../font/Klavika-Light.otf') format('embedded-opentype');
+}
 body {
   font-family: "klavika",
                AvenirNext-Regular,
@@ -33,8 +37,8 @@ a {
 p {
   @include reset-box-model;
   @include adjust-font-size-to(14px);
-  @include leader(1);
-  @include trailer(1);
+  // @include leader(1);
+  // @include trailer(1);
 }
 @mixin reset-baseline {
   @include adjust-leading-to(.1, if($relative-font-sizing, $base-font-size, $base-font-size));

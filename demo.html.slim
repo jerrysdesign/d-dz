@@ -1,11 +1,10 @@
+//demo
 = content_for :title do 
   <title>Demo</title>
-.container
-  = render "layout_header"
-  //a.toggle href="#right" Show Right
-  #right.right
-    | right
-  .main
- 		| main
- 		a.toggle href="#right" Show Right
-  = render "layout_footer"
+  
+#right.right
+  | right
+.main
+		| main
+		a.toggle href="#right" Show Right
+= render "layout_footer"
