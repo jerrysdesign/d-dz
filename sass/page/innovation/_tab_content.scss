@@ -26,15 +26,18 @@
         height: 26px;
       }
       .orkesta {
-        background-image: url("../images/logo_orkesta.png");
+        //background-image: url("../images/logo_orkesta.png");
+        @include at2x('../images/logo_orkesta',png,91px,26px);
         width: 91px;
       }
       .provecta {
-        background-image: url("../images/logo_provecta.png");
+        //background-image: url("../images/logo_provecta.png");
+        @include at2x('../images/logo_provecta',png,97px,26px);
         width: 97px;
       }
       .provecta_orkesta {
-        background-image: url("../images/logo_provecta_orkesta.png");
+        //background-image: url("../images/logo_provecta_orkesta.png");
+        @include at2x('../images/logo_provecta_orkesta',png,210px,26px);
         width: 210px;
       }
       .product_info {
@@ -48,7 +51,8 @@
       h6 {
         float: left;
         @include remove-text;
-        background-image: url("../images/icon_dl_blue.jpg");
+        //background-image: url("../images/icon_dl_blue.jpg");
+        @include at2x('../images/icon_dl_blue',jpg,38px,38px);
         background-repeat: no-repeat;
         width: 38px;
         height: 38px;

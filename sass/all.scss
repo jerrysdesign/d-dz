@@ -1,7 +1,8 @@
 // import all things
+@import "compass";
 @import "basic/mixin";
 @import "colors";
-@import "compass";
+@import "partials/retina";
 @import "compass/utilities/sprites";
 /*normalize*/
 //@import "normalize";
