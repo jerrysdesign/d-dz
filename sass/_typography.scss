@@ -14,32 +14,63 @@ body {
                'Heiti TC',
                微軟正黑體, 'Microsoft JhengHei',
                sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  font-size: 16px;
-  text-rendering: optimizeLegibility;
-  font-weight: 400;
-  color: $text-color;
-  background: $body-background-color;
 }
-
-#{headings()} {
-  @include reset-box-model;
-  @include adjust-font-size-to(32px);
-}
+@import "basic/typography"; //import baseline Mixin
 
 a {
+  @include unstyled-link;
   @include link-colors($color01);
-  @include hover-link;
+}
+
+// 設定 h1 – h6, p 邊界為 0
+#{headings()},
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+h1 {
+  $font-size: 42px;
+  @include baseline-font-size($font-size, 1);
+  @include trailer(1, $font-size);
+}
+
+h2 {
+  $font-size: 20px;
+  @include baseline-font-size($font-size);
+}
+
+small {
+  display: block;
+  $font-size: 12px;
+  @include baseline-font-size($font-size);
+  @include trailer(1, $font-size);
+  opacity: .5;
 }
 
 p {
-  @include reset-box-model;
-  @include adjust-font-size-to(14px);
-  // @include leader(1);
-  // @include trailer(1);
+  $font-size: 14px;
+  @include baseline-font-size($font-size);
+  @include trailer(1, $font-size);
 }
+
+.header p {
+  margin: 0;
+}
+
+// $i: 0;
+// @each $font-size in 11px, 12px, 14px, 16px, 18px, 24px, 28px, 32px {
+//   .font-scale-#{$i} {
+//     @include adjust-font-size-to($font-size);
+//     @include trailer(1, $font-size);
+//     @include move-to-baseline($font-size);
+//     &:before {
+//       content: "#{$font-size} ";
+//     }
+//   }
+//   $i: $i + 1;
+// }
+
 @mixin reset-baseline {
   @include adjust-leading-to(.1, if($relative-font-sizing, $base-font-size, $base-font-size));
 }

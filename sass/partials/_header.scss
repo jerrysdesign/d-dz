@@ -11,6 +11,7 @@
   float: left;
   margin: 20px 70px 10px 20px;
   margin-right: 70px;
+  @include remove-move-to-baseline;
   a {
     //background: url(../images/logo.png) no-repeat;
     @include at2x('../images/logo',png,178px,55px);
