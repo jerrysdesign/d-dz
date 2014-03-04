@@ -128,7 +128,8 @@ footer {
   @include at-breakpoint($large-columns) { @include opacity(1); }
 }
 .main_container {
-  background: $side-bar-background-color;
+  //background: $side-bar-background-color;
+  background-image: url("../images/main_container.jpg");
   @include pie-clearfix;
 }
 .toggle {
@@ -146,4 +147,8 @@ footer {
     text-decoration: none;
   }
 
+}
+.full_main {
+  background-color: #fff;
+  @include pie-clearfix;
 }
