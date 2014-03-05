@@ -11,7 +11,7 @@
     padding: 40px 20px 40px 40px;
     background-color: #fff;
     h4 {
-      color: $color01;
+      color: $color02;
     }
     >h4+p.second {
       @include adjust-font-size-to(16px);

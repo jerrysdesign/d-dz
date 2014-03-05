@@ -3,11 +3,15 @@
   width: 680px
 .apparel, .main_banner, .slogan, .section_divider, .list
   +trailer(1)
-
-.slogan 
-  +adjust-font-size-to(20px)
-  //+leader(1)
-.list
-  +adjust-font-size-to(20px)
-  li
-    margin-bottom: 15px
+.section_divider
+  border-bottom: 1px solid #ccc
+.apparel
+  .slogan 
+    +adjust-font-size-to(20px)
+    line-height: 1.5
+    border: none
+    //+leader(1)
+  .list
+    +adjust-font-size-to(20px)
+    li
+      margin-bottom: 15px

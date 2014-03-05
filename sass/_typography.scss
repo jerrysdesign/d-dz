@@ -7,6 +7,7 @@
   font-family: "Klavika-Light";
   src: url('../font/Klavika-Light.otf') format('truetype'), url('../font/Klavika-Light.otf') format('embedded-opentype');
 }
+@import "basic/typography"; //import baseline Mixin
 body {
   font-family: "klavika",
                AvenirNext-Regular,
@@ -15,11 +16,10 @@ body {
                微軟正黑體, 'Microsoft JhengHei',
                sans-serif;
 }
-@import "basic/typography"; //import baseline Mixin
 
 a {
   @include unstyled-link;
-  @include link-colors($color01);
+  @include link-colors($color02);
 }
 
 // 設定 h1 – h6, p 邊界為 0
@@ -31,32 +31,32 @@ p {
 
 h1 {
   $font-size: 42px;
-  @include baseline-font-size($font-size, 1);
-  @include trailer(1, $font-size);
+  // @include baseline-font-size($font-size, 1);
+  // @include trailer(1, $font-size);
 }
 
-h2 {
-  $font-size: 20px;
-  @include baseline-font-size($font-size);
-}
+// h2 {
+//   $font-size: 20px;
+//   @include baseline-font-size($font-size);
+// }
 
-small {
-  display: block;
-  $font-size: 12px;
-  @include baseline-font-size($font-size);
-  @include trailer(1, $font-size);
-  opacity: .5;
-}
+// small {
+//   display: block;
+//   $font-size: 12px;
+//   @include baseline-font-size($font-size);
+//   @include trailer(1, $font-size);
+//   opacity: .5;
+// }
 
-p {
-  $font-size: 14px;
-  @include baseline-font-size($font-size);
-  @include trailer(1, $font-size);
-}
+// p {
+//   $font-size: 14px;
+//   @include baseline-font-size($font-size);
+//   @include trailer(1, $font-size);
+// }
 
-.header p {
-  margin: 0;
-}
+// .header p {
+//   margin: 0;
+// }
 
 // $i: 0;
 // @each $font-size in 11px, 12px, 14px, 16px, 18px, 24px, 28px, 32px {

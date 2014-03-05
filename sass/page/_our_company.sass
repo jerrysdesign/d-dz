@@ -1,0 +1,30 @@
+.socialresponsibility
+  .slogan
+    +adjust-font-size-to(20px)
+    line-height: 30px
+    +at-breakpoint($large-columns)
+      width: 67%
+  +padding-leader(2)
+  h4
+    color: #333
+  h4,p
+    +trailer(1)
+    +at-breakpoint($large-columns)
+      float: none
+.green-section
+  width: 100%
+  +pie-clearfix
+  span
+    font-size: 14px
+    line-height: 1.2em
+    width: 80px
+    float: left
+    +trailer(1)
+    margin-right: 5%
+  +at-breakpoint($large-columns)
+    width: 30%
+    margin-right: 5%
+    float: left
+    &:last-child
+      margin-right: 0
+      float: right

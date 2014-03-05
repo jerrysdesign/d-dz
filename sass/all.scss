@@ -14,7 +14,10 @@ $legacy-support-for-ie: false;
 @include global-reset;
 // 設定基本字體與文字高度
 body { font-family: sans-serif; vertical-align: baseline; }
+$base-font-size: 16px;
+$base-line-height: 24px;
 @include establish-baseline;
+// custom def style
 body {
 	-webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -25,6 +28,10 @@ body {
 }
 img {
 	max-width: 100%
+}
+hr {
+	border: none;
+	border-bottom: 1px solid #333;
 }
 // 良好文字排版
 @import "typography";

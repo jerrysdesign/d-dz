@@ -107,7 +107,7 @@ nav.slider-pagination {
     @include isolate-grid(4);
     @include trailer20;
     h3 {
-      color: $color01;
+      color: $color02;
     }
     p {
       margin-top: .5em;
@@ -116,7 +116,7 @@ nav.slider-pagination {
     }
     p+p {
       a {
-        color: $color01;
+        color: $color02;
         text-decoration: underline;
         font-weight: 600;
         font-style: italic;

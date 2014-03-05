@@ -1,8 +1,17 @@
+.maincont > .headquarters:first-child
+  margin-top: 100px
+
 .headquarters
   display: block
   border-top: 1px solid $color01
+  +pie-clearfix
+  .area
+    display: block
+    float: left
+    width: 300px
+
   h3
-    color: $color01
+    color: $color02
     font-size: 24px
     font-weight: bold
     margin-top: 25px
@@ -10,9 +19,12 @@
   h4
     font-size: 18px
     font-weight: bold
-    color: $color01
+    color: $color02
     display: block
     margin-bottom: 24px
   p
     +leader(.5)
     +trailer(.5)
+  strong
+    padding-right: 5px
+    color: #333
