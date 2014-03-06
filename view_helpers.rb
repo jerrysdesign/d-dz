@@ -34,4 +34,16 @@ module ViewHelpers
     ##content_tag(:li, link_to(name, href, options), :class => active )
   end
 
+  # Right Cont Download link
+  # 結構 => partials/rcont_download
+  def rdownload_link_to(href, name, options={})
+    if name == ""
+      name = "Download the brochure >>"
+      options[:target] = "_blank"
+    end
+    link_to name, href, options
+    content_tag(:div, image_tag("/images/2.1_product_provecta_film_rtitle.jpg"),:class => "rtitleimage" )+\
+    content_tag(:div, content_tag(:p, "What can you do to DingZing technical film?")+content_tag(:div, link_to(name, href, options), :class => "link03" ), :class => "rcont1" )
+  end
+
 end
