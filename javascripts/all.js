@@ -36,6 +36,20 @@ $(document).ready(function(){
 
 });
 
+//側欄選單
+$(document).ready(function(){
+  
+  $(".collapse > li").click( function(){
+    
+    $(".collapse").find("ul").slideUp(300); //先把全部的收起來
+    $(".collapse > li").removeClass('active');
+    $(this).addClass('active').find("ul").slideDown(300); //目前被按到的這個打開來
+    return false;
+
+  });
+    
+});
+
 //Page Innovation Stories tab
 $(document).ready(function(){
 
@@ -50,7 +64,7 @@ $(document).ready(function(){
 
   $(".story").click(function() {
     var thisId = $(this).attr('id');
-    var thatId =$(this).siblings().attr('id')
+    var thatId =$(this).siblings().attr('id');
     $('[class^="story-"]').hide();
     $('.'+thisId).show();
     $('.story').removeClass('active');
@@ -73,7 +87,6 @@ $(document).ready(function(){
 });
 
 // Index slider
-
 var mainSlider = document.getElementById('mainSlider');
 var    bullets = document.getElementById('position').getElementsByTagName('li');
 
