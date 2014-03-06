@@ -1,0 +1,23 @@
+//Product Adventa™ Breathable
+
+= content_for :title do 
+  <title>DingZing | Adventa™ Breathable</title>
+  
+.path
+  | Products > Adventa™ Film > Adventa™ Breathable
+
+.main_container
+
+  #right.right
+    .rightcont
+      =rdownload_link_to("href", "")
+  .main
+    a.toggle href="#right" show Menu
+    .leftcont
+      .titleimage
+        h1
+          img src="/images/product/section_logo/11_advanta-breathable.png" alt="Adventa™ Breathable"
+      .maincont.library
+        .slogan
+          p Adventa™ Breathable technical ﬁlms deliver excellent waterproof protection and are available in different levels of breathability, from high to medium to low, to suit different products and applications.
+        =render "aventa_film_adventa_breathable_tablelist.html.erb"
