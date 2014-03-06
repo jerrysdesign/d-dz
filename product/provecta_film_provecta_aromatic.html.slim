@@ -9,32 +9,15 @@
 .main_container
 
   #right.right
-    //helper
-    =rdownload_link_to("href", "")
-
-    //erb
-    / =content_tag(:div, image_tag("/images/2.1_product_provecta_film_rtitle.jpg"),:class => "rtitleimage" )
-    / =content_tag(:div,\
-    /   content_tag(:p, "What can you do to DingZing technical film?") +\
-    /   content_tag(:div, link_to("Download the brochure >>","url"), :class => "link03" ),\
-    / :class => "rcont1" )
-    
-    //slim
-    / .rightcont
-    / .rightcont
-    /   .rtitleimage
-    /     img src="/images/2.1_product_provecta_film_rtitle.jpg"
-    /   .rcont1
-    /     p What can you do to DingZing technical film?
-    /     .link03
-    /       a href="/innovation_playground/" Download the brochure >>
+    .rightcont
+      =rdownload_link_to("href", "")
     
   .main
     a.toggle href="#right" show Menu
     .leftcont
       .titleimage
         h1
-          img src="/images/product/section_logo/products_section_logo_0000_provecta.png" alt="Provecta"
+          img src="/images/product/section_logo/00_provecta.png" alt="Provecta"
       .maincont.library
         .slogan
           p Provecta™ Aromatic technical films are excellent for applications that require flexibility, durability, and sturdiness.
