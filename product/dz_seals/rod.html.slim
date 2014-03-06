@@ -1,0 +1,22 @@
+//Product Seals Rod Seals
+
+= content_for :title do 
+  <title>DingZing | Rod Seals</title>
+  
+.path
+  | Products > DinZing DZ Seals > Rod Seals
+
+.main_container
+
+  #right.right
+    .rightcont
+      /=rdownload_link_to("href", "")
+  .main
+    a.toggle href="#right" show Menu
+    .leftcont
+      .titleimage
+        h1 Rod Seals
+      .maincont.product
+        .slogan
+          p DingZing DZ Seals, for hydraulic applicaitons, all of which have excellent tensile strength, compression set, oil temperature and pressure resistance etc... DingZing DZ is known for long lasting lift cycle, suitable for light, medium and heavy duty cylinders.
+        =render "rod_tablelist.html.erb"

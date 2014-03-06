@@ -1,0 +1,22 @@
+//Product Belts Ridgetop Belts
+
+= content_for :title do 
+  <title>DingZing | Ridgetop Belts</title>
+  
+.path
+  | Products > DinZing Belts > Ridgetop Belts
+
+.main_container
+
+  #right.right
+    .rightcont
+      /=rdownload_link_to("href", "")
+  .main
+    a.toggle href="#right" show Menu
+    .leftcont
+      .titleimage
+        h1 Ridgetop Belts
+      .maincont.product
+        .slogan
+          p DingZing Belts are a series of high recovery transmission belts that feature excellent mechanical, physical, and chemical properties. Highly durable, DingZing Belts provide good abrasion and impact resistance along with outstanding flexibility.
+        =render "ridgetop_tablelist.html.erb"
