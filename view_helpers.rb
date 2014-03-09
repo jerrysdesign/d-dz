@@ -31,7 +31,15 @@ module ViewHelpers
       active = "active"
     end
     link_to name, href, options
-    ##content_tag(:li, link_to(name, href, options), :class => active )
+  end
+
+  # nav li active link
+  def sidenav_link_to(href, name, options={})
+    if href == request.path.gsub('index.html', '')
+      active = "active"
+    end
+    link_to name, href, options
+    content_tag(:li, link_to(name, href, options), :class => active )
   end
 
   # Right Cont Download link

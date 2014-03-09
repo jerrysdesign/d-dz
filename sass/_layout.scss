@@ -150,3 +150,14 @@ footer {
   background-color: #fff;
   @include pie-clearfix;
 }
+.column {
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  &.full { width: 100%; }
+  &.two-thirds { width: 66.7%; }
+  &.half { width: 50%; }
+  &.third { width: 33.3%; }
+  &.fourth { width: 24.95%; }
+  &.flow-opposite { float: right; }
+}

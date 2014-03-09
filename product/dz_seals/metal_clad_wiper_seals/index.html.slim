@@ -1,0 +1,23 @@
+//metal_clad_wiper.html.slim
+//Product Seals Metal Clad Wiper Seals
+
+= content_for :title do 
+  <title>DingZing | Metal Clad Wiper Seals</title>
+  
+.path
+  | Products > DinZing DZ Seals > Metal Clad Wiper Seals
+
+.main_container
+
+  #right.right
+    .rightcont
+      =render "../right"
+  .main
+    a.toggle href="#right" show Menu
+    .leftcont
+      .titleimage
+        h1 Metal Clad Wiper Seals
+      .maincont.product
+        .slogan
+          p DingZing DZ Seals, for hydraulic applicaitons, all of which have excellent tensile strength, compression set, oil temperature and pressure resistance etc... DingZing DZ is known for long lasting lift cycle, suitable for light, medium and heavy duty cylinders.
+        =render "metal_clad_wiper_tablelist.html.erb"

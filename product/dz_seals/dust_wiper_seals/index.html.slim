@@ -1,0 +1,23 @@
+//dust_wiper.html.slim
+//Product Seals Dust Wiper Seals
+
+= content_for :title do 
+  <title>DingZing | Dust Wiper Seals</title>
+  
+.path
+  | Products > DinZing DZ Seals > Dust Wiper Seals
+
+.main_container
+
+  #right.right
+    .rightcont
+      =render "../right"
+  .main
+    a.toggle href="#right" show Menu
+    .leftcont
+      .titleimage
+        h1 Dust Wiper Seals
+      .maincont.product
+        .slogan
+          p DingZing DZ Seals, for hydraulic applicaitons, all of which have excellent tensile strength, compression set, oil temperature and pressure resistance etc... DingZing DZ is known for long lasting lift cycle, suitable for light, medium and heavy duty cylinders.
+        =render "dust_wiper_tablelist.html.erb"
