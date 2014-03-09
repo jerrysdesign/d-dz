@@ -39,6 +39,7 @@
 .main_navigation {
   font-weight: 900;
   letter-spacing: -1px;
+  font-size: 16px;
   @include reset-list;
   a {
     display: block;
@@ -48,7 +49,8 @@
     > a {
       position: relative;
       padding: 25px 20px;
-      line-height: 1.5;
+      
+      line-height: 23px;
       z-index: 151;
       //@include text-shadow (0 1px 1px #fff);
     }
@@ -64,7 +66,6 @@
 /* SUB NAVIGATION */
 
 .sub_navigation {
-  
   @include box-sizing(content-box);
   position: absolute;
   display: none;
@@ -96,14 +97,15 @@
     dl { margin: 10px 11px; }
     dt, dd { @include reset-list; }
     dt {
-      @include adjust-font-size-to(14px);
+      font-size: 14px;
+      line-height: 24px;
       font-weight: bold;
       padding: 0 10px;
       a {
         margin: 0 -10px;
       }
     }
-    dd { @include adjust-font-size-to(13px);}
+    dd { font-size: 13px;line-height: 24px;}
     a {
       color: $text-color;
       display: block;
@@ -123,14 +125,14 @@ ul.lang {
   top: 10px;
   right: 10px;
   height: 30px;
-  @include adjust-font-size-to(13px);
+  font-size: 14px;
+  line-height: 21px;
   overflow: hidden;
   > li {
     float: left;
   }
   a {
     display: block;
-    line-height: 1.5;
   }
 }
 

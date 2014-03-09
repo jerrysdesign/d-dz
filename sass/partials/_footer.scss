@@ -2,6 +2,7 @@
   padding: 20px;
   padding-bottom: 10px;
   .copyright {
+    font-size: 14px;
     text-align: center;
     @include span-columns(8);
   }
@@ -23,10 +24,10 @@
       padding-top: 50px;
       background-image: url(../images/icon_email.png);
       background-repeat: no-repeat;
-      font-size: 1em;
+      font-size: 16px;
     }
     p {
-      font-size: 1em;
+      font-size: 16px;
       margin: 10px 0;
     }
     a {
