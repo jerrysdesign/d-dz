@@ -19,16 +19,26 @@
   font-size: 13px
   color: #333
   +trailer(2)
+  table
+    margin-bottom: 36px
+    margin-top: -6px
   td
     height: 25px
     border: 1px solid #B0B2B2
     padding-top: 6px
     padding-left: 6px
     padding-bottom: 6px
+    vertical-align: top
+    &.col_v
+      background-color: #666
+      color: #fff
+    &.col_h
+      background-color: $color02
+      color: #fff
     &.txtwhite
       color: #fff
       a
-        color: #FFF
+        color: #fff
         text-decoration: underline
     &.H83
       height: 83px
@@ -39,16 +49,17 @@
   color: $color02
 
 .dz
-  table
-    margin-bottom: 36px
-    margin-top: -6px
-    &.noline
-      td
-        vertical-align: top
-        border-top-style: none
-        border-right-style: none
-        border-bottom-style: none
-        border-left-style: none
+  td
+    &.td
+      background-color: $tabletdcolor00
+  &.noline
+    td
+      border-top-style: none
+      border-right-style: none
+      border-bottom-style: none
+      border-left-style: none
+  .r17
+  .l18
   .script
     font-size: 14px
     color: #6f8ac5
