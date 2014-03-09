@@ -1,0 +1,24 @@
+//rotary.html.slim
+//Product Seals Rotary Seals D-14
+
+= content_for :title do 
+  <title>DingZing | Rotary Seals D-14</title>
+  
+.path
+  | Products > DinZing DZ Seals > Rotary Seals > D-14
+
+.main_container
+
+  #right.right
+    .rightcont
+      =render "../right"
+  .main
+    a.toggle href="#right" show Menu
+    .leftcont
+      .titleimage
+        h1 Rotary d-14
+      .maincont.product
+        .slogan
+          .column.half
+            img src="/resources/images/D14_pic.jpg"
+        =render "d-14_tablelist.html.erb"

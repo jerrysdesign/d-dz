@@ -23,17 +23,17 @@ a {
 }
 
 // 設定 h1 – h6, p 邊界為 0
-#{headings()},
-p {
-  margin: 0;
-  font-weight: normal;
-}
+// #{headings()},
+// p {
+//   margin: 0;
+//   font-weight: normal;
+// }
 
-h1 {
-  $font-size: 42px;
-  // @include baseline-font-size($font-size, 1);
-  // @include trailer(1, $font-size);
-}
+//h1 {
+// $font-size: 42px;
+// @include baseline-font-size($font-size, 1);
+// @include trailer(1, $font-size);
+//}
 
 // h2 {
 //   $font-size: 20px;

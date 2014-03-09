@@ -1,0 +1,28 @@
+
+//Product Seals Dust Wiper Seals DH-07
+
+= content_for :title do 
+  <title>DingZing | Dust Wiper Seals DH-07</title>
+  
+.path
+  | Products > DinZing DZ Seals > Dust Wiper Seals > DH-07
+
+.main_container
+
+  #right.right
+    .rightcont
+      =render "../right"
+  .main
+    a.toggle href="#right" show Menu
+    .leftcont
+      .titleimage
+        h1 Dust Wiper DH-07
+      .maincont.product
+        .slogan
+          .column.half
+            img src="/resources/images/DH7_pic.jpg"
+            .picscript
+              p R ≦ 0.3
+              p R1 ≦ 0.5
+              p Rod Ø d Surface Roughness: 0.8~1.6 μ mRmax (0.2~0.4 μ mRa)
+        =render "dh-07_tablelist.html.erb"

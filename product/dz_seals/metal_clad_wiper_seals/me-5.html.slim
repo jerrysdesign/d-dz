@@ -1,0 +1,26 @@
+//Product Seals Metal Clad Wiper Seals ME-5
+
+= content_for :title do 
+  <title>DingZing | Metal Clad Wiper ME-5</title>
+  
+.path
+  | Products > DinZing DZ Seals > Metal Clad Wiper Seals > ME-5
+
+.main_container
+
+  #right.right
+    .rightcont
+      =render "../right"
+  .main
+    a.toggle href="#right" show Menu
+    .leftcont
+      .titleimage
+        h1 Metal Clad Wiper ME-5
+      .maincont.product
+        .slogan
+          .column.half
+            img src="/resources/images/ME5_pic.jpg"
+            .picscript
+              p R ≦ 0.3
+              p Rod Ø d Surface Roughness: 0.8~1.6 μ mRmax (0.2~0.4 μ mRa)
+        =render "me-5_tablelist.html.erb"

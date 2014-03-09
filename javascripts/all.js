@@ -39,15 +39,12 @@ $(document).ready(function(){
 //側欄選單
 $(document).ready(function(){
   
-  $(".collapse > li").click( function(){
-    
-    $(".collapse").find("ul").slideUp(300); //先把全部的收起來
-    $(".collapse > li").removeClass('active');
-    $(this).addClass('active').find("ul").slideDown(300); //目前被按到的這個打開來
-    return false;
-
+  $('.collapse > li').click(function(){
+    var $this = $(this);
+    $('.collapse > li').removeClass('').find('ul').hide(); //先把全部的收起來
+    $this.addClass('active').find("ul").slideDown(300); //目前被按到的這個打開來
   });
-    
+
 });
 
 //Page Innovation Stories tab

@@ -13,7 +13,7 @@ $legacy-support-for-ie: false;
 // Rrsest
 @include global-reset;
 // 設定基本字體與文字高度
-body { font-family: sans-serif; vertical-align: baseline; }
+body { font-family: sans-serif; vertical-align: top; }
 $base-font-size: 16px;
 $base-line-height: 24px;
 @include establish-baseline;

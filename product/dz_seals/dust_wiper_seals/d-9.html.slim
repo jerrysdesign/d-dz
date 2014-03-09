@@ -1,0 +1,27 @@
+
+//Product Seals Dust Wiper Seals D-9
+
+= content_for :title do 
+  <title>DingZing | Dust Wiper Seals D-9</title>
+  
+.path
+  | Products > DinZing DZ Seals > Dust Wiper Seals > D-9
+
+.main_container
+
+  #right.right
+    .rightcont
+      =render "../right"
+  .main
+    a.toggle href="#right" show Menu
+    .leftcont
+      .titleimage
+        h1 Dust Wiper D-9
+      .maincont.product
+        .slogan
+          .column.half
+            img src="/resources/images/D9_pic.jpg"
+            .picscript
+              p R ≦ 0.3
+              p Rod Ø d Surface Roughness: 0.8~1.6 μ mRmax (0.2~0.4 μ mRa)
+        =render "d-9_tablelist.html.erb"
