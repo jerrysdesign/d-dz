@@ -1,6 +1,7 @@
 // 1-3
 .story_img {
   position: relative;
+  overflow: hidden;
   div[class^="layer"]{
     position: absolute;
   }
@@ -24,18 +25,20 @@
   .layer00 { left: 40px; top: 0;}
   .layer01 { left: 70px; top: 243px;}
   .layer02 { left: 62px; top: 228px;}
-  &:hover {
+  &:hover, &.move {
     .layer01 { left: 60px; top: 223px;}
     .layer02 { left: 2px; top: 170px;}
   }
 }
 #p2-1 {
-  .layer00 { left: 70px; top: 26px;}
-  .layer01 { left: 77px; top: 38px;}
-  .layer02 { left: 59px; top: 38px;}
-  &:hover {
-    .layer00 { left: 104px; top: 23px;}
-    .layer01 { left: 80px; top: 28px;}
-    .layer02 { left: 19px; top: 38px;}
+  .layer00 { left: 60px; top: 34px;}
+  .layer01 { left: 70px; top: 26px;}
+  .layer02 { left: 77px; top: 38px;}
+  .layer03 { left: 59px; top: 38px;}
+  &:hover, &.move {
+    .layer00 { left: 120px; top: 34px;}
+    .layer01 { left: 104px; top: 23px;}
+    .layer02 { left: 80px; top: 28px;}
+    .layer03 { left: 19px; top: 38px;}
   }
 }

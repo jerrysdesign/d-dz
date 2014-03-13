@@ -7,14 +7,14 @@
   //= image_tag(lorem_image("1200x230"))
   p.info1 At the Innovation Playground, we exchange ideas. Explore possibilities. Experiment with technical films. This is what we call collaborative innovation—our own unique way of working with clients to turn concepts into reality.
   p.info2 With our knowledge of technical films at the ingredient, material, process, and production level, we are able to develop the most innovative solutions with our clients. Already, hundreds of products that have energized a number of industries are using materials that were developed in the Innovation Playground.
-
+#tabgo
 #tabMenu
   h3 Innovation Stories
   nav
-    li#story-1.story: a href="javascript:;" 1
-    li#story-2.story: a href="javascript:;" 2
-    li#story-3.story: a href="javascript:;" 3
-    li#story-4.story: a href="javascript:;" 4
+    li#story-1.story: a href="#tabgo" 1
+    li#story-2.story: a href="#tabgo" 2
+    li#story-3.story: a href="#tabgo" 3
+    li#story-4.story: a href="#tabgo" 4
 
 .tab_content
 
@@ -88,10 +88,12 @@
       .story_img_wrapper
         #p2-1.story_img
           .layer00
-            = image_tag("innovation/img_snow_wood.png")
+            = image_tag("innovation/img_snow_film2.png")
           .layer01
-            = image_tag("innovation/img_snow_carbon.png")
+            = image_tag("innovation/img_snow_wood.png")
           .layer02
+            = image_tag("innovation/img_snow_carbon.png")
+          .layer03
             = image_tag("innovation/img_snow_film1.png")
 
     //p2-2
