@@ -25,7 +25,8 @@
   .layer00 { left: 40px; top: 0;}
   .layer01 { left: 70px; top: 243px;}
   .layer02 { left: 62px; top: 228px;}
-  &:hover, &.move {
+  &.move {
+    @include transition (all 0.3s ease);
     .layer01 { left: 60px; top: 223px;}
     .layer02 { left: 2px; top: 170px;}
   }
@@ -35,7 +36,8 @@
   .layer01 { left: 70px; top: 26px;}
   .layer02 { left: 77px; top: 38px;}
   .layer03 { left: 59px; top: 38px;}
-  &:hover, &.move {
+  &.move {
+    @include transition (all 0.3s ease);
     .layer00 { left: 120px; top: 34px;}
     .layer01 { left: 104px; top: 23px;}
     .layer02 { left: 80px; top: 28px;}
