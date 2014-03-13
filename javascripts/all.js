@@ -87,33 +87,30 @@ $(document).ready(function(){
     var p1cot = $("#p1-3").offset().top;
     var p2aot = $("#p2-1").offset().top;
     
-    if ($(".story-1").css("display") == 'block' ){
+    $(window).scroll(function(){
 
-      $(window).scroll(function(){
+      if ($(".story-1").css("display") == 'block' ){
         if ($(window).scrollTop() > (p1cot-220)){
           $("#p1-3").addClass("move");
         }
         else {
           $("#p1-3").removeClass("move");
         }
-      });
+      }
 
-    }
-
-    if ($(".story-2").css("display") == 'block' ){
-
-      $(window).scroll(function(){
-        if ($(window).scrollTop() > (p2aot-220)){
+      if ($(".story-2").css("display") == 'block' ){
+        if ($(window).scrollTop() > (p2aot-40)){
           $("#p2-1").addClass("move");
         }
         else {
           $("#p2-1").removeClass("move");
         }
-      });
+      }
 
-    }
+    });
 
   });
+
 
 });
 
