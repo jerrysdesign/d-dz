@@ -10,14 +10,14 @@
 
   #right.right
     .rightcont
-      =rdownload_link_to("/download/pdf/Technical%20Brochure.pdf", "")
+      =rdownload_link_to("/download/pdf/technical_brochure.pdf", "")
   .main
     a.toggle href="#right" show Menu
     .leftcont
       .titleimage
         h1
           img src="/images/product/section_logo/11_advanta-breathable.png" alt="Adventa™ Breathable"
-      .maincont.library
-        .slogan
+      .maincont
+        .slogan.style02
           p Adventa™ Breathable technical ﬁlms deliver excellent waterproof protection and are available in different levels of breathability, from high to medium to low, to suit different products and applications.
         =render "adventa_breathable_tablelist.html.erb"

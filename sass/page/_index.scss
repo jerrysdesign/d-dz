@@ -128,7 +128,7 @@ nav.slider-pagination {
     }
   }
   section {
-    padding: 1em 7em .75em 2em;
+    padding: 15px 100px 10px 20px;
   }
   @include at-breakpoint($large-columns,12) {
     section {
@@ -139,8 +139,8 @@ nav.slider-pagination {
 
 @include at-breakpoint($large-columns) {
   .product section {
-    padding-right: 3em;
-    padding-left: 1em;
+    padding-right: 45px;
+    padding-left: 30px;
   }
 }
 .product {

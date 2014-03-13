@@ -10,14 +10,14 @@
 
   #right.right
     .rightcont
-      =rdownload_link_to("href", "")
+      =rdownload_link_to("/download/pdf/technical_brochure.pdf", "")
   .main
     a.toggle href="#right" show Menu
     .leftcont
       .titleimage
         h1
-          img src="/images/product/section_logo/02_provecta-allphatic.png" alt="Provecta"
-      .maincont.library
-        .slogan
+          img src="/images/product/section_logo/02_provecta-aliphatic.png" alt="Provecta"
+      .maincont
+        .slogan.style01
           p Provecta™ Aliphatic technical films are excellent for applications that require flexibility, durability, and sturdiness.
-        =render "provecta_aromatic_tablelist.html.erb"
+        =render "provecta_aliphatic_tablelist.html.erb"

@@ -3,6 +3,7 @@
   padding-bottom: 10px;
   .copyright {
     font-size: 14px;
+    padding-top: 30px;
     text-align: center;
     @include span-columns(8);
   }
@@ -21,6 +22,7 @@
     padding: 16px 15px;
     @include adjust-font-size-to(16px);
     h6 {
+      font-weight: bold;
       padding-top: 50px;
       background-image: url(../images/icon_email.png);
       background-repeat: no-repeat;

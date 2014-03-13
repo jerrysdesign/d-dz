@@ -10,14 +10,14 @@
 
   #right.right
     .rightcont
-      =rdownload_link_to("/download/pdf/Technical%20Brochure.pdf", "")
+      =rdownload_link_to("/download/pdf/technical_brochure.pdf", "")
   .main
     a.toggle href="#right" show Menu
     .leftcont
       .titleimage
         h1
           img src="/images/product/section_logo/06_provecta-bio.png" alt="Provecta Bio"
-      .maincont.library
-        .slogan
+      .maincont
+        .slogan.style01
           p Provecta™ Bio films are made from organic materials. It is ideal for applications that require flexibility, durability, and sturdiness, with the added bonus of a reduced environmental footprint.
         =render "provecta_bio_tablelist.html.erb"

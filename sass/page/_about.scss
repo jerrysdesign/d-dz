@@ -1,39 +1,16 @@
 
-.maincont {
-  background-color: #FFF;
-  display: block;
-  padding-top: 30px;
-  // padding-left: 35px;
-  // padding-right: 55px;
-  .about {
-    overflow: hidden;
-    h3 {
-      @include isolate-grid(4);
-      font-size: 24px;
-      color: $color02;
-      line-height: 28px;
-    }
-    p {
-      @include isolate-grid(4);
-      font-size: 14px;
-      padding-bottom: 35px;
-    }
+.about {
+  overflow: hidden;
+  h3 {
+    @include isolate-grid(4);
+    font-size: 24px;
+    color: $color02;
+    line-height: 28px;
+  }
+  p {
+    @include isolate-grid(4);
+    font-size: 14px;
+    padding-bottom: 35px;
   }
 }
 
-.rcont1 {
-  font-size: 16px;
-  color: #333333;
-  padding: 20px;
-  background-color: #CCC;
-  p {
-    font-size: 16px;
-    line-height: 20px;
-    @include trailer(1);
-  }
-  .link03 {
-    @include trailer(1);
-  }
-  //@include leader(1);
-  // @include trailer(1);
-}

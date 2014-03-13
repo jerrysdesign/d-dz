@@ -10,7 +10,7 @@
 
   #right.right
     .rightcont
-      =rdownload_link_to("/download/pdf/Technical%20Brochure.pdf", "")
+      =rdownload_link_to("/download/pdf/technical_brochure.pdf", "")
     
   .main
     a.toggle href="#right" show Menu
@@ -18,7 +18,7 @@
       .titleimage
         h1
           img src="/images/product/section_logo/03_provecta-hotmelt.png" alt="Provecta"
-      .maincont.library
-        .slogan
+      .maincont
+        .slogan.style01
           p Provecta™ Hot Melt technical films are solvent-free, highly elastic, and perfect for bonding microfiber fabrics, pu leather, and genuine leather, among other materials.
         =render "provecta_hot_melt_tablelist.html.erb"
