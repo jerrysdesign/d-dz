@@ -7,15 +7,7 @@
 .main_container
 
   #right.right
-    .rightcont
-      .rtitleimage
-        img src="/images/playground.jpg"
-      .rcont1
-        p
-          | Find out more about how DingZing works with clients to develop and launch
-          | products that energize industries.
-        .link03
-          a href="/innovation_playground/" Click here to go to the Innovation Playground >
+    = render "right"
   .main
     a.toggle href="#right" show Menu
     .leftcont
@@ -25,11 +17,10 @@
         .apparel
           .main_banner
             img src="/images/applications/main_banner_medical.jpg"
-          .slogan.style02
+          .slogan.style01
             | DingZing offers medical-grade technical films that are ideal for medical and healthcare
             | applications that require hygienic and anti-microbial solutions. Our medical films are
             | highly breathable, very durable, and highly resistant to contamination.
-          hr.section_divider
           ul.list
             li• Use as a breathable and anti-microbial material for mattress covers
             li• Use in bandages and dressings for better wound management (by absorbing fluids without drying out skin)

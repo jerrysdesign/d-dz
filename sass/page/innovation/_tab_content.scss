@@ -68,9 +68,10 @@
         display: block;
       }
       a {
+        @include linkbiu;
         display: block;
-        text-decoration: underline;
-        font-style: italic;
+        // text-decoration: underline;
+        // font-style: italic;
       }
     }
     

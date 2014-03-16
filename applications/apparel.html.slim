@@ -7,15 +7,7 @@
 .main_container
 
   #right.right
-    .rightcont
-      .rtitleimage
-        img src="/images/playground.jpg"
-      .rcont1
-        h6 Innovation Playground
-        p.app
-          | We works with clients to develop and launch products that energize industries.
-        .link03
-          a href="/innovation_playground/" Find out how we can work together. >>
+    = render "right"
   .main
     a.toggle href="#right" show Menu
     .leftcont
@@ -25,9 +17,8 @@
         .apparel
           .main_banner
             img src="/images/applications/main_banner_apparel.jpg"
-          .slogan.style02
+          .slogan.style01
             | DingZing offers three different categories of advanced technical films for laminating fabrics and creating high-performance apparel. Whether it be additional protection, enhanced aesthetics, or increased performance, DingZing has just the right film to do the job.
-          hr.section_divider
           ul.list
             li• Add waterproof and breathability functionality to garments.
             li• Create a special look and texture with multi-layered fabric lamination.

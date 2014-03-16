@@ -7,15 +7,7 @@
 .main_container
 
   #right.right
-    .rightcont
-      .rtitleimage
-        img src="/images/playground.jpg"
-      .rcont1
-        p
-          | Find out more about how DingZing works with clients to develop and launch
-          | products that energize industries.
-        .link03
-          a href="/innovation_playground/" Click here to go to the Innovation Playground >
+    = render "right"
   .main
     a.toggle href="#right" show Menu
     .leftcont
@@ -25,12 +17,11 @@
         .apparel
           .main_banner
             img src="/images/applications/main_banner_footwear.jpg"
-          .slogan.style02
+          .slogan.style01
             | DingZing's high-performance technical films help create shoes that are much lighter
             | while making the production process even faster and more efficient. And in comparison to
             | conventional materials, our technical films also deliver better breathability and waterproof
             | functionality in footwear.
-          hr.section_divider
           ul.list
             li• Waterproof shoes with highly breathable technical films
             li• Give different textures or designs to a shoe's outer layer

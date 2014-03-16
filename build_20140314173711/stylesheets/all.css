@@ -1,0 +1,2036 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
+html {
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
+q, blockquote {
+  quotes: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
+a img {
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/all\.scss}line{font-family:\0000316}}
+body {
+  font-family: sans-serif;
+  vertical-align: top;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/typography\/_vertical_rhythm\.scss}line{font-family:\00003105}}
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/all\.scss}line{font-family:\0000321}}
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  color: #58595b;
+  background: #eff0f2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/all\.scss}line{font-family:\0000329}}
+img {
+  max-width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/all\.scss}line{font-family:\0000332}}
+hr {
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+/*webfont*/
+@font-face {
+  font-family: "klavika";
+  src: url("../font/klavika-webfont.ttf") format("truetype"), url("../font/klavika-webfont.eot") format("embedded-opentype");
+}
+
+/*font*/
+@font-face {
+  font-family: "Klavika-Regular";
+  src: url("../font/Klavika-Regular.otf") format("truetype"), url("../font/Klavika-Regular.otf") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Klavika-RegularItalic";
+  src: url("../font/Klavika-RegularItalic.otf") format("truetype"), url("../font/Klavika-RegularItalic.otf") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Klavika-Light";
+  src: url("../font/Klavika-Light.otf") format("truetype"), url("../font/Klavika-Light.otf") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "klavika-Medium";
+  src: url("../font/Klavika-Medium.otf") format("truetype"), url("../font/Klavika-Medium.otf") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Klavika-MediumItalic";
+  src: url("../font/Klavika-MediumItalic.otf") format("truetype"), url("../font/Klavika-MediumItalic.otf") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Klavika-Bold";
+  src: url("../font/Klavika-Bold.otf") format("truetype"), url("../font/Klavika-Bold.otf") format("embedded-opentype");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_typography\.scss}line{font-family:\0000333}}
+body {
+  font-family: "klavika", AvenirNext-Regular, HelveticaNeue-Light, Helvetica, Arial, 'Heiti TC', 微軟正黑體, 'Microsoft JhengHei', sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_typography\.scss}line{font-family:\0000342}}
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  color: #6f8ac5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/typography\/links\/_unstyled-link\.scss}line{font-family:\000036}}
+a:active, a:focus {
+  outline: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_extensions\/susy-1\.0\.9\/sass\/susy\/_grid\.scss}line{font-family:\0000314}}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\0000321}}
+.container {
+  max-width: 768px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 768px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\0000333}}
+.main {
+  width: 100%;
+  float: left;
+  margin-right: 2.6738%;
+  margin-right: -100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\0000336}}
+.show-right .main {
+  margin-left: -51.3369%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\0000340}}
+.index {
+  padding: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\0000343}}
+.right {
+  width: 48.6631%;
+  float: right;
+  margin-right: 0;
+  margin-right: -100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\0000346}}
+.show-right .right {
+  margin-right: 0;
+}
+
+@media (min-width: 1180px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\0000365}}
+  .container {
+    max-width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: inherit;
+    width: 1200px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\0000371}}
+  [href="#right"] {
+    visibility: hidden;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\0000373}}
+  .main {
+    width: 800px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\0000378}}
+  .show-right .main {
+    margin-left: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\0000381}}
+  .right {
+    width: 400px;
+    margin-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\0000387}}
+  .show-right .right {
+    margin-right: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\0000390}}
+  .index {
+    padding: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003105}}
+header, footer {
+  overflow: hidden;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003109}}
+footer {
+  background: #d2d2d2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003113}}
+.toggle {
+  text-transform: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003115}}
+[href="#right"] {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003117}}
+.right, .main {
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003127}}
+.show-right .right {
+  opacity: 1;
+}
+@media (min-width: 1180px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003125}}
+  .right {
+    opacity: 1;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003130}}
+.main_container {
+  background-image: url("../images/main_container.jpg");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.main_container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003135}}
+.toggle {
+  display: block;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #e6e6e6;
+  text-decoration: none;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003144}}
+.toggle:hover {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003149}}
+.full_main {
+  background-color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.full_main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003153}}
+.column {
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003157}}
+.column.full {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003158}}
+.column.two-thirds {
+  width: 66.7%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003159}}
+.column.half {
+  width: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003160}}
+.column.third {
+  width: 33.3%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003161}}
+.column.fourth {
+  width: 24.95%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_layout\.scss}line{font-family:\00003162}}
+.column.flow-opposite {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\000031}}
+.titleimage {
+  background-color: #7f97ca;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\000034}}
+.titleimage h1 {
+  font-family: Klavika-Light;
+  font-size: 42px;
+  padding: 70px 33px 15px;
+  height: 125px;
+  color: white;
+  font-weight: 100;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\0000312}}
+.rtitleimage {
+  line-height: 0.15em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\0000315}}
+.maincont {
+  background-color: white;
+  display: block;
+  padding: 30px 45px 80px 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.maincont:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.slogan:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\0000326}}
+.slogan p {
+  margin-bottom: 15px;
+  top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\0000329}}
+.slogan > *:last-child {
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\0000333}}
+.slogan.style01 {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\0000338}}
+.slogan.style01 p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #666666;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\0000342}}
+.slogan.style01 p.directions {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: italic;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\0000347}}
+.slogan.style02 {
+  padding-top: 1.125em;
+  padding-bottom: 1.125em;
+  border-top: 1px solid #7f97ca;
+  border-bottom: 1px solid #7f97ca;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\0000352}}
+.slogan.style02 p {
+  fon-size: 24px;
+  line-height: 32px;
+  color: #6f8ac5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\0000357}}
+.maincont {
+  background-color: white;
+  display: block;
+  padding-top: 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\0000362}}
+.rcont1 {
+  font-size: 16px;
+  color: #58595b;
+  padding: 30px 40px;
+  padding-right: 10px;
+  background-color: #cccccc;
+  min-height: 100px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\0000369}}
+.rcont1 h6 {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\0000374}}
+.rcont1 p.app {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\0000378}}
+.rcont1 p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/_pages\.sass}line{font-family:\0000383}}
+.rcont1 .link03 a {
+  text-decoration: underline;
+  font-family: Klavika-MediumItalic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\000033}}
+.banner {
+  position: relative;
+  line-height: 0.15em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\000037}}
+.banner .swipe > a {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\0000311}}
+.banner .position-nav {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\0000317}}
+.banner_footer {
+  background-color: #7f97ca;
+  color: #fff;
+  text-align: center;
+  padding: 20px 15% 15px;
+  margin-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\0000324}}
+.newsbanner {
+  margin-bottom: 20px;
+  line-height: 0.15em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\0000328}}
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\0000332}}
+.swipe .swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\0000335}}
+.swipe .swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\0000343}}
+.position-nav {
+  margin-right: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\0000345}}
+.position-nav li {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background-color: #FFF;
+  border: solid 1px #7f97ca;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\0000353}}
+.position-nav li.on {
+  background-color: #7f97ca;
+  border-width: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\0000358}}
+.position-nav li + li {
+  margin-left: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\0000369}}
+.prev, .next {
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  margin: -26px 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\0000378}}
+.prev {
+  right: 100%;
+  margin-right: -52px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\0000382}}
+.next {
+  left: 100%;
+  margin-left: -52px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\0000386}}
+.swipe {
+  width: 768px;
+  height: 256px;
+}
+
+@media (min-width: 1180px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\0000391}}
+  .swipe {
+    width: 1200px;
+    height: 400px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\0000395}}
+  .banner_footer {
+    font-size: 24px;
+    line-height: 32px;
+    padding: 23px 20%;
+    height: 100px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.product:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\00003105}}
+.product section {
+  background: #fff;
+  width: 48.71795%;
+  float: left;
+  margin-right: 2.5641%;
+  margin-right: -100%;
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_extensions\/susy-1\.0\.9\/sass\/susy\/_isolation\.scss}line{font-family:\0000342}}
+.product section:nth-child(2n + 1) {
+  margin-left: 0%;
+  clear: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_extensions\/susy-1\.0\.9\/sass\/susy\/_isolation\.scss}line{font-family:\0000342}}
+.product section:nth-child(2n + 2) {
+  margin-left: 51.28205%;
+  clear: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\00003109}}
+.product section h3 {
+  color: #6f8ac5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\00003112}}
+.product section p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  letter-spacing: -.05em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\00003119}}
+.product section p + p {
+  height: auto;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\00003120}}
+.product section p + p a {
+  color: #6f8ac5;
+  text-decoration: underline;
+  font-weight: 600;
+  font-style: italic;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\00003130}}
+.product section {
+  padding: 15px 100px 10px 20px;
+}
+@media (min-width: 1180px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\00003134}}
+  .product section {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-right: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_extensions\/susy-1\.0\.9\/sass\/susy\/_isolation\.scss}line{font-family:\0000342}}
+  .product section:nth-child(4n + 1) {
+    margin-left: 0%;
+    clear: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_extensions\/susy-1\.0\.9\/sass\/susy\/_isolation\.scss}line{font-family:\0000342}}
+  .product section:nth-child(4n + 2) {
+    margin-left: 25.42373%;
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_extensions\/susy-1\.0\.9\/sass\/susy\/_isolation\.scss}line{font-family:\0000342}}
+  .product section:nth-child(4n + 3) {
+    margin-left: 50.84746%;
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_extensions\/susy-1\.0\.9\/sass\/susy\/_isolation\.scss}line{font-family:\0000342}}
+  .product section:nth-child(4n + 4) {
+    margin-left: 76.27119%;
+    clear: none;
+  }
+}
+
+@media (min-width: 1180px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\00003141}}
+  .product section {
+    padding-right: 45px;
+    padding-left: 30px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_index\.scss}line{font-family:\00003147}}
+.product h3 {
+  height: 16px;
+  text-indent: -9999px;
+  display: block;
+  width: 100px;
+  height: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sprite\/logo\/\*\.png}line{font-family:\0000371}}
+.product .logo-sprite, .product .logo-advanta, .product .logo-duopel, .product .logo-orkesta, .product .logo-provecta {
+  background-image: url('../images/sprite/logo-s32b4761d54.png');
+  background-repeat: no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000377}}
+.product .logo-advanta {
+  background-position: 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000377}}
+.product .logo-duopel {
+  background-position: 0 -20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000377}}
+.product .logo-orkesta {
+  background-position: 0 -40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000377}}
+.product .logo-provecta {
+  background-position: 0 -60px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\000031}}
+.maincont {
+  font-size: 16pt;
+  line-height: 1.5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\000035}}
+.contlist {
+  padding-top: 35px;
+  padding-bottom: 84px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\000038}}
+.contlist li {
+  margin-bottom: 6px;
+  /* style */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000318}}
+.contlist a {
+  color: #6f8ac5;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: underline;
+  font-family: Klavika-MediumItalic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000324}}
+.tablelist {
+  font-size: 13px;
+  color: #333333;
+  margin-bottom: 3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000328}}
+.tablelist table {
+  margin-bottom: 36px;
+  margin-top: -6px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000331}}
+.tablelist td {
+  height: 25px;
+  border: 1px solid #b0b2b2;
+  padding-top: 6px;
+  padding-left: 6px;
+  padding-bottom: 6px;
+  vertical-align: top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000338}}
+.tablelist td.col_0 {
+  background-color: #333333;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000341}}
+.tablelist td.col_v {
+  background-color: #666666;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000344}}
+.tablelist td.col_h {
+  background-color: #6f8ac5;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000347}}
+.tablelist td.bgf {
+  background-color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000350}}
+.tablelist td.bgg {
+  background-color: #e7e8e9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000352}}
+.tablelist td.bdf {
+  border-corlor: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000354}}
+.tablelist td.bdg {
+  border-corlor: #ebebeb;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000356}}
+.tablelist td.txtwhite {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000358}}
+.tablelist td.txtwhite a {
+  color: white;
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000361}}
+.tablelist td.H83 {
+  height: 83px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000363}}
+.tablelist td.txt16 {
+  font-size: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000365}}
+.tablelist td.td {
+  background-color: #e7e8e9;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000367}}
+.style2 {
+  font-size: 25px;
+  color: #6f8ac5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000370}}
+.style1 {
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000372}}
+.undertable1 {
+  color: #666666;
+  margin-right: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000375}}
+.undertable2 {
+  color: #999999;
+  margin-right: 5px;
+  margin-left: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000379}}
+.tableimg {
+  margin-top: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000382}}
+.dz img {
+  margin-bottom: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000385}}
+.dz td.td {
+  background-color: #e7e8e9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000388}}
+.dz .noline td, .dz .noline td {
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000393}}
+.dz .r17 {
+  margin-right: 17px;
+  float: left;
+  width: 335px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\0000397}}
+.dz .l18 {
+  display: block;
+  float: left;
+  margin-left: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\00003101}}
+.dz .script {
+  font-size: 14px;
+  color: #6f8ac5;
+  margin-bottom: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_product\.sass}line{font-family:\00003105}}
+.dz strong {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/product\/_dz_belts\.sass}line{font-family:\000031}}
+.rcontprodlist3 {
+  font-size: 18px;
+  color: #333333;
+  font-weight: normal;
+  padding-top: 25px;
+  padding-right: 16px;
+  padding-left: 17px;
+  background-color: #cccccc;
+  margin-left: 1px;
+  padding-bottom: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/product\/_dz_belts\.sass}line{font-family:\0000312}}
+.rcontprodlist3 ul li {
+  display: block;
+  line-height: 31px;
+  text-indent: 35px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/product\/_dz_belts\.sass}line{font-family:\0000316}}
+.rcontprodlist3 ul li a {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/product\/_dz_belts\.sass}line{font-family:\0000318}}
+.rcontprodlist3 ul li a:hover {
+  color: white;
+  background-color: #7f97ca;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/product\/_dz_belts\.sass}line{font-family:\0000322}}
+.rcontprodlist3 ul.active a {
+  color: white;
+  background-color: #7f97ca;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/product\/_dz_seals\.sass}line{font-family:\000031}}
+.rprodlist {
+  background-color: #cccccc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/product\/_dz_seals\.sass}line{font-family:\000034}}
+.sealstitle {
+  font-size: 18px;
+  padding: 20px 40px 10px;
+  font-weight: bold;
+  color: #333333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/product\/_dz_seals\.sass}line{font-family:\0000310}}
+ul.sidenav.collapse > li {
+  color: #333333;
+  cursor: pointer;
+  background-image: url("../images/open11.png");
+  background-repeat: no-repeat;
+  background-position: 40px 8px;
+  font-size: 18px;
+  line-height: 30px;
+  text-indent: 65px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/product\/_dz_seals\.sass}line{font-family:\0000320}}
+ul.sidenav.collapse > li.active {
+  background-image: url("../images/open21.png");
+  background-position: 37px 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/product\/_dz_seals\.sass}line{font-family:\0000323}}
+ul.sidenav.collapse > li.active ul {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/product\/_dz_seals\.sass}line{font-family:\0000325}}
+ul.sidenav.collapse > li > ul {
+  background-color: #e6e6e6;
+  padding: 10px 25px;
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/product\/_dz_seals\.sass}line{font-family:\0000329}}
+ul.sidenav.collapse > li > ul > li {
+  text-indent: 18px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/product\/_dz_seals\.sass}line{font-family:\0000332}}
+ul.sidenav.collapse > li > ul > li a {
+  font-size: 16px;
+  line-height: 28px;
+  color: #333333;
+  display: block;
+  padding: 0 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/product\/_dz_seals\.sass}line{font-family:\0000338}}
+ul.sidenav.collapse > li > ul > li a:hover {
+  color: white;
+  background-color: #6f8ac5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/product\/_dz_seals\.sass}line{font-family:\0000342}}
+.picscript {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_menu\.scss}line{font-family:\000032}}
+#tabMenu {
+  border-bottom: 5px solid #7f97ca;
+  color: #fff;
+  font-size: 22px;
+  line-height: 50px;
+  position: inherit;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+#tabMenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_menu\.scss}line{font-family:\000039}}
+#tabMenu h3 {
+  padding: 0 65px;
+  background-color: #7f97ca;
+  float: left;
+  font-size: 22px;
+  line-height: 50px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_menu\.scss}line{font-family:\0000316}}
+#tabMenu nav {
+  list-style: none;
+  margin-left: 6px;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_menu\.scss}line{font-family:\0000320}}
+#tabMenu nav li {
+  float: left;
+  background-color: #d2d2d2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_menu\.scss}line{font-family:\0000323}}
+#tabMenu nav li a {
+  color: #fff;
+  display: block;
+  padding: 0 20px;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_menu\.scss}line{font-family:\0000329}}
+#tabMenu nav li:hover, #tabMenu nav li.active {
+  background-color: #7f97ca;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_menu\.scss}line{font-family:\0000331}}
+#tabMenu nav li:hover a, #tabMenu nav li.active a {
+  background-color: #7f97ca;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_menu\.scss}line{font-family:\0000337}}
+#tabMenu.active {
+  position: fixed;
+  width: 768px;
+  background-color: #FFF;
+  z-index: 9999;
+  top: 0;
+  padding-top: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\000032}}
+.tab_content {
+  background-color: #fff;
+  padding: 40px;
+  padding-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.tab_content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\000037}}
+.tab_content .story_text, .tab_content .story_img {
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.tab_content .story_text:after, .tab_content .story_img:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000311}}
+.tab_content .story_text {
+  padding: 40px 20px 40px 40px;
+  background-color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000314}}
+.tab_content .story_text h4 {
+  color: #6f8ac5;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: Klavika;
+  width: 470px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000321}}
+.tab_content .story_text > h4 + p.second {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 65px;
+  margin-top: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000327}}
+.tab_content .story_text .product h5.logo {
+  text-indent: -9999px;
+  display: block;
+  margin: 0;
+  margin-bottom: 5px;
+  height: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000333}}
+.tab_content .story_text .product .orkesta {
+  background-image: url("../images/logo_orkesta.png");
+  width: 91px;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000333}}
+  .tab_content .story_text .product .orkesta {
+    background-image: url("../images/logo_orkesta@2x.png");
+    background-size: 91px 26px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000338}}
+.tab_content .story_text .product .provecta {
+  background-image: url("../images/logo_provecta.png");
+  width: 97px;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000338}}
+  .tab_content .story_text .product .provecta {
+    background-image: url("../images/logo_provecta@2x.png");
+    background-size: 97px 26px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000343}}
+.tab_content .story_text .product .provecta_orkesta {
+  background-image: url("../images/logo_provecta_orkesta.png");
+  width: 210px;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000343}}
+  .tab_content .story_text .product .provecta_orkesta {
+    background-image: url("../images/logo_provecta_orkesta@2x.png");
+    background-size: 210px 26px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000348}}
+.tab_content .story_text .product .product_info {
+  clear: both;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000354}}
+.tab_content .story_text .download {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000356}}
+.tab_content .story_text .download h6 {
+  float: left;
+  text-indent: -9999px;
+  display: block;
+  background-image: url("../images/icon_dl_blue.jpg");
+  background-repeat: no-repeat;
+  width: 38px;
+  height: 38px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000356}}
+  .tab_content .story_text .download h6 {
+    background-image: url("../images/icon_dl_blue@2x.jpg");
+    background-size: 38px 38px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000367}}
+.tab_content .story_text .download span {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000370}}
+.tab_content .story_text .download a {
+  text-decoration: underline;
+  font-family: Klavika-MediumItalic;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\0000379}}
+.tab_content .story_img {
+  text-align: center;
+  width: 688px;
+  height: 520px;
+  display: block;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\00003109}}
+.tab_content .col {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.tab_content .col:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\00003113}}
+.tab_content .col:first-child {
+  margin-top: 0;
+}
+@media (min-width: 1180px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\00003125}}
+  .tab_content .col:nth-child(odd) .story_text {
+    float: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\00003126}}
+  .tab_content .col:nth-child(odd) .story_img {
+    float: right;
+    margin-right: 20px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\00003129}}
+  .tab_content .col:nth-child(even) .story_text {
+    float: right;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\00003130}}
+  .tab_content .col:nth-child(even) .story_img {
+    float: left;
+    margin-left: 20px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\00003134}}
+  .tab_content .story_text, .tab_content .story_img {
+    width: 49%;
+    height: 520px;
+  }
+}
+
+@media (min-width: 1180px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\00003145}}
+  .tab_content .story_text {
+    padding-bottom: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\00003148}}
+  .tab_content .story_img {
+    width: 530px;
+    border: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_tab_content\.scss}line{font-family:\00003155}}
+  #tabMenu.active {
+    width: 1200px;
+    background-color: #eff0f2;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\000032}}
+.story_img {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\000036}}
+.story_img div[class^="layer"] {
+  position: absolute;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\000039}}
+.story_img * {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000312}}
+.story_img .layer00 {
+  z-index: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000315}}
+.story_img .layer01 {
+  z-index: 2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000318}}
+.story_img .layer02 {
+  z-index: 3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000321}}
+.story_img .layer03 {
+  z-index: 4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000324}}
+.story_img .layer04 {
+  z-index: 5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000329}}
+#p1-1 .layer00 {
+  left: 118px;
+  top: 86px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000330}}
+#p1-1 .layer01 {
+  left: 135px;
+  top: 99px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000331}}
+#p1-1 .layer02 {
+  left: 135px;
+  top: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000332}}
+#p1-1 .layer03 {
+  left: 135px;
+  top: 63px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000333}}
+#p1-1 .layer04 {
+  left: 118px;
+  top: 35px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000334}}
+#p1-1:hover, #p1-1.move {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000336}}
+#p1-1:hover .layer00, #p1-1.move .layer00 {
+  left: 0px;
+  top: 62px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000337}}
+#p1-1:hover .layer01, #p1-1.move .layer01 {
+  left: 71px;
+  top: 91px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000338}}
+#p1-1:hover .layer03, #p1-1.move .layer03 {
+  left: 71px;
+  top: 54px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000339}}
+#p1-1:hover .layer04, #p1-1.move .layer04 {
+  left: 0px;
+  top: 11px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000343}}
+#p1-2 .layer00 {
+  left: 0;
+  top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000344}}
+#p1-2 .layer01 {
+  left: 104px;
+  top: 63px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000345}}
+#p1-2:hover, #p1-2.move {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000347}}
+#p1-2:hover .layer01, #p1-2.move .layer01 {
+  left: 59px;
+  top: 37px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000351}}
+#p1-3 .layer00 {
+  left: 40px;
+  top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000352}}
+#p1-3 .layer01 {
+  left: 70px;
+  top: 243px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000353}}
+#p1-3 .layer02 {
+  left: 62px;
+  top: 228px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000354}}
+#p1-3:hover, #p1-3.move {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000356}}
+#p1-3:hover .layer01, #p1-3.move .layer01 {
+  left: 60px;
+  top: 223px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000357}}
+#p1-3:hover .layer02, #p1-3.move .layer02 {
+  left: 2px;
+  top: 170px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000361}}
+#p2-1 .layer00 {
+  left: 60px;
+  top: 34px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000362}}
+#p2-1 .layer01 {
+  left: 70px;
+  top: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000363}}
+#p2-1 .layer02 {
+  left: 77px;
+  top: 38px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000364}}
+#p2-1 .layer03 {
+  left: 59px;
+  top: 38px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000365}}
+#p2-1:hover, #p2-1.move {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000367}}
+#p2-1:hover .layer00, #p2-1.move .layer00 {
+  left: 120px;
+  top: 34px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000368}}
+#p2-1:hover .layer01, #p2-1.move .layer01 {
+  left: 104px;
+  top: 23px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000369}}
+#p2-1:hover .layer02, #p2-1.move .layer02 {
+  left: 80px;
+  top: 28px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_story_img\.scss}line{font-family:\0000370}}
+#p2-1:hover .layer03, #p2-1.move .layer03 {
+  left: 19px;
+  top: 38px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_banner\.sass}line{font-family:\000031}}
+.banner2 {
+  background-image: url("../images/intro_img_paperroll.jpg");
+  background-repeat: no-repeat;
+  background-position: 90% bottom;
+  background-color: white;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.banner2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_banner\.sass}line{font-family:\000039}}
+.banner2 p.info1 {
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: -1px;
+  color: #6f8ac5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_banner\.sass}line{font-family:\0000314}}
+.banner2 p.info2 {
+  width: 70%;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+@media (min-width: 1180px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_banner\.sass}line{font-family:\0000318}}
+  .banner2 {
+    height: 230px;
+    padding: 0 6.25%;
+    background-position: 55% bottom;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_banner\.sass}line{font-family:\0000322}}
+  .banner2 p.info1 {
+    width: 38%;
+    float: left;
+    margin-top: 30px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/innovation\/_banner\.sass}line{font-family:\0000326}}
+  .banner2 p.info2 {
+    width: 30%;
+    float: right;
+    margin-top: 30px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_about\.scss}line{font-family:\000032}}
+.about {
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_about\.scss}line{font-family:\000034}}
+.about h3 {
+  width: 48.71795%;
+  float: left;
+  margin-right: 2.5641%;
+  margin-right: -100%;
+  font-size: 24px;
+  color: #6f8ac5;
+  line-height: 28px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_extensions\/susy-1\.0\.9\/sass\/susy\/_isolation\.scss}line{font-family:\0000342}}
+.about h3:nth-child(2n + 1) {
+  margin-left: 0%;
+  clear: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_extensions\/susy-1\.0\.9\/sass\/susy\/_isolation\.scss}line{font-family:\0000342}}
+.about h3:nth-child(2n + 2) {
+  margin-left: 51.28205%;
+  clear: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_about\.scss}line{font-family:\0000310}}
+.about p {
+  width: 48.71795%;
+  float: left;
+  margin-right: 2.5641%;
+  margin-right: -100%;
+  font-size: 14px;
+  padding-bottom: 35px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_extensions\/susy-1\.0\.9\/sass\/susy\/_isolation\.scss}line{font-family:\0000342}}
+.about p:nth-child(2n + 1) {
+  margin-left: 0%;
+  clear: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_extensions\/susy-1\.0\.9\/sass\/susy\/_isolation\.scss}line{font-family:\0000342}}
+.about p:nth-child(2n + 2) {
+  margin-left: 51.28205%;
+  clear: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_applications\.sass}line{font-family:\000032}}
+.apparel {
+  width: 680px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_applications\.sass}line{font-family:\000034}}
+.apparel, .main_banner, .section_divider, .list {
+  margin-bottom: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_applications\.sass}line{font-family:\000036}}
+.section_divider {
+  border-bottom: 1px solid #cccccc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_applications\.sass}line{font-family:\000039}}
+.apparel .list {
+  font-size: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_applications\.sass}line{font-family:\0000311}}
+.apparel .list li {
+  margin-bottom: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_contact_us\.sass}line{font-family:\000031}}
+.maincont > .headquarters:first-child {
+  margin-top: 60px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_contact_us\.sass}line{font-family:\000034}}
+.headquarters {
+  display: block;
+  margin-top: 30px;
+  padding: 30px 0;
+  font-size: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.headquarters:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_contact_us\.sass}line{font-family:\0000310}}
+.headquarters .area {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_contact_us\.sass}line{font-family:\0000314}}
+.headquarters .unit {
+  margin-bottom: 3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_contact_us\.sass}line{font-family:\0000316}}
+.headquarters h3 {
+  color: #6f8ac5;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 33px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_contact_us\.sass}line{font-family:\0000322}}
+.headquarters h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #6f8ac5;
+  display: block;
+  margin-bottom: 24px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_contact_us\.sass}line{font-family:\0000328}}
+.headquarters p {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_contact_us\.sass}line{font-family:\0000331}}
+.headquarters strong {
+  padding-right: 5px;
+  color: #333333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_contact_us\.sass}line{font-family:\0000334}}
+.headquarters + .headquarters {
+  border-top: 1px solid #7f97ca;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_library\.sass}line{font-family:\000032}}
+.r1, .r2, .r3, .r4 {
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  font-size: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_library\.sass}line{font-family:\000038}}
+.r1 strong, .r2 strong, .r3 strong, .r4 strong {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_library\.sass}line{font-family:\0000312}}
+.r1 p, .r2 p, .r3 p, .r4 p {
+  margin-bottom: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_library\.sass}line{font-family:\0000315}}
+.r1 {
+  padding-left: 520px;
+  min-height: 400px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_library\.sass}line{font-family:\0000318}}
+.r2 {
+  padding-left: 20px;
+  padding-right: 500px;
+  min-height: 430px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_library\.sass}line{font-family:\0000322}}
+.r3 {
+  padding-left: 450px;
+  min-height: 400px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_library\.sass}line{font-family:\0000325}}
+.r4 {
+  padding-left: 20px;
+  padding-right: 450px;
+  min-height: 430px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_library\.sass}line{font-family:\0000329}}
+.r1 {
+  background-image: url(../images/library/library_1.jpg);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_library\.sass}line{font-family:\0000332}}
+.r2 {
+  background-image: url(../images/library/library_2.jpg);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_library\.sass}line{font-family:\0000335}}
+.r3 {
+  background-image: url(../images/library/library_3.jpg);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_library\.sass}line{font-family:\0000338}}
+.r4 {
+  background-image: url(../images/library/library_4.jpg);
+}
+
+@media (min-width: 1180px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_our_company\.sass}line{font-family:\000033}}
+  .socialresponsibility .slogan p {
+    width: 67%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_our_company\.sass}line{font-family:\000036}}
+.socialresponsibility h4 {
+  color: #333333;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_our_company\.sass}line{font-family:\000039}}
+.socialresponsibility h4, .socialresponsibility p {
+  margin-bottom: 1.5em;
+}
+@media (min-width: 1180px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_our_company\.sass}line{font-family:\000039}}
+  .socialresponsibility h4, .socialresponsibility p {
+    float: none;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_our_company\.sass}line{font-family:\0000313}}
+.green-section {
+  width: 100%;
+  font-size: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.green-section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_our_company\.sass}line{font-family:\0000317}}
+.green-section span {
+  font-size: 14px;
+  line-height: 1.2em;
+  width: 80px;
+  float: left;
+  margin-bottom: 1.5em;
+  margin-right: 5%;
+}
+@media (min-width: 1180px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_our_company\.sass}line{font-family:\0000313}}
+  .green-section {
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/page\/_our_company\.sass}line{font-family:\0000328}}
+  .green-section:last-child {
+    margin-right: 0;
+    float: right;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\000031}}
+.header {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/Fire\.app\/Contents\/Resources\/lib\/ruby\/compass_0\.13\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\000035}}
+.header a {
+  color: #58595b;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\000037}}
+.header a:hover {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000310}}
+.logo {
+  float: left;
+  margin: 20px 70px 10px 20px;
+  margin-right: 70px;
+  top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000315}}
+.logo a {
+  background-image: url("../images/logo.png");
+  display: block;
+  width: 178px;
+  height: 55px;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000315}}
+  .logo a {
+    background-image: url("../images/logo@2x.png");
+    background-size: 178px 55px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000321}}
+.logo a strong {
+  display: none;
+}
+
+/* MAIN NAVIGATION */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000329}}
+.navigation {
+  border-top: solid 1px #ddd;
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000334}}
+.navigation .navigation-inner {
+  border-top: solid 1px #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000339}}
+.main_navigation {
+  font-weight: 900;
+  letter-spacing: -1px;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000344}}
+.main_navigation a {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000347}}
+.main_navigation > li {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000349}}
+.main_navigation > li > a {
+  position: relative;
+  padding: 25px 20px;
+  line-height: 23px;
+  z-index: 151;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000358}}
+.main_navigation > li:hover > a, .main_navigation > li.active > a {
+  border-bottom: 4px solid #8094cf;
+  margin-bottom: -4px;
+}
+
+/* SUB NAVIGATION */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000368}}
+.sub_navigation {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  display: none;
+  z-index: 150;
+  background-color: rgba(226, 226, 226, 0.9);
+  border-top: 4px solid #a0a0a0;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.02);
+  -moz-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.02);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.02);
+  font-weight: 100;
+  letter-spacing: normal;
+  padding: 10px 0 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000383}}
+.sub_navigation .submenu-col {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000386}}
+.sub_navigation.multi-sub {
+  width: 768px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000392}}
+.nav {
+  list-style-type: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000395}}
+.nav li {
+  float: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000397}}
+.nav li dl {
+  margin: 10px 11px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000398}}
+.nav li dt, .nav li dd {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\0000399}}
+.nav li dt {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\00003104}}
+.nav li dt a {
+  margin: 0 -10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\00003108}}
+.nav li dd {
+  font-size: 13px;
+  line-height: 24px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\00003109}}
+.nav li a {
+  color: #58595b;
+  display: block;
+  padding: 0 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\00003113}}
+.nav li a:hover {
+  text-decoration: none;
+  background: #7f97ca;
+  color: #FFF;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\00003122}}
+ul.lang {
+  list-style-type: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 21px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\00003131}}
+ul.lang > li {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\00003134}}
+ul.lang a {
+  display: block;
+}
+
+@media (min-width: 1180px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\00003145}}
+  .logo {
+    margin: 45px 35px 20px 30px;
+    margin-bottom: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\00003148}}
+  .logo a {
+    margin-bottom: 7px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\00003152}}
+  .navigation {
+    width: auto;
+    margin-top: 56px;
+    border: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\00003157}}
+  .navigation, .navigation .navigation-inner {
+    border: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\00003162}}
+  .sub_navigation li dl {
+    margin: 10px 16px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\00003164}}
+  .sub_navigation.multi-sub {
+    width: auto;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_header\.scss}line{font-family:\00003168}}
+  ul.lang {
+    top: 80px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_footer\.scss}line{font-family:\000031}}
+.footer {
+  padding: 20px;
+  padding-bottom: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_footer\.scss}line{font-family:\000034}}
+.footer .copyright {
+  font-size: 14px;
+  padding-top: 30px;
+  text-align: center;
+  width: 100%;
+  float: left;
+  margin-right: 2.5641%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_footer\.scss}line{font-family:\0000311}}
+.footer .footer_navigation {
+  width: 74.35897%;
+  float: left;
+  margin-right: 2.5641%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_footer\.scss}line{font-family:\0000313}}
+.footer .footer_navigation > li {
+  float: left;
+  width: 33%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_footer\.scss}line{font-family:\0000319}}
+.footer .contact_us {
+  width: 23.07692%;
+  float: right;
+  margin-right: 0;
+  background-color: #eeeeee;
+  padding: 16px 15px;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_footer\.scss}line{font-family:\0000324}}
+.footer .contact_us h6 {
+  font-weight: bold;
+  padding-top: 50px;
+  background-image: url(../images/icon_email.png);
+  background-repeat: no-repeat;
+  font-size: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_footer\.scss}line{font-family:\0000331}}
+.footer .contact_us p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_footer\.scss}line{font-family:\0000335}}
+.footer .contact_us a {
+  color: #6f8ac5;
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+}
+@media (min-width: 1180px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_footer\.scss}line{font-family:\000031}}
+  .footer {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_footer\.scss}line{font-family:\0000344}}
+  .footer .footer_navigation {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    background-color: none !important;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_footer\.scss}line{font-family:\0000348}}
+  .footer .contact_us {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+    padding: 26px 28px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jerrysdesign\/Dropbox\/www\.dingzing\.com\.tw\/prototype\/dgg-dingzing\/sass\/partials\/_breadcrumb\.sass}line{font-family:\000031}}
+.path {
+  background-color: #333333;
+  color: white;
+  font-size: 12px;
+  line-height: 30px;
+  padding: 0 30px;
+}

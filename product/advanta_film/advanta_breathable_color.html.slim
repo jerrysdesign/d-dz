@@ -1,0 +1,23 @@
+//Product Advanta™ Breathable (Color)
+
+= content_for :title do 
+  <title>DingZing | Advanta™ Breathable (Color)</title>
+  
+.path
+  | Products > Advanta™ Film > Advanta™ Breathable (Color)
+
+.main_container
+
+  #right.right
+    .rightcont
+      =rdownload_link_to("/download/pdf/technical_brochure.pdf", "")
+  .main
+    a.toggle href="#right" show Menu
+    .leftcont
+      .titleimage
+        h1
+          img src="/images/product/section_logo/12_advanta-breathablecolor.png" alt="Advanta™ Breathable (Color)"
+      .maincont
+        .slogan.style01
+          p Advanta™ Breathable technical ﬁlms are available in variety of standard colors. These highly breathable ﬁlms can also be customized for individual or unique colors, and are ideal for stylish products, such as apparel and outerwear.
+        =render "advanta_breathable_color_tablelist.html.erb"

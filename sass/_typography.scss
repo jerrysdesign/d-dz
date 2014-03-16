@@ -1,12 +1,34 @@
-/*font*/
+/*webfont*/
 @font-face {
   font-family: "klavika";
   src: url('../font/klavika-webfont.ttf') format('truetype'), url('../font/klavika-webfont.eot') format('embedded-opentype');
+}
+/*font*/
+@font-face {
+  font-family: "Klavika-Regular";
+  src: url('../font/Klavika-Regular.otf') format('truetype'), url('../font/Klavika-Regular.otf') format('embedded-opentype');
+}
+@font-face {
+  font-family: "Klavika-RegularItalic";
+  src: url('../font/Klavika-RegularItalic.otf') format('truetype'), url('../font/Klavika-RegularItalic.otf') format('embedded-opentype');
 }
 @font-face {
   font-family: "Klavika-Light";
   src: url('../font/Klavika-Light.otf') format('truetype'), url('../font/Klavika-Light.otf') format('embedded-opentype');
 }
+@font-face {
+  font-family: "klavika-Medium";
+  src: url('../font/Klavika-Medium.otf') format('truetype'), url('../font/Klavika-Medium.otf') format('embedded-opentype');
+}
+@font-face {
+  font-family: "Klavika-MediumItalic";
+  src: url('../font/Klavika-MediumItalic.otf') format('truetype'), url('../font/Klavika-MediumItalic.otf') format('embedded-opentype');
+}
+@font-face {
+  font-family: "Klavika-Bold";
+  src: url('../font/Klavika-Bold.otf') format('truetype'), url('../font/Klavika-Bold.otf') format('embedded-opentype');
+}
+
 @import "basic/typography"; //import baseline Mixin
 body {
   font-family: "klavika",

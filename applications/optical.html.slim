@@ -7,15 +7,7 @@
 .main_container
 
   #right.right
-    .rightcont
-      .rtitleimage
-        img src="/images/playground.jpg"
-      .rcont1
-        p
-          | Find out more about how DingZing works with clients to develop and launch
-          | products that energize industries.
-        .link03
-          a href="/innovation_playground/" Click here to go to the Innovation Playground >
+    = render "right"
   .main
     a.toggle href="#right" show Menu
     .leftcont
@@ -25,9 +17,8 @@
         .apparel
           .main_banner
             img src="/images/applications/main_banner_optical.jpg"
-          .slogan.style02
+          .slogan.style01
             | DingZing provides various transparent and translucent technical films for different optical applications, including windows, glass, home lighting, and electronic devices, such as cameras.
-          hr.section_divider
           ul.list
             li• Bond multiple layers of glass to increase strength and durability (e.g., ballistic glass)
             li• Laminate glass surfaces to produce different types of lighting effects
