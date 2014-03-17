@@ -6,12 +6,12 @@ $(document).ready(function(){
 
   function openSubMenu() {
     $(this).addClass('active');
-    $(this).find('> ul').stop(true, true).slideDown(250);
+    $(this).find('> ul').stop(true, true).slideDown(200);
   }
 
   function closeSubMenu() {
     $(this).removeClass('active');
-    $(this).find('> ul').stop(true, true).slideUp(150);
+    $(this).find('> ul').stop(true, true).delay(100).slideUp(250);
   }
 });
 
