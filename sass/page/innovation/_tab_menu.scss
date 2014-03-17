@@ -1,5 +1,6 @@
 // TAB 選單
 #tabMenu {
+  padding-top: 5px;
   border-bottom: 5px solid $color01;
   color: #fff;
   font-size: 22px;
@@ -34,12 +35,20 @@
       }
     }
   }
-  &.active {
+}
+.tabmenuspace {
+  height: 40px;
+  display: none;
+}
+.smartposition {
+  #tabMenu {
     position: fixed;
     width: 768px;
     background-color: #FFF;
     z-index: 9999;
     top: 0;
-    padding-top: 5px;
+  }
+  .tabmenuspace {
+    display: block;
   }
 }

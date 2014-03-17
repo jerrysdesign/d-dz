@@ -70,25 +70,40 @@ $(document).ready(function(){
   });
   
   //Scroll fixed
-  $(window).scroll(function(){
-
-    if( $(window).scrollTop() > (tabMenuY)){
-      $("#tabMenu").addClass('active');
-    }
-    else {
-      $("#tabMenu").removeClass('active');
+  var nav_pos = $('#tabMenu').offset().top;
+  $(window).scroll(function() {
+    // Detect if content is being scroll offscreen.
+    if ( (document.documentElement.scrollTop || document.body.scrollTop) >= nav_pos-5) {
+      $('body').addClass('smartposition');
+    } else {
+      $('body').removeClass('smartposition');
     }
   });
+  $(window).scroll(); // Trigger onload
+
+  // $(window).scroll(function(){
+
+  //   if( $(window).scrollTop() > (tabMenuY)){
+  //     $("#tabMenu").addClass('active');
+  //   }
+  //   else {
+  //     $("#tabMenu").removeClass('active');
+  //   }
+  // });
 
   // scroll tragger class
   
   $(document).ready(function(){
+
+    var htmlHeight = jQuery(document).height();
 
     var p11cot = $("#p1-1").offset().top;
     var p12cot = $("#p1-2").offset().top;
     var p13cot = $("#p1-3").offset().top;
 
     var p21aot = $("#p2-1").offset().top;
+    var p22aot = $("#p2-2").offset().top;
+    var p23aot = $("#p2-3").offset().top;
     
     $(window).scroll(function(){
 
@@ -122,6 +137,20 @@ $(document).ready(function(){
         }
         else {
           $("#p2-1").removeClass("move");
+        }
+
+        if ($(window).scrollTop() > (p22aot-200)){
+          $("#p2-2").addClass("move");
+        }
+        else {
+          $("#p2-2").removeClass("move");
+        }
+
+        if ($(window).scrollTop() > (p23aot-200)){
+          $("#p2-3").addClass("move");
+        }
+        else {
+          $("#p2-3").removeClass("move");
         }
       }
 
