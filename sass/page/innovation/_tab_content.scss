@@ -2,155 +2,136 @@
 .tab_content {
   background-color: #fff;
   @include pie-clearfix;
-  padding: 40px;
-  padding-top: 0;
-  .story_text , .story_img {
-    margin: 0 auto;
-    @include pie-clearfix;
+}
+.story_text , .story_img {
+  width: 590px;
+  margin: 0 auto;
+  @include pie-clearfix;
+}
+.story_text {
+  padding: 40px 30px 30px 30px;
+  background-color: #fff;
+  h4 {
+    color: $color02;
+    font-size: 36px;
+    line-height: 36px;
+    font-family: Klavika;
+    width: 470px;
   }
-  .story_text {
-    padding: 40px 20px 40px 40px;
-    background-color: #fff;
-    h4 {
-      color: $color02;
-      font-size: 36px;
-      line-height: 36px;
-      font-family: Klavika;
-      width: 470px;
-    }
-    >h4+p.second {
-      @include adjust-font-size-to(16px);
-      margin-bottom: 65px;
-      margin-top: 1.5em;
-    }
-    .product {
-      h5.logo {
-        @include remove-text;
-        margin: 0;
-        margin-bottom: 5px;
-        height: 26px;
-      }
-      .orkesta {
-        //background-image: url("../images/logo_orkesta.png");
-        @include at2x('../images/logo_orkesta',png,91px,26px);
-        width: 91px;
-      }
-      .provecta {
-        //background-image: url("../images/logo_provecta.png");
-        @include at2x('../images/logo_provecta',png,97px,26px);
-        width: 97px;
-      }
-      .provecta_orkesta {
-        //background-image: url("../images/logo_provecta_orkesta.png");
-        @include at2x('../images/logo_provecta_orkesta',png,210px,26px);
-        width: 210px;
-      }
-      .product_info {
-        clear: both;
-        @include leader(1);
-        @include trailer(1);
-      }
-    }
-    .download {
-      @include adjust-font-size-to(14px);
-      h6 {
-        float: left;
-        @include remove-text;
-        //background-image: url("../images/icon_dl_blue.jpg");
-        @include at2x('../images/icon_dl_blue',jpg,38px,38px);
-        background-repeat: no-repeat;
-        width: 38px;
-        height: 38px;
-        margin-right: 10px;
-        margin-top: 5px;
-      }
-      span {
-        display: block;
-      }
-      a {
-        @include linkbiu;
-        display: block;
-        // text-decoration: underline;
-        // font-style: italic;
-      }
-    }
-    
+  >h4+p.second {
+    @include adjust-font-size-to(16px);
+    margin-bottom: 55px;
+    margin-top: 25px;
   }
-  .story_img {
-    text-align: center;
-    width: 688px;
-    height: 520px;
-    //margin-bottom: 40px;
-    display: block;
-    @include bordertb1d2;
-    // &:before {
-    //   content:"";
-    //   @include background-image (radial-gradient(center bottom,ellipse farthest-side , rgba(0, 0, 0, 0.05) , transparent));
-    //   width: 100%;
-    //   height: 10px;
-    //   background-repeat: no-repeat;
-    //   display: block;
-    //   border-bottom: 1px solid #e2e2e2;
-    //   top: -10px;
-    //   position: absolute;
-    // }
-    // &:after {
-    //   content:"";
-    //   @include background-image (radial-gradient(center top,ellipse farthest-side , rgba(0, 0, 0, 0.05) , transparent));
-    //   width: 100%;
-    //   height: 10px;
-    //   background-repeat: no-repeat;
-    //   display: block;
-    //   border-top: 1px solid #e2e2e2;
-    //   bottom: -10px;
-    //   position: absolute;
-    // }
-  }
-  .col {
-    @include pie-clearfix;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    &:first-child {
-      margin-top: 0;
+  .product {
+    h5.logo {
+      @include remove-text;
+      margin: 0;
+      margin-bottom: 5px;
+      height: 26px;
+    }
+    .orkesta {
+      //background-image: url("../images/logo_orkesta.png");
+      @include at2x('../images/logo_orkesta',png,91px,26px);
+      width: 91px;
+    }
+    .provecta {
+      //background-image: url("../images/logo_provecta.png");
+      @include at2x('../images/logo_provecta',png,97px,26px);
+      width: 97px;
+    }
+    .provecta_orkesta {
+      //background-image: url("../images/logo_provecta_orkesta.png");
+      @include at2x('../images/logo_provecta_orkesta',png,210px,26px);
+      width: 210px;
+    }
+    .product_info {
+      clear: both;
+      @include leader(1);
+      @include trailer(1);
     }
   }
-  .col + .col {
-    //border-top: 1px solid #d2d2d2;
-  }
-  @include at-breakpoint($large-columns) {
-
-    .col {
-      
-      &:nth-child(odd) {
-        .story_text {float: left;}
-        .story_img {float: right;margin-right: 20px;}
-      }
-      &:nth-child(even) {
-        .story_text {float: right;}
-        .story_img {float: left;margin-left: 20px;}
-      }
+  .download {
+    @include adjust-font-size-to(14px);
+    h6 {
+      float: left;
+      @include remove-text;
+      //background-image: url("../images/icon_dl_blue.jpg");
+      @include at2x('../images/icon_dl_blue',jpg,38px,38px);
+      background-repeat: no-repeat;
+      width: 38px;
+      height: 38px;
+      margin-right: 10px;
+      margin-top: 5px;
     }
-
-    .story_text , .story_img {
-      width: 49%;
-      height: 520px; 
+    span {
+      display: block;
     }
-
+    a {
+      @include linkbiu;
+      display: block;
+      // text-decoration: underline;
+      // font-style: italic;
+    }
   }
   
 }
+.story_img {
+  text-align: center;
+  height: 520px;
+  display: block;
 
+  // @include bordertb1d2;
+  // &:before {
+  //   content:"";
+  //   @include background-image (radial-gradient(center bottom,ellipse farthest-side , rgba(0, 0, 0, 0.05) , transparent));
+  //   width: 100%;
+  //   height: 10px;
+  //   background-repeat: no-repeat;
+  //   display: block;
+  //   border-bottom: 1px solid #e2e2e2;
+  //   top: -10px;
+  //   position: absolute;
+  // }
+  // &:after {
+  //   content:"";
+  //   @include background-image (radial-gradient(center top,ellipse farthest-side , rgba(0, 0, 0, 0.05) , transparent));
+  //   width: 100%;
+  //   height: 10px;
+  //   background-repeat: no-repeat;
+  //   display: block;
+  //   border-top: 1px solid #e2e2e2;
+  //   bottom: -10px;
+  //   position: absolute;
+  // }
+}
+.col {
+  @include pie-clearfix;
+  //margin-top: 60px;
+  //margin-bottom: 60px;
+  // &:first-child {
+  //   margin-top: 0;
+  // }
+}
+.col + .col {
+  border-top: 1px solid #d2d2d2;
+}
 @include at-breakpoint($large-columns) {
-  .tab_content {
-    .story_text {
-      padding-bottom: 0;
+
+  .col {
+    
+    &:nth-child(odd) {
+      .story_text {float: left;}
+      .story_img {float: right;margin-right: 0;}
     }
-    .story_img {
-      width: 530px;
-      //margin-top: 40px;
-      border: none;
-      // margin-right: 0px;
+    &:nth-child(even) {
+      .story_text {float: right;}
+      .story_img {float: left;margin-left: 0;}
     }
+  }
+
+  .story_text , .story_img {
+    min-height: 520px; 
   }
   #tabMenu.active {
     width: 1200px;
