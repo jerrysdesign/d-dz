@@ -29,6 +29,7 @@
   overflow: hidden;
   visibility: hidden;
   position: relative;
+  background-image: url(../images/banner_shad.jpg);
   .swipe-wrap {
     overflow: hidden;
     position: relative;
@@ -128,7 +129,7 @@ nav.slider-pagination {
     }
   }
   section {
-    padding: 15px 100px 10px 20px;
+    padding: 15px 120px 10px 20px;
   }
   @include at-breakpoint($large-columns,12) {
     section {

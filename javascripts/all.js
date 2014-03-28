@@ -55,7 +55,7 @@ $(document).ready(function(){
   $('.story:first-child').addClass('active');
   //var tabMenuH = $("#tabMenu").innerHeight();
   //var WsH = $(window).scrollTop() + $(window).innerHeight()-tabMenuH;
-  var tabMenuY = $("#tabMenu").offset().top;
+  var tabMenuY = $("#tabMenu").position().top;
 
   // .innerHeight()
 
@@ -70,7 +70,7 @@ $(document).ready(function(){
   });
   
   //Scroll fixed
-  var nav_pos = $('#tabMenu').offset().top;
+  var nav_pos = $('#tabMenu').position().top;
   $(window).scroll(function() {
     // Detect if content is being scroll offscreen.
     if ( (document.documentElement.scrollTop || document.body.scrollTop) >= nav_pos-5) {
@@ -97,19 +97,19 @@ $(document).ready(function(){
 
     var htmlHeight = jQuery(document).height();
 
-    var p11cot = $("#p1-1").offset().top;
-    var p12cot = $("#p1-2").offset().top;
-    var p13cot = $("#p1-3").offset().top;
+    var p11cot = $("#p1-1").position().top;
+    var p12cot = $("#p1-2").position().top;
+    var p13cot = $("#p1-3").position().top;
 
-    var p21aot = $("#p2-1").offset().top;
-    var p22aot = $("#p2-2").offset().top;
-    var p23aot = $("#p2-3").offset().top;
+    var p21aot = $("#p2-1").position().top;
+    var p22aot = $("#p2-2").position().top;
+    var p23aot = $("#p2-3").position().top;
     
     $(window).scroll(function(){
 
       if ($(".story-1").css("display") == 'block' ){
 
-        if ($(window).scrollTop() > (p11cot)){
+        if ($(window).scrollTop() > (p11cot-200)){
           $("#p1-1").addClass("move");
         }
         else {
@@ -132,6 +132,7 @@ $(document).ready(function(){
       }
 
       if ($(".story-2").css("display") == 'block' ){
+        
         if ($(window).scrollTop() > (p21aot-200)){
           $("#p2-1").addClass("move");
         }
@@ -167,8 +168,8 @@ var    bullets = document.getElementById('position').getElementsByTagName('li');
 
 window.slider1 = Swipe(mainSlider, {
   startSlide: 0,
-  speed: 400,
-  auto: 3000,
+  speed: 600,
+  auto: 5500,
   continuous: true,
   disableScroll: true,
   stopPropagation: true,
@@ -184,5 +185,5 @@ window.slider1 = Swipe(mainSlider, {
 });
 setInterval(function() {
   window.slider1.next();
-}, 3000);
+}, 5500);
 
