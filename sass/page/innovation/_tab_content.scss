@@ -4,19 +4,20 @@
   @include pie-clearfix;
 }
 .story_text , .story_img {
-  width: 590px;
+  width: 600px;
   margin: 0 auto;
   @include pie-clearfix;
 }
 .story_text {
-  padding: 40px 30px 30px 30px;
+  padding: 60px;
   background-color: #fff;
+  position: relative;
   h4 {
     color: $color02;
     font-size: 36px;
     line-height: 36px;
     font-family: Klavika;
-    width: 470px;
+    width: 480px;
   }
   >h4+p.second {
     @include adjust-font-size-to(16px);
@@ -47,29 +48,41 @@
     }
     .product_info {
       clear: both;
+      font-size: 13px;
+      line-height: 20px;
       @include leader(1);
       @include trailer(1);
     }
   }
   .download {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 30px 60px;
+    width: 100%;
     @include adjust-font-size-to(14px);
+    background-color: $color01;
     h6 {
       float: left;
       @include remove-text;
       //background-image: url("../images/icon_dl_blue.jpg");
-      @include at2x('../images/icon_dl_blue',jpg,38px,38px);
+      @include at2x('../images/icon_dl_blue',png,38px,38px);
       background-repeat: no-repeat;
       width: 38px;
       height: 38px;
       margin-right: 10px;
-      margin-top: 5px;
     }
     span {
       display: block;
+      color: #fff;
+      margin-top: -4px;
     }
     a {
       @include linkbiu;
       display: block;
+      color: #fff;
+      margin-top: -4px;
       // text-decoration: underline;
       // font-style: italic;
     }
@@ -78,60 +91,36 @@
 }
 .story_img {
   text-align: center;
-  height: 520px;
+  height: 550px;
   display: block;
-
-  // @include bordertb1d2;
-  // &:before {
-  //   content:"";
-  //   @include background-image (radial-gradient(center bottom,ellipse farthest-side , rgba(0, 0, 0, 0.05) , transparent));
-  //   width: 100%;
-  //   height: 10px;
-  //   background-repeat: no-repeat;
-  //   display: block;
-  //   border-bottom: 1px solid #e2e2e2;
-  //   top: -10px;
-  //   position: absolute;
-  // }
-  // &:after {
-  //   content:"";
-  //   @include background-image (radial-gradient(center top,ellipse farthest-side , rgba(0, 0, 0, 0.05) , transparent));
-  //   width: 100%;
-  //   height: 10px;
-  //   background-repeat: no-repeat;
-  //   display: block;
-  //   border-top: 1px solid #e2e2e2;
-  //   bottom: -10px;
-  //   position: absolute;
-  // }
+  background-image: url(../images/innovation/story_img.png);
 }
 .col {
   @include pie-clearfix;
-  //margin-top: 60px;
-  //margin-bottom: 60px;
-  // &:first-child {
-  //   margin-top: 0;
-  // }
 }
 .col + .col {
-  border-top: 1px solid #d2d2d2;
+  // border-top: 1px solid #d2d2d2;
 }
 @include at-breakpoint($large-columns) {
 
   .col {
-    
-    &:nth-child(odd) {
-      .story_text {float: left;}
-      .story_img {float: right;margin-right: 0;}
-    }
-    &:nth-child(even) {
-      .story_text {float: right;}
-      .story_img {float: left;margin-left: 0;}
-    }
+    // &:nth-child(odd) {
+    //   .story_text {float: left;}
+    //   .story_img {float: right;margin-right: 0;}
+    // }
+    // &:nth-child(even) {
+    //   .story_text {float: right;}
+    //   .story_img {float: left;margin-left: 0;}
+    // }
   }
-
+  .story_text {
+    float: right;
+  }
+  .story_img {
+    float: left;
+  }
   .story_text , .story_img {
-    min-height: 520px; 
+    height: 550px; 
   }
   .smartposition #tabMenu {
     width: 1200px;
