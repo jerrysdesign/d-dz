@@ -54,4 +54,8 @@ module ViewHelpers
     content_tag(:div, content_tag(:p, "What can you do to DingZing technical film?")+content_tag(:div, link_to(name, href, options), :class => "link03" ), :class => "rcont1" )
   end
 
+  #breadcrumb
+  def breadcrumb()
+  end
+
 end

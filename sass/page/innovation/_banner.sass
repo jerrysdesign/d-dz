@@ -1,29 +1,31 @@
 .banner2
-  background-image: url("../images/intro_img_paperroll.jpg")
+  background-image: url("../images/intro_img_paperroll.png")
   background-repeat: no-repeat
   background-position: 90% bottom
-  background-color: #fff
-  padding: 40px
+  background-color: $color01
+  padding: 30px
   +trailer20
   +pie-clearfix
   p.info1
-    font-size: 22px
-    line-height: 34px
+    font-size: 20px
+    line-height: 32px
     letter-spacing: -1px
-    color: $color02
+    color: #fff
+    margin-bottom: 10px
   p.info2
     width: 70%
     +adjust-font-size-to(16px)
+    color: #2b2c2c
 +at-breakpoint($large-columns)
   .banner2
-    height: 230px
-    padding: 0 6.25%
-    background-position: 55% bottom
+    height: 180px
+    padding: 0 5%
+    background-position: 50% bottom
     p.info1
-      width: 38%
+      width: 40%
       float: left
       margin-top: 30px
     p.info2
-      width: 30%
+      width: 40%
       float: right
       margin-top: 30px
