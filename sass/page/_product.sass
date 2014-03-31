@@ -32,29 +32,31 @@
     margin-top: 0
   td
     height: 25px
-    border: 1px solid #B0B2B2
+    border: 1px solid $tabletd-border-color
     padding-top: 6px
     padding-left: 6px
     padding-bottom: 6px
     vertical-align: top
-    &.col_0
-      background-color: #333
-      color: #fff
-    &.col_v
-      background-color: #58595b
-      color: #fff
     &.col_h
-      background-color: $color02
+      background-color: $tabletdcolor01
+      color: #fff
+    &.col_0
+      background-color: $tabletdcolor02
+      color: #fff
+    &.col_et
+      background-color: $tabletdcolor03
+      color: #fff
+    &.col_es
+      background-color: $tabletdcolor04
       color: #fff
     &.bgf
       background-color: #fff
-
     &.bgg
-      background-color: $tabletdcolor00
+      background-color: $tabletdcolor05
     &.bdf
       border-corlor: #fff
     &.bdg
-      border-corlor: #ebebeb
+      border-corlor: $tabletd-border-color
     &.txtwhite
       color: #fff
       a
@@ -65,17 +67,17 @@
     &.txt16
       font-size: 16px
     &.td
-      background-color: $tabletdcolor00
+      background-color: $tabletdcolor05
 .style2
   font-size: 25px
   color: $color02
 .style1
   color: #fff
 .undertable1
-  color: #58595b
+  color: $tabletdcolor03
   margin-right: 5px
 .undertable2
-  color: #999
+  color: $tabletdcolor04
   margin-right: 5px
   margin-left: 20px
 .tableimg
@@ -85,7 +87,7 @@
     margin-bottom: 30px
   td
     &.td
-      background-color: $tabletdcolor00
+      background-color: $tabletdcolor05
   .noline, .noline
     td
       border-top-style: none
@@ -99,7 +101,9 @@
   .l18
     display: block
     float: left
-    margin-left: 18px
+    margin-left: 5px
+    +at-breakpoint($large-columns)
+      margin-left: 15px
   .script
     font-size: 14px
     color: #7f97ca

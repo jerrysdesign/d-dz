@@ -25,8 +25,8 @@ $(function() {
     // cached images don't fire load sometimes, so we reset src.
     if (this.complete || this.complete === undefined){
       var src = this.src;
-      // webkit hack from http://groups.google.com/group/jquery-dev/browse_thread/thread/eee6ab7b2da50e1f
-      // data uri bypasses webkit log warning (thx doug jones)
+      // webkit hack
+      // data uri bypasses webkit log warning
       this.src = blank;
       this.src = src;
     }
@@ -35,16 +35,16 @@ $(function() {
   return this;
   };
 
-  // gallery container
-  var $rgGallery      = $('#rg-gallery'),
+  // item  container
+  var $itemContainer = $('#rg-items'),
   // carousel container
-  $esCarousel     = $rgGallery.find('div.es-carousel-wrapper'),
+  $esCarousel        = $itemContainer.find('div.es-carousel-wrapper'),
   // the carousel items
-  $items        = $esCarousel.find('ul > li'),
+  $items             = $esCarousel.find('ul > li'),
   // total number of items
-  itemsCount      = $items.length;
+  itemsCount         = $items.length;
   
-  Gallery       = (function() {
+  AllItems       = (function() {
       // index of the current item
     var current     = 0,
       // mode : carousel || fullview
@@ -95,21 +95,21 @@ $(function() {
         // adds the structure for the large image and the navigation buttons (if total items > 1)
         // also initializes the navigation events
         
-        $('#img-wrapper-tmpl').tmpl( {itemsCount : itemsCount} ).appendTo( $rgGallery );
+        $('#img-wrapper-tmpl').tmpl( {itemsCount : itemsCount} ).appendTo( $itemContainer );
         
         if( itemsCount > 1 ) {
           // addNavigation
           var
-            $navPrev      = $rgGallery.find('a.rg-image-nav-prev'),
-            $navNext      = $rgGallery.find('a.rg-image-nav-next'),
-            $imgWrapper   = $rgGallery.find('div.rg-image');
+            $navPrev      = $itemContainer.find('a.rg-image-nav-prev'),
+            $navNext      = $itemContainer.find('a.rg-image-nav-next'),
+            $imgWrapper   = $itemContainer.find('div.rg-image');
             
-          $navPrev.on('click.rgGallery', function( event ) {
+          $navPrev.on('click.itemContainer', function( event ) {
             _navigate( 'left' );
             return false;
           }); 
           
-          $navNext.on('click.rgGallery', function( event ) {
+          $navNext.on('click.itemContainer', function( event ) {
             _navigate( 'right' );
             return false;
           });
@@ -125,7 +125,7 @@ $(function() {
             preventDefaultEvents: false
           });
         
-          $(document).on('keyup.rgGallery', function( event ) {
+          $(document).on('keyup.itemContainer', function( event ) {
             if (event.keyCode == 39)
               _navigate( 'right' );
             else if (event.keyCode == 37)
@@ -162,21 +162,21 @@ $(function() {
         
         // shows the large image that is associated to the $item
         
-        var $loader = $rgGallery.find('div.rg-loading').show();
+        var $loader = $itemContainer.find('div.rg-loading').show();
         
         $items.removeClass('selected');
         $item.addClass('selected');
            
-        var $thumb     = $item.find('img'),
-            largesrc   = $thumb.data('large');
+        var $thumb      = $item.find('img'),
+            largesrc    = $thumb.data('large');
         var $story_text = $item.find('div.story_text_0');
 
         $('<img/>').load( function() {
           
-          $rgGallery.find('div.rg-image').empty().append('<img src="' + largesrc + '"/>');
-          //$rgGallery.find('div.story_text').show().append($story_text);
+          $itemContainer.find('div.rg-image').empty().append('<img src="' + largesrc + '"/>');
+          //$itemContainer.find('div.story_text').show().append($story_text);
           
-          $rgGallery.find('div.rg-text').show().children('div.story_text').empty().append($story_text);
+          $itemContainer.find('div.rg-text').show().children('div.story_text').empty().append($story_text);
 
           $loader.hide();
           
@@ -190,7 +190,7 @@ $(function() {
         }).attr( 'src', largesrc );
         
       },
-      addItems    = function( $new ) {
+      addAllItems    = function( $new ) {
       
         $esCarousel.find('ul').append($new);
         $items    = $items.add( $($new) );
@@ -201,18 +201,18 @@ $(function() {
     
     return { 
       init    : init,
-      addItems  : addItems
+      addAllItems  : addAllItems
     };
   
   })();
 
-  Gallery.init();
+  AllItems.init();
   
   /*
-  Example to add more items to the gallery:
+  Example to add more items to the items:
   
   var $new  = $('<li><a href="#"><img src="images/thumbs/1.jpg" data-large="images/1.jpg" alt="image01" data-description="From off a hill whose concave womb reworded" /></a></li>');
-  Gallery.addItems( $new );
+  AllItems.addAllItems( $new );
   */
 });
 
