@@ -1,54 +1,150 @@
 // TAB 選單
-#tabMenu {
-  padding-top: 5px;
-  border-bottom: 5px solid $color01;
-  color: #fff;
-  font-size: 22px;
-  line-height: 50px;
-  @include pie-clearfix;
-  position: inherit;
-  h3 {
-    padding: 0 65px;
-    background-color: $color01;
-    float: left;
-    font-size: 22px;
-    line-height: 50px;
-  }
-  nav {
-    list-style: none;
-    margin-left: 6px;
-    float: left;
+// #tabMenu {
+//   padding-top: 5px;
+//   border-bottom: 5px solid $color01;
+//   color: #fff;
+//   font-size: 22px;
+//   line-height: 50px;
+//   @include pie-clearfix;
+//   position: inherit;
+//   h3 {
+//     padding: 0 65px;
+//     background-color: $color01;
+//     float: left;
+//     font-size: 22px;
+//     line-height: 50px;
+//   }
+//   nav {
+//     list-style: none;
+//     margin-left: 6px;
+//     float: left;
+//     li {
+//       float: left;
+//       background-color: #d2d2d2;
+//       a {
+//         color: #fff;
+//         display: block;
+//         padding: 0 20px;
+//         text-decoration: none;
+//       }
+//       &:hover,&.active {
+//         background-color: $color01;
+//         a {
+//           background-color: $color01;
+//         }
+//       }
+//     }
+//   }
+// }
+// .tabmenuspace {
+//   height: 40px;
+//   display: none;
+// }
+// .smartposition {
+//   #tabMenu {
+//     position: fixed;
+//     width: 768px;
+//     background-color: #FFF;
+//     z-index: 9999;
+//     top: 0;
+//   }
+//   .tabmenuspace {
+//     display: block;
+//   }
+// }
+/* Elastislide Style */
+
+.es-carousel-wrapper {
+  height: 120px;
+  padding: 10px 50px;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.es-carousel {
+  overflow: hidden;
+  height: 100px;
+  ul {
+    display: none;
     li {
       float: left;
-      background-color: #d2d2d2;
+      display: block;
+      width: 276px;
+      background-image: url("/images/innovation/divider.png");
+      padding: 0 1px;
+      // &:before {
+      //   content: url("/images/innovation/divider.png");
+      //   display: block;
+      //   padding-right: 25px;
+      //   float: left;
+      // }
+      // &:after {
+      //   content: url("/images/innovation/divider.png");
+      //   display: block;
+      //   float: right;
+      //   padding-left: 25px;
+      // }
       a {
-        color: #fff;
+        height: 100px;
         display: block;
-        padding: 0 20px;
-        text-decoration: none;
-      }
-      &:hover,&.active {
-        background-color: $color01;
-        a {
-          background-color: $color01;
+        background-color: #fff;
+        -webkit-touch-callout: none;
+        padding: 0 25px;
+        overflow: hidden;
+        /* option */
+        @include transition (all 0.2s ease-in-out);
+        span , img {
+          margin-top: 10px;
+          display: block;
+        }
+        span {
+          font-size: 16px;
+          line-height: 18px;
+          color: $text-color;
+          max-width: 140px;
+          letter-spacing: -.01em;
+          padding-top: 20px;
+          float: left;
+          
+        }
+        img {
+          float: right;
         }
       }
+
+      &.selected a {
+        border-color: #fff;
+        display: block;
+      }
+    }
+    li+li {
+      margin-left: -1px;
     }
   }
 }
-.tabmenuspace {
-  height: 40px;
-  display: none;
-}
-.smartposition {
-  #tabMenu {
-    position: fixed;
-    width: 768px;
-    background-color: #FFF;
-    z-index: 9999;
-    top: 0;
+
+.es-nav span {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-position: no-repeat;
+  text-indent: -9999px;
+  &.es-nav-prev {
+    left: 0;
+    right: auto;
+    background-image: url(../images/innovation/img_inno_arrow_left.png);
   }
-  .tabmenuspace {
-    display: block;
+  &.es-nav-next {
+    right: 0;
+    left: auto;
+    background-image: url(../images/innovation/img_inno_arrow_right.png);
+
+  }
+  &:hover {
+    opacity: 1.0;
   }
 }
