@@ -27,14 +27,14 @@ var OBC = (function (OBC, $) {
       var right = $(triggers).filter('[href="#right"]');
       var body = $('body');
       if (body.hasClass('show-left')) {
-        left.text('hide left');
+        left.text('More');
       } else {
-        left.text('show left');
+        left.text('More');
       }
       if (body.hasClass('show-right')) {
-        right.text('hide menu');
+        right.text('More');
       } else {
-        right.text('show menu');
+        right.text('More');
       }
     }
   };
