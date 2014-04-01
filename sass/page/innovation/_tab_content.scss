@@ -13,75 +13,77 @@
     max-width: 100%;
   }
 }
-
-.rg-image-nav a {
-  position: absolute;
-  top: 0px;
-  
-  background-image: url(../images/innovation/img_inno_arrow.png);
-  background-repeat: no-repeat;
-  width: 18px;
-  height: 100%;
-  text-indent: -9999px;
-  cursor: pointer;
-  opacity: 0.5;
-  outline: none;
-  z-index: 99;
-  &.rg-image-nav-prev {
-    left: 0px;
-    right: auto;
-    background-position: -15% 50%
-  }
-  &.rg-image-nav-next {
-    right: 0px;
-    left: auto;
-    background-position: 115% 50%;
-  }
-  &:hover {
-    opacity: 0.8;
-  }
-}
-
-.rg-caption {
-  text-align: center;
-  margin-top: 15px;
-  position: relative;
-  p {
-    font-size: 11px;
-    letter-spacing: 2px;
-    font-family: 'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;
-    line-height: 16px;
-    padding: 0 15px;
-    text-transform: uppercase;
-  }
-}
-
-.rg-view {
-  height: 30px;
+.rg-image-nav {
+  height: 352px;
   a {
-    display: block;
-    float: right;
-    width: 16px;
-    height: 16px;
-    margin-right: 3px;
-    background: #464646 url(../images/innovation/views.png) no-repeat top left;
-    border: 3px solid #464646;
-    opacity: 0.8;
+    position: absolute;
+    top: 0px;
+    background-image: url(../images/innovation/img_inno_arrow.png);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 100%;
+    text-indent: -9999px;
+    cursor: pointer;
+    opacity: 0.5;
+    outline: none;
+    z-index: 99;
+    &.rg-image-nav-prev {
+      left: 0px;
+      right: auto;
+      background-position: -15% 50%
+    }
+    &.rg-image-nav-next {
+      right: 0px;
+      left: auto;
+      background-position: 115% 50%;
+    }
     &:hover {
-      opacity: 1.0;
-    }
-    &.rg-view-full {
-      background-position: 0px 0px;
-    }
-    &.rg-view-selected {
-      background-color: #6f6f6f;
-      border-color: #6f6f6f;
-    }
-    &.rg-view-thumbs {
-      background-position: 0px -16px;
+      opacity: 0.8;
     }
   }
+
 }
+
+// .rg-caption {
+//   text-align: center;
+//   margin-top: 15px;
+//   position: relative;
+//   p {
+//     font-size: 11px;
+//     letter-spacing: 2px;
+//     font-family: 'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;
+//     line-height: 16px;
+//     padding: 0 15px;
+//     text-transform: uppercase;
+//   }
+// }
+
+// .rg-view {
+//   height: 30px;
+//   a {
+//     display: block;
+//     float: right;
+//     width: 16px;
+//     height: 16px;
+//     margin-right: 3px;
+//     background: #464646 url('../images/innovation/views.png') no-repeat top left;
+//     border: 3px solid #464646;
+//     opacity: 0.8;
+//     &:hover {
+//       opacity: 1.0;
+//     }
+//     &.rg-view-full {
+//       background-position: 0px 0px;
+//     }
+//     &.rg-view-selected {
+//       background-color: #6f6f6f;
+//       border-color: #6f6f6f;
+//     }
+//     &.rg-view-thumbs {
+//       background-position: 0px -16px;
+//     }
+//   }
+// }
 
 .rg-loading {
   width: 46px;
@@ -89,7 +91,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  background: black url(../images/innovation/ajax-loader.gif) no-repeat center center;
+  background: black url('../images/innovation/ajax-loader.gif') no-repeat center center;
   margin: -23px 0px 0px -23px;
   z-index: 100;
   border-radius: 10px;
@@ -102,7 +104,7 @@
 }
 .story_text , .story_img {
   width: 384px;
-  height: 550px;
+  height: 452px;
   margin: 0;
   @include pie-clearfix;
 }
@@ -110,20 +112,21 @@
   float: left;
 }
 .story_text {
-  padding: 30px;
+  padding: 30px 20px;
   background-color: #fff;
   position: relative;
   float: right;
   h4 {
     color: $color02;
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 28px;
     font-family: Klavika;
   }
   .second {
-    @include adjust-font-size-to(16px);
-    margin-bottom: 55px;
-    margin-top: 25px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 2em;
+    margin-top: 1em;
     color: $text-color;
   }
   .product {
@@ -160,10 +163,10 @@
   .download {
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     margin: 0;
-    padding: 30px 60px;
-    width: 100%;
+    padding: 30px 160px;
+    width: 768px;
     @include adjust-font-size-to(14px);
     background-color: $color01;
     h6 {
@@ -180,6 +183,7 @@
       display: block;
       color: #fff;
       margin-top: -4px;
+      text-decoration: none;
     }
     a {
       @include linkbiu;
@@ -201,6 +205,7 @@
 @include at-breakpoint($large-columns) {
   .story_text , .story_img {
     width: 600px;
+    height: 550px;
   }
   .story_text {
     padding: 60px;
@@ -210,9 +215,21 @@
       font-family: Klavika;
       width: 480px;
     }
+    .second {
+      @include adjust-font-size-to(16px);
+      margin-bottom: 3.4375em;
+      margin-top: 1.5625em;
+    }
+    .download {
+      padding: 30px 60px;
+      width: 600px;
+    }
   }
   .story_img {
     background-image: url(../images/innovation/story_img.png);
     height: 550px;
+  }
+  .rg-image-nav {
+    height: 550px
   }
 }

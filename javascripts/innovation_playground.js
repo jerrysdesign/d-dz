@@ -2,9 +2,9 @@ $(function() {
   
   $.fn.imagesLoaded     = function( callback ) {
   var $images = this.find('img'),
-    len   = $images.length,
-    _this   = this,
-    blank   = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
+    len       = $images.length,
+    _this     = this,
+    blank     = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
 
   function triggerCallback() {
     callback.call( _this, $images );
@@ -57,10 +57,10 @@ $(function() {
         $items.add('<img src="images/ajax-loader.gif"/><img src="images/black.png"/>').imagesLoaded( function() {
           
           // add large image wrapper
-          _addImageWrapper();
+          _addItemWrapper();
           
           // show first image
-          _showImage( $items.eq( current ) );
+          _showItem( $items.eq( current ) );
             
         });
         
@@ -79,7 +79,7 @@ $(function() {
             if( anim ) return false;
             anim  = true;
             // on click show image
-            _showImage($item);
+            _showItem($item);
             // change current
             current = $item.index();
           }
@@ -90,7 +90,7 @@ $(function() {
         
       },
 
-      _addImageWrapper= function() {
+      _addItemWrapper= function() {
         
         // adds the structure for the large image and the navigation buttons (if total items > 1)
         // also initializes the navigation events
@@ -102,12 +102,13 @@ $(function() {
           var
             $navPrev      = $itemContainer.find('a.rg-image-nav-prev'),
             $navNext      = $itemContainer.find('a.rg-image-nav-next'),
-            $imgWrapper   = $itemContainer.find('div.rg-image');
+            //$imgWrapper   = $itemContainer.find('div.rg-image'),
+            $rgContainer  = $itemContainer.find('div.rg-container');
             
           $navPrev.on('click.itemContainer', function( event ) {
             _navigate( 'left' );
             return false;
-          }); 
+          });
           
           $navNext.on('click.itemContainer', function( event ) {
             _navigate( 'right' );
@@ -115,7 +116,7 @@ $(function() {
           });
         
           // add touchwipe events on the large image wrapper
-          $imgWrapper.touchwipe({
+          $rgContainer.touchwipe({
             wipeLeft      : function() {
               _navigate( 'right' );
             },
@@ -129,7 +130,7 @@ $(function() {
             if (event.keyCode == 39)
               _navigate( 'right' );
             else if (event.keyCode == 37)
-              _navigate( 'left' );  
+              _navigate( 'left' );
           });
           
         }
@@ -155,51 +156,47 @@ $(function() {
             --current;
         }
         
-        _showImage( $items.eq( current ) );
+        _showItem( $items.eq( current ) );
         
       },
-      _showImage    = function( $item ) {
+      _showItem    = function( $item ) {
         
         // shows the large image that is associated to the $item
         
         var $loader = $itemContainer.find('div.rg-loading').show();
         
-        $items.removeClass('selected');
-        $item.addClass('selected');
-           
+        // $items.removeClass('selected');
+        // $item.addClass('selected');
+        
+        // IMG
         var $thumb      = $item.find('img'),
             largesrc    = $thumb.data('large');
-        var $story_text = $item.find('div.story_text_0');
+        // TEXT
+        var $story_text = $item.find('div.story_text');
 
-        $('<img/>').load( function() {
-          
-          $itemContainer.find('div.rg-image').empty().append('<img src="' + largesrc + '"/>');
-          //$itemContainer.find('div.story_text').show().append($story_text);
-          
-          $itemContainer.find('div.rg-text').show().children('div.story_text').empty().append($story_text);
-
+        $('<img>').load( function() {
+          $itemContainer.find('div.rg-image').children('div.story_img').html('<img src="' + largesrc + '"/>');
+          $itemContainer.find('div.rg-text').html($story_text);
           $loader.hide();
-          
           if( mode === 'carousel' ) {
             $esCarousel.elastislide( 'reload' );
             $esCarousel.elastislide( 'setCurrent', current );
           }
-          
           anim  = false;
-          
         }).attr( 'src', largesrc );
-        
+        // $story_text.appendTo($thumb);
+
       },
       addAllItems    = function( $new ) {
       
-        $esCarousel.find('ul').append($new);
-        $items    = $items.add( $($new) );
-        itemsCount  = $items.length; 
-        $esCarousel.elastislide( 'add', $new );
+        // $esCarousel.find('ul').append($new);
+        // $items      = $items.add( $($new) );
+        // itemsCount  = $items.length;
+        // $esCarousel.elastislide( 'add', $new );
       
       };
     
-    return { 
+    return {
       init    : init,
       addAllItems  : addAllItems
     };
@@ -209,12 +206,9 @@ $(function() {
   AllItems.init();
   
   /*
-  Example to add more items to the items:
-  
-  var $new  = $('<li><a href="#"><img src="images/thumbs/1.jpg" data-large="images/1.jpg" alt="image01" data-description="From off a hill whose concave womb reworded" /></a></li>');
-  AllItems.addAllItems( $new );
+  more items to the items:
   */
+  // var $new  = $('<li><a href="#"><img src="images/thumbs/1.jpg" data-large="images/1.jpg" alt="image01" data-description="From off a hill whose concave womb reworded" /></a></li>');
+  // AllItems.addAllItems( $new );
+  
 });
-
-
-

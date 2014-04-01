@@ -42,6 +42,7 @@ body {
 a {
   @include unstyled-link;
   @include link-colors($color02);
+  cursor: pointer;
 }
 
 // 設定 h1 – h6, p 邊界為 0
