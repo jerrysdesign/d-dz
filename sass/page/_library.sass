@@ -1,36 +1,35 @@
+// .r0,.r1,.r2,.r3,.r4
+  
+.library
+  div[class^="r"]
+    background-repeat: no-repeat
+    padding-top: 100px
+    font-size: 14px
+    background-position: center bottom
+    min-height: 400px
+    a
+      +linkbiu
+    strong
+      font-weight: bold
+      display: block
+      +trailer(1)
+    p
+      +trailer(1)
 
-.r1,.r2,.r3,.r4,.r5
-  background-repeat: no-repeat
-  padding-top: 90px
-  //padding-bottom: 90px
-  //+trailer(2)
-  font-size: 14px
-  a
-    +linkbiu
-  strong
-    font-weight: bold
-    display: block
-    +trailer(1)
-  p
-    +trailer(1)
-
+    &:nth-child(even)
+      padding-left: 20px
+.r0 , .r2
+  padding-right: 500px
 .r1
   padding-left: 520px
-  min-height: 400px
-.r2
-  padding-left: 20px
-  padding-right: 500px
-  min-height: 430px
 .r3
   padding-left: 450px
-  min-height: 400px
 .r4
-  padding-left: 20px
   padding-right: 450px
-  min-height: 430px
-.r5
-  padding-left: 450px
-  min-height: 400px
+
+
+.r0
+  background-image: url(../images/library/library_0.jpg)
 .r1
   background-image: url(../images/library/library_1.jpg)
 .r2
@@ -39,5 +38,3 @@
   background-image: url(../images/library/library_3.jpg)
 .r4
   background-image: url(../images/library/library_4.jpg)
-.r5
-  background-image: url(http://placehold.it/300x300)
