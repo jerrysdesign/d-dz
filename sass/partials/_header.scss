@@ -50,15 +50,23 @@
       position: relative;
       padding: 25px 20px;
       line-height: 23px;
-      z-index: 151;
+      z-index: 151;      
       &:hover {
         color: $color01;
-        text-decoration: underline;
+        margin-bottom: -5px; 
+        //text-decoration: underline;
+        &:after {
+          content: "";
+          display: block;
+          height: 2px;
+          margin-top: 3px;
+          background-color: $color01;
+        }
       }
     }
     &:hover, &.active {
       > a {
-        // border-bottom: 4px solid $color01;
+        //border-bottom: 2px solid $color01;
         // margin-bottom: -4px;
       }
     }
