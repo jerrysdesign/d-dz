@@ -173,10 +173,16 @@ $(function() {
             largesrc    = $thumb.data('large');
         // TEXT
         var $story_text = $item.find('div.story_text');
+        var $thumbparent= $thumb.parent('a');
+
+        //$thumbparent.css('background-color','yellow');
 
         $('<img>').load( function() {
           $itemContainer.find('div.rg-image').children('div.story_img').html('<img src="' + largesrc + '"/>');
           $itemContainer.find('div.rg-text').html($story_text);
+          //幹幹幹
+          $thumbparent.append($story_text.clone());
+          //幹妳媽的死bug終於解出來了
           $loader.hide();
           if( mode === 'carousel' ) {
             $esCarousel.elastislide( 'reload' );
