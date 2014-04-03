@@ -1,11 +1,11 @@
 = content_for :title do 
-  <title>DingZing | Exhibitions</title>
+  <title>DingZing | 展覽會</title>
 
 .path
-  | Our Company > Exhibitions
+  | 公司介紹 > 展覽會
   / | Our Company
   / span >
-  / = link_to("Exhibitions", "/exhibitions.html")
+  / = link_to("展覽會", "/exhibitions.html")
 .main_container
 
   #right.right
@@ -15,19 +15,17 @@
     = render "/partials/slider_toggle"
     .leftcont
       .titleimage
-        h1 Exhibitions
+        h1 展覽會
       .maincont
         .exhibition
-          h3.data Apr. 13-16, 2014
+          h3.data 2014年4月13-16
           p
-            a href="http://www.hktdc.com/fair/hkelectronicsfairse-en/s/441-General_Information/HKTDC-Hong-Kong-Electronics-Fair-Spring-Edition/FairDetails.html" target="_blank" Hong Kong Electronics Fair (Spring Edition)
-            | HongKong Convention and Exhibiton Center
-            | Booth Number: 2C06
+            a href="http://www.hktdc.com/fair/hkelectronicsfairse-tc/s/441-General_Information/%E9%A6%99%E6%B8%AF%E8%B2%BF%E7%99%BC%E5%B1%80%E9%A6%99%E6%B8%AF%E6%98%A5%E5%AD%A3%E9%9B%BB%E5%AD%90%E7%94%A2%E5%93%81%E5%B1%95/%E7%B0%A1%E4%BB%8B.html" target="_blank" 香港春季電子產品展
+            | 香港會議展覽中心
+            | 攤位號碼: 2C06
 
-          h3.data
-            | May. 12-19, 2014
+          h3.data 2014年5月12-19
           p
-            a href="http://www.siuf.com/en1/index.asp" target="_blank" The 9th China (ShenZen) International Brand Underwear Fair
-            | Halls of ShenZen Convention and Exhibition Center, China
-            | Booth Number: Hall 4,H35B
-
+            a href="http://www.siuf.com/index.html" target="_blank" 第九屆中國（深圳）國際品牌內衣展覽會
+            | 中國深圳會展中心
+            | 攤位號碼: 4號館,H35B
