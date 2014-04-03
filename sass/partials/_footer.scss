@@ -9,7 +9,8 @@
   }
 
   .footer_navigation {
-    @include span-columns(6);
+    @include span-columns(8);
+    @include trailer(1);
     >li {
       float: left;
       width: 33%;
@@ -17,14 +18,16 @@
   }
   
   .contact_us {
-    @include span-columns(2 omega);
+    @include span-columns(8);
     background-color: #eeeeee;
     padding: 16px 15px;
     @include adjust-font-size-to(16px);
+    text-align: center;
     h6 {
       font-weight: bold;
       padding-top: 50px;
       background-image: url(../images/icon_email.png);
+      background-position: center 10px;
       background-repeat: no-repeat;
       font-size: 16px;
     }
@@ -44,10 +47,15 @@
     .footer_navigation {
       @include span-columns(8);
       background-color: none !important;
+      @include trailer(0);
     }
     .contact_us {
       @include span-columns(4 omega);
       padding: 26px 28px;
+      text-align: left;
+      h6 {
+        background-position: left 15px;
+      }
     }
     @include span-columns(12);
   }

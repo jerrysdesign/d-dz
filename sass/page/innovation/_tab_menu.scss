@@ -114,8 +114,13 @@
       }
 
       &.selected a {
+        border-top: 4px solid $color01;
         border-color: #fff;
+        background-color: $color01;
         display: block;
+        span {
+          color: #fff;
+        }
       }
     }
     li+li {

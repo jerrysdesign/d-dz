@@ -194,7 +194,13 @@
       // font-style: italic;
     }
   }
-  
+  //fix 高度不夠客製樣式
+  .plh {
+    &.second, &.product_info {
+      line-height: 18px;
+    }
+  }
+  //
 }
 .story_img {
   text-align: center;
@@ -224,6 +230,17 @@
       padding: 30px 60px;
       width: 600px;
     }
+    //fix 高度不夠客製樣式
+    .plh {
+      &.second {
+        @include adjust-font-size-to(16px);
+        line-height: 1.5em;
+      }
+      &.product_info {
+        line-height: 20px;
+      }
+    }
+    //
   }
   .story_img {
     background-image: url(../images/innovation/story_img.png);

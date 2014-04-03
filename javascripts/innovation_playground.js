@@ -165,15 +165,15 @@ $(function() {
         
         var $loader = $itemContainer.find('div.rg-loading').show();
         
-        // $items.removeClass('selected');
-        // $item.addClass('selected');
+        $items.removeClass('selected');
+        $item.addClass('selected');
         
         // IMG
         var $thumb      = $item.find('img'),
             largesrc    = $thumb.data('large');
         // TEXT
         var $story_text = $item.find('div.story_text');
-        var $thumbparent= $thumb.parent('a');
+        var $thumbparent= $thumb.parents('li');
 
         //$thumbparent.css('background-color','yellow');
 
