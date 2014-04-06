@@ -1,10 +1,10 @@
 //Product Air Hoses Recoil
 
 = content_for :title do 
-  <title>DingZing | Recoil</title>
+  <title>DingZing | 捲管</title>
   
 .path
-  | 產品 > DingZing Air Hoses > Recoil Air Hoses
+  | 產品 > 氣動管 > 捲管
 
 .main_container
 
@@ -13,8 +13,7 @@
   .main
     .leftcont
       .titleimage
-        h1 Recoil
+        h1 捲管
       .maincont.product
-        .slogan.style01
-          p DingZing Air Hoses come in different sizes, structures, and burst pressures. Our premium air hoses are made of polyurethane resins and are widely used for air tools, pneumatic and hydraulic systems and machines, vacuum equipment, and oil and fuel lines.
+        =render "slogan"
         =render "recoil_tablelist.html.erb"
