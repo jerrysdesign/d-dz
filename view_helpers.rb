@@ -46,12 +46,12 @@ module ViewHelpers
   # 結構 => partials/rcont_download
   def rdownload_link_to(href, name, options={})
     if name == ""
-      name = "Download the brochure >>"
+      name = "下載產品型錄 >>"
       options[:target] = "_blank"
     end
     link_to name, href, options
     content_tag(:div, image_tag("/images/2.1_product_provecta_film_rtitle.jpg"),:class => "rtitleimage" )+\
-    content_tag(:div, content_tag(:p, "What can you do to DingZing technical film?")+content_tag(:div, link_to(name, href, options), :class => "link03" ), :class => "rcont1" )
+    content_tag(:div, content_tag(:p, "⿍基⾼科技膜：將創新玩弄於股掌之間")+content_tag(:div, link_to(name, href, options), :class => "link03" ), :class => "rcont1" )
   end
 
   #breadcrumb
