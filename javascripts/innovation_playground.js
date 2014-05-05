@@ -54,7 +54,7 @@ $(function() {
       init      = function() {
         
         // (not necessary) preloading the images here...
-        $items.add('<img src="images/ajax-loader.gif"/><img src="images/black.png"/>').imagesLoaded( function() {
+        $items.add('<img src="../images/innovation/ajax-loader.gif"/><img src="../images/innovation/black.png"/>').imagesLoaded( function() {
           
           // add large image wrapper
           _addItemWrapper();
